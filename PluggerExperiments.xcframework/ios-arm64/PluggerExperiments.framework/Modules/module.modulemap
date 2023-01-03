@@ -1,0 +1,11 @@
+framework module PluggerExperiments {
+  umbrella header "PluggerExperiments-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PluggerExperiments.Swift {
+    header "PluggerExperiments-Swift.h"
+    requires objc
+}

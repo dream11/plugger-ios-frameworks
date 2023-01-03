@@ -1,0 +1,11 @@
+framework module PluggerCore {
+  umbrella header "PluggerCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PluggerCore.Swift {
+    header "PluggerCore-Swift.h"
+    requires objc
+}

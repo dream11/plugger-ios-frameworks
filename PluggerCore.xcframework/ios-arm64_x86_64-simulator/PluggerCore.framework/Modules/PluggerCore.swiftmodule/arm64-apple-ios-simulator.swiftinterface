@@ -1,0 +1,330 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerCore
+import CoreLocation
+import CoreTelephony
+import Foundation
+@_exported import PluggerCore
+import Swift
+import _Concurrency
+import os
+@objc public protocol Config {
+  @objc var httpConfig: PluggerCore.HTTPConfig { get set }
+}
+public class CommonConfig : PluggerCore.Config {
+  public var plugins: [PluggerCore.Plugin]
+  @objc public var httpConfig: PluggerCore.HTTPConfig
+  public init(plugins: [PluggerCore.Plugin] = [], httpConfig: PluggerCore.HTTPConfig)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConfigProvider {
+  public static let shared: PluggerCore.ConfigProvider
+  public static func getInstance(key: PluggerCore.PluginList) -> PluggerCore.Config?
+  public static func setInstance(key: PluggerCore.PluginList, config: PluggerCore.Config)
+  public static func setInstances(for plugins: [PluggerCore.Plugin])
+  @objc deinit
+}
+@objc public protocol DeviceInfoDataSource {
+  @objc func getOs() -> Swift.String
+  @objc func getOsVersion() -> Swift.String
+  @objc func getPlatform() -> Swift.String
+  @objc func getBrand() -> Swift.String
+  @objc func getModel() -> Swift.String
+  @objc func getBundleId() -> Swift.String
+  @objc func getDeviceId() -> Swift.String
+  @objc func getAppVersion() -> Swift.String
+  @objc func getAppName() -> Swift.String
+  @objc func getBuildNumber() -> Swift.String
+  @objc func getCarrier() -> Swift.String
+  @objc func getDeviceName() -> Swift.String
+  @objc func getManufacturer() -> Swift.String
+  @objc func getLanguage() -> Swift.String
+  @objc func getLocationInfo() -> PluggerCore.DeviceLocationInfo?
+}
+@objc final public class DeviceLocationInfo : ObjectiveC.NSObject {
+  final public let country: Swift.String?
+  final public let state: Swift.String?
+  final public let city: Swift.String?
+  final public let postalCode: Swift.String?
+  public init(country: Swift.String? = nil, state: Swift.String? = nil, city: Swift.String? = nil, postalCode: Swift.String? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class DeviceInfo : ObjectiveC.NSObject, PluggerCore.DeviceInfoDataSource {
+  public static let shared: PluggerCore.DeviceInfo
+  @objc final public func getOs() -> Swift.String
+  @objc final public func getOsVersion() -> Swift.String
+  @objc final public func getPlatform() -> Swift.String
+  @objc final public func getBrand() -> Swift.String
+  @objc final public func getModel() -> Swift.String
+  @objc final public func getBundleId() -> Swift.String
+  @objc final public func getDeviceId() -> Swift.String
+  @objc final public func getAppVersion() -> Swift.String
+  @objc final public func getAppName() -> Swift.String
+  @objc final public func getBuildNumber() -> Swift.String
+  @objc final public func getCarrier() -> Swift.String
+  @objc final public func getDeviceName() -> Swift.String
+  @objc final public func getManufacturer() -> Swift.String
+  @objc final public func getLanguage() -> Swift.String
+  @objc final public func getLocationInfo() -> PluggerCore.DeviceLocationInfo?
+  final public func printAllDeviceInfo()
+  @objc deinit
+}
+@objc public enum HTTPMethod : Swift.Int {
+  case GET
+  case POST
+  case PUT
+  case DELETE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getHTTPMethodString(from method: PluggerCore.HTTPMethod) -> Swift.String
+@objc public class Delay : ObjectiveC.NSObject {
+  public init(time: Swift.Int, policy: PluggerCore.RetrialDelayPolicy)
+  @objc deinit
+}
+@objc public class RetrialConfig : ObjectiveC.NSObject {
+  public init(attempts: Swift.Int, delay: PluggerCore.Delay?)
+  @objc deinit
+}
+@objc public class TimeoutConfig : ObjectiveC.NSObject {
+  public init(callTimeout: Swift.Int)
+  @objc deinit
+}
+@objc public enum RetrialDelayPolicy : Swift.Int {
+  case linear
+  case incremental
+  case quadratic
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getDelayTimeFor(attemptNumber: Swift.Int, delay: PluggerCore.Delay) -> Swift.Int
+@objc public class HTTPConfig : ObjectiveC.NSObject {
+  public var headers: [Swift.String : Swift.String]?
+  public var apiBaseUrl: Swift.String
+  public var shouldRetry: Swift.Bool?
+  public var retrialConfig: PluggerCore.RetrialConfig?
+  public var timeoutConfig: PluggerCore.TimeoutConfig?
+  public init(headers: [Swift.String : Swift.String]? = nil, apiBaseUrl: Swift.String, shouldRetry: Swift.Bool? = true, retrialConfig: PluggerCore.RetrialConfig? = nil, timeoutConfig: PluggerCore.TimeoutConfig? = nil)
+  @objc deinit
+}
+@objc public enum NetworkManagerError : Swift.Int, Swift.Error {
+  case invalidHTTPConfig
+  case invalidURL
+  case request
+  case response
+  case malformedData
+  case non2XXResponse
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getErrorDescription(from error: PluggerCore.NetworkManagerError) -> Swift.String
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NetworkManager : ObjectiveC.NSObject {
+  public static let shared: PluggerCore.NetworkManager
+  final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, completion: @escaping (T?, PluggerCore.NetworkManagerError?) -> Swift.Void) where T : Swift.Decodable
+  @objc deinit
+}
+public struct NetworkOperationInfo {
+}
+public class NetworkDataOperation<T> : Foundation.Operation where T : Swift.Decodable {
+  public init(info: PluggerCore.NetworkOperationInfo, onFinishCallback: @escaping (T?, PluggerCore.NetworkManagerError?, PluggerCore.NetworkOperationInfo) -> Swift.Void)
+  @objc override dynamic public var isAsynchronous: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func start()
+  @objc override dynamic public var isExecuting: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var isFinished: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public protocol Initializable {
+  @objc init()
+}
+@objc public protocol Configurable {
+  @objc func configure(config: PluggerCore.Config)
+}
+@objc public protocol Notifiable {
+  @objc func onNotify(eventType: PluggerCore.PluggerEvents, data: [Swift.AnyHashable : Any]?)
+}
+@objc public enum PluggerEvents : Swift.Int {
+  case UserLoggedIn
+  case UserLoggedOut
+  case UserLocationSet
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum PluggerError : Swift.Int, Swift.Error {
+  case AlreadyInitialized
+  case PluginNotFound
+  case PluginAlreadyExists
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias PluginInterface = PluggerCore.Configurable & PluggerCore.Initializable & PluggerCore.Notifiable
+@_hasMissingDesignatedInitializers final public class Plugger {
+  public static var user: PluggerCore.PluggerUser
+  public static let deviceInfo: PluggerCore.DeviceInfo
+  public static func initialize(with config: PluggerCore.CommonConfig) throws
+  public static func getPlugin<T>(_ pluginName: T.Type) throws -> T where T : PluggerCore.Configurable, T : PluggerCore.Initializable, T : PluggerCore.Notifiable
+  public static func addPlugin(_ plugin: PluggerCore.Plugin) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PluggerLog {
+  public static let shared: PluggerCore.PluggerLog
+  public static func initialize(traceId: Swift.Double?)
+  public static func log(message: Swift.String)
+  public static func warn(message: Swift.String)
+  public static func error(message: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class PluggerUser : ObjectiveC.NSObject {
+  public static var shared: PluggerCore.PluggerUser
+  final public func getId() -> Swift.String
+  final public func getAuthToken() -> Swift.String
+  final public func isGuest() -> Swift.Bool
+  final public func userDeviceLocationInfo() -> PluggerCore.DeviceLocationInfo?
+  final public func setAsLoggedIn(id: Swift.String, token: Swift.String)
+  final public func setAsLoggedOut(id: Swift.String, guestToken: Swift.String)
+  final public func setLocation(location: CoreLocation.CLLocation)
+  final public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
+  @objc deinit
+}
+public class Plugin {
+  public var type: PluggerCore.PluginInterface.Type
+  public var config: PluggerCore.Config
+  public init(type: PluggerCore.PluginInterface.Type, config: PluggerCore.Config)
+  @objc deinit
+}
+@objc public enum PluginList : Swift.Int {
+  case Common
+  case Experiments
+  case Features
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getPluginName(from plugin: PluggerCore.PluginList) -> Swift.String
+public func getPluginList(from pluginName: Swift.String) -> PluggerCore.PluginList?
+@objc public enum StorageManagerError : Swift.Int, Swift.Error {
+  case MakeDirectory
+  case FileNotFound
+  case Read
+  case Write
+  case Delete
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getErrorDescription(from error: PluggerCore.StorageManagerError) -> Swift.String
+@_hasMissingDesignatedInitializers final public class StorageManager {
+  public static let shared: PluggerCore.StorageManager
+  final public func save<T>(data: T, at url: Foundation.URL, completion: @escaping (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Encodable
+  final public func load<T>(from url: Foundation.URL, completion: @escaping (Swift.Result<T, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Decodable
+  final public func delete(from url: Foundation.URL, completion: @escaping (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void)
+  @objc deinit
+}
+public struct StorageWriteOperationInfo<T> {
+  public let url: Foundation.URL
+  public let item: T
+  public let encoder: Foundation.JSONEncoder
+}
+public class StorageWriteOperation<T> : Foundation.Operation where T : Swift.Encodable {
+  public init(info: PluggerCore.StorageWriteOperationInfo<T>, onFinishCallback: @escaping (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>, PluggerCore.StorageWriteOperationInfo<T>) -> Swift.Void)
+  @objc override dynamic public var isAsynchronous: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var isExecuting: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var isFinished: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func start()
+  @objc deinit
+}
+public struct StorageReadOperationInfo {
+  public let url: Foundation.URL
+  public let decoder: Foundation.JSONDecoder
+}
+public class StorageReadOperation<T> : Foundation.Operation where T : Swift.Decodable {
+  public init(info: PluggerCore.StorageReadOperationInfo, onFinishCallback: @escaping (Swift.Result<T, PluggerCore.StorageManagerError>, PluggerCore.StorageReadOperationInfo) -> Swift.Void)
+  @objc override dynamic public var isAsynchronous: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var isExecuting: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var isFinished: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func start()
+  @objc deinit
+}
+public struct StorageDeleteOperationInfo {
+  public let url: Foundation.URL
+}
+@objc public class StorageDeleteOperation : Foundation.Operation {
+  public init(info: PluggerCore.StorageDeleteOperationInfo, onFinishCallback: @escaping (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>, PluggerCore.StorageDeleteOperationInfo) -> Swift.Void)
+  @objc override dynamic public var isAsynchronous: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var isExecuting: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var isFinished: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public func start()
+  @objc deinit
+}
+extension PluggerCore.HTTPMethod : Swift.Equatable {}
+extension PluggerCore.HTTPMethod : Swift.Hashable {}
+extension PluggerCore.HTTPMethod : Swift.RawRepresentable {}
+extension PluggerCore.RetrialDelayPolicy : Swift.Equatable {}
+extension PluggerCore.RetrialDelayPolicy : Swift.Hashable {}
+extension PluggerCore.RetrialDelayPolicy : Swift.RawRepresentable {}
+extension PluggerCore.NetworkManagerError : Swift.Equatable {}
+extension PluggerCore.NetworkManagerError : Swift.Hashable {}
+extension PluggerCore.NetworkManagerError : Swift.RawRepresentable {}
+extension PluggerCore.PluggerEvents : Swift.Equatable {}
+extension PluggerCore.PluggerEvents : Swift.Hashable {}
+extension PluggerCore.PluggerEvents : Swift.RawRepresentable {}
+extension PluggerCore.PluggerError : Swift.Equatable {}
+extension PluggerCore.PluggerError : Swift.Hashable {}
+extension PluggerCore.PluggerError : Swift.RawRepresentable {}
+extension PluggerCore.PluginList : Swift.Equatable {}
+extension PluggerCore.PluginList : Swift.Hashable {}
+extension PluggerCore.PluginList : Swift.RawRepresentable {}
+extension PluggerCore.StorageManagerError : Swift.Equatable {}
+extension PluggerCore.StorageManagerError : Swift.Hashable {}
+extension PluggerCore.StorageManagerError : Swift.RawRepresentable {}

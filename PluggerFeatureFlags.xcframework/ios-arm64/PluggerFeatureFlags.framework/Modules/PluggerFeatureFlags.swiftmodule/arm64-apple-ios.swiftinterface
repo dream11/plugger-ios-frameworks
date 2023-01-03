@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerFeatureFlags
+import Foundation
+import PluggerCore
+@_exported import PluggerFeatureFlags
+import Swift
+import _Concurrency
+@objc final public class FeatureFlagSnapshot : ObjectiveC.NSObject, Swift.Codable {
+  final public let timestamp: Swift.Double
+  final public let data: [Swift.String : PluggerFeatureFlags.FeatureFlag]
+  public init(timestamp: Swift.Double, data: [Swift.String : PluggerFeatureFlags.FeatureFlag])
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class FeatureFlagResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public let assignedFeatureFlags: [PluggerFeatureFlags.FeatureFlag]?
+  final public let message: Swift.String?
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class FeatureFlag : ObjectiveC.NSObject, Swift.Codable {
+  public static let ASSIGNED_STATUS: Swift.String
+  final public let unitId: Swift.Int
+  final public let status: Swift.String
+  final public let unitName: Swift.String
+  final public var isEnabled: Swift.Bool {
+    get
+  }
+  public init(unitId: Swift.Int, status: Swift.String, unitName: Swift.String)
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public protocol FeatureFlagsDelegate {
+  @objc func onSuccess()
+  @objc func onFailure(error: Swift.String)
+}
+@objc public protocol FeatureFlagsDataSource {
+  @objc func isEnabled(for flagName: Swift.String) -> Swift.Bool
+  @objc func getValue(for flagName: Swift.String) -> Swift.Bool
+}
+public typealias FeatureFlagsFetchResponse = (PluggerFeatureFlags.FeatureFlagResponse?, Swift.String?) -> Swift.Void
+@_inheritsConvenienceInitializers @objc final public class PlugFeatureFlags : ObjectiveC.NSObject, PluggerCore.Initializable {
+  public static let FEATURES_BASE_URL: Swift.String
+  public static let FEATURES_INT_BASE_URL: Swift.String
+  @objc required override dynamic public init()
+  public static let shared: PluggerFeatureFlags.PlugFeatureFlags
+  weak final public var delegate: PluggerFeatureFlags.FeatureFlagsDelegate?
+  final public func fetchFeatureFlags(completion: @escaping PluggerFeatureFlags.FeatureFlagsFetchResponse)
+  @objc deinit
+}
+@objc public class FeatureFlagsConfig : ObjectiveC.NSObject, PluggerCore.Config {
+  @objc public var httpConfig: PluggerCore.HTTPConfig
+  public var shouldFetchOnInit: Swift.Bool
+  public init(httpConfig: PluggerCore.HTTPConfig, shouldFetchOnInit: Swift.Bool)
+  @objc deinit
+}
+@objc extension PluggerFeatureFlags.PlugFeatureFlags : PluggerCore.Configurable {
+  @objc final public func configure(config: PluggerCore.Config)
+}
+@objc extension PluggerFeatureFlags.PlugFeatureFlags : PluggerFeatureFlags.FeatureFlagsDataSource {
+  @objc final public func isEnabled(for flagName: Swift.String) -> Swift.Bool
+  @objc final public func getValue(for flagName: Swift.String) -> Swift.Bool
+}
+@objc extension PluggerFeatureFlags.PlugFeatureFlags : PluggerCore.Notifiable {
+  @objc final public func onNotify(eventType: PluggerCore.PluggerEvents, data: [Swift.AnyHashable : Any]?)
+}

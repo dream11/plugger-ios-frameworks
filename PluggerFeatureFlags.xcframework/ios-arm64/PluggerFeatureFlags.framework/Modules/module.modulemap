@@ -1,0 +1,11 @@
+framework module PluggerFeatureFlags {
+  umbrella header "PluggerFeatureFlags-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PluggerFeatureFlags.Swift {
+    header "PluggerFeatureFlags-Swift.h"
+    requires objc
+}
