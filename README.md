@@ -1,2 +1,2 @@
-# plugger-ios-frameworks
+# Plugger iOS Frameworks
 Repository for Plugger iOS frameworks
