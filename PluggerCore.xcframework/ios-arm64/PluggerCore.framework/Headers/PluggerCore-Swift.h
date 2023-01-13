@@ -354,6 +354,7 @@ typedef SWIFT_ENUM(NSInteger, PluginList, open) {
   PluginListCommon = 0,
   PluginListExperiments = 1,
   PluginListFeatures = 2,
+  PluginListEvents = 3,
 };
 
 

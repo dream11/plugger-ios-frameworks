@@ -132,7 +132,7 @@ public func getDelayTimeFor(attemptNumber: Swift.Int, delay: PluggerCore.Delay) 
 public func getErrorDescription(from error: PluggerCore.NetworkManagerError) -> Swift.String
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NetworkManager : ObjectiveC.NSObject {
   public static let shared: PluggerCore.NetworkManager
-  final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, completion: @escaping (T?, PluggerCore.NetworkManagerError?) -> Swift.Void) where T : Swift.Decodable
+  final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, useStatusCodeAsResponse: Swift.Bool = false, completion: @escaping (T?, PluggerCore.NetworkManagerError?) -> Swift.Void) where T : Swift.Decodable
   @objc deinit
 }
 public struct NetworkOperationInfo {
@@ -203,11 +203,10 @@ public typealias PluginInterface = PluggerCore.Configurable & PluggerCore.Initia
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class PluggerUser : ObjectiveC.NSObject {
   public static var shared: PluggerCore.PluggerUser
   final public func getId() -> Swift.String
-  final public func getAuthToken() -> Swift.String
   final public func isGuest() -> Swift.Bool
   final public func userDeviceLocationInfo() -> PluggerCore.DeviceLocationInfo?
-  final public func setAsLoggedIn(id: Swift.String, token: Swift.String)
-  final public func setAsLoggedOut(id: Swift.String, guestToken: Swift.String)
+  final public func setAsLoggedIn(id: Swift.String)
+  final public func setAsLoggedOut(id: Swift.String)
   final public func setLocation(location: CoreLocation.CLLocation)
   final public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
   @objc deinit
@@ -222,6 +221,7 @@ public class Plugin {
   case Common
   case Experiments
   case Features
+  case Events
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

@@ -1,10 +1,3 @@
-//
-//  Plugger.h
-//  PluggerCore
-//
-//  Created by Anup Kher on 22/11/22.
-//
-
 #ifndef Plugger_h
 #define Plugger_h
 
