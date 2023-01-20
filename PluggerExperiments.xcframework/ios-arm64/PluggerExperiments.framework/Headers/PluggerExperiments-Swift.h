@@ -232,9 +232,9 @@ SWIFT_CLASS("_TtC18PluggerExperiments16ExperimentConfig")
 @end
 
 typedef SWIFT_ENUM(NSInteger, ExperimentHeader, open) {
-  ExperimentHeaderAuthorization = 0,
-  ExperimentHeaderGuestId = 1,
-  ExperimentHeaderDeviceId = 2,
+  ExperimentHeaderGuestId = 0,
+  ExperimentHeaderUserId = 1,
+  ExperimentHeaderApiKey = 2,
 };
 
 

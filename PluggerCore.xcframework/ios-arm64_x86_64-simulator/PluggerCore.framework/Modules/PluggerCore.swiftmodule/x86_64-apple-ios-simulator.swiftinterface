@@ -11,10 +11,16 @@ import os
 @objc public protocol Config {
   @objc var httpConfig: PluggerCore.HTTPConfig { get set }
 }
-public class CommonConfig : PluggerCore.Config {
+@objc public class ClientConfig : ObjectiveC.NSObject {
+  public init(accountId: Swift.String)
+  public func getAccountId() -> Swift.String
+  @objc deinit
+}
+@objc public class CommonConfig : ObjectiveC.NSObject, PluggerCore.Config {
   public var plugins: [PluggerCore.Plugin]
   @objc public var httpConfig: PluggerCore.HTTPConfig
-  public init(plugins: [PluggerCore.Plugin] = [], httpConfig: PluggerCore.HTTPConfig)
+  public var clientConfig: PluggerCore.ClientConfig?
+  public init(plugins: [PluggerCore.Plugin] = [], httpConfig: PluggerCore.HTTPConfig, clientConfig: PluggerCore.ClientConfig? = nil)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ConfigProvider {
@@ -132,7 +138,7 @@ public func getDelayTimeFor(attemptNumber: Swift.Int, delay: PluggerCore.Delay) 
 public func getErrorDescription(from error: PluggerCore.NetworkManagerError) -> Swift.String
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NetworkManager : ObjectiveC.NSObject {
   public static let shared: PluggerCore.NetworkManager
-  final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, useStatusCodeAsResponse: Swift.Bool = false, completion: @escaping (T?, PluggerCore.NetworkManagerError?) -> Swift.Void) where T : Swift.Decodable
+  final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, queryParams: [Swift.String : Swift.String]? = nil, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, useStatusCodeAsResponse: Swift.Bool = false, completion: @escaping (T?, PluggerCore.NetworkManagerError?) -> Swift.Void) where T : Swift.Decodable
   @objc deinit
 }
 public struct NetworkOperationInfo {
@@ -202,11 +208,11 @@ public typealias PluginInterface = PluggerCore.Configurable & PluggerCore.Initia
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class PluggerUser : ObjectiveC.NSObject {
   public static var shared: PluggerCore.PluggerUser
-  final public func getId() -> Swift.String
-  final public func isGuest() -> Swift.Bool
+  final public func getGuestId() -> Swift.String
+  final public func getUserId() -> Swift.String
+  final public func setGuest(guestId: Swift.String)
+  final public func setUser(userId: Swift.String)
   final public func userDeviceLocationInfo() -> PluggerCore.DeviceLocationInfo?
-  final public func setAsLoggedIn(id: Swift.String)
-  final public func setAsLoggedOut(id: Swift.String)
   final public func setLocation(location: CoreLocation.CLLocation)
   final public func setLocation(latitude: Swift.Double, longitude: Swift.Double)
   @objc deinit

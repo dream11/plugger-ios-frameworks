@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PluggerCore-Swift.h</key>
 		<data>
-		w3huaUAQGAxOK5F2PL1egR/TDqw=
+		kPC03XiJKNSa/zdoR8CejBTjMag=
 		</data>
 		<key>Headers/PluggerCore-umbrella.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		75C6TYED15a/Y9D0DilAAuMKnFM=
+		IwkgN0ukra+HltAlePH2Wprx/+4=
 		</data>
 		<key>Modules/PluggerCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/PluggerCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VLFSj7/GMMdOKkV1x0hiDHjtd/I=
+		G0d4GyMExdVMwvT019dwlhocVpw=
 		</data>
 		<key>Modules/PluggerCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6q+zJtyPzEYed60jNY48Y6VbsvY=
+		wTaN6b5PMy8jK+CUS8OvcX8YGMc=
 		</data>
 		<key>Modules/PluggerCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PluggerCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		n7vRpRSTwNU+WYqHUK3xyJmkpQU=
+		iwTgT+uUfBVIZlWl3z23T+kRpZw=
 		</data>
 		<key>Modules/PluggerCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NuZhzfOMNcpIioohd9yaU2kziDQ=
+		XF4l6YPLed9HFTwWby1cLgrHyf4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Td2ImNHx/zDiXYTcicKl1lE7fDWSqcHnSimBBG2o0Ts=
+			ufPGupuRqY8SSSYklbK2Hch8/pObrhqJbKg8S7h94CE=
 			</data>
 		</dict>
 		<key>Headers/PluggerCore-umbrella.h</key>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y3cHCQ7RxL5pwfp/F+6mDSm9U7LNfw6QkQyAN5+U5QU=
+			sYrPRpMQxN7bciXxphwEmZcqo7YpuqJ9OI/jpcUJnZo=
 			</data>
 		</dict>
 		<key>Modules/PluggerCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vqu9EWsHbB6CfuZ1jsIAVBw18BSWtehxQ44Ouf1jago=
+			At9ZwHXAthZT+BWvm5J0R2AdpGMiN/RezEnA+JNt/rk=
 			</data>
 		</dict>
 		<key>Modules/PluggerCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -104,14 +104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+WFtS1cboJqmu5rIi34ZpolnF6hsVSPviZR7T+64j4=
+			n1YZ1tag+20G0ndEul0Vv3z+/Ojfxid98vL2g5qcjAk=
 			</data>
 		</dict>
 		<key>Modules/PluggerCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SkKRwdkdmRNXHyuV/+MdyKM9Fu9WE+JWEETVHxulkNY=
+			a0jAV0KlQBQ/wb2LsAA/rOdkaO1mJdoqQ1LNoD6PQhI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

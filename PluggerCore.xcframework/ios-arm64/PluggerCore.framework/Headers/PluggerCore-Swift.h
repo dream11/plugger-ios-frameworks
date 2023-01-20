@@ -214,12 +214,28 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+SWIFT_CLASS("_TtC11PluggerCore12ClientConfig")
+@interface ClientConfig : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class HTTPConfig;
 
 SWIFT_PROTOCOL("_TtP11PluggerCore6Config_")
 @protocol Config
 @property (nonatomic, strong) HTTPConfig * _Nonnull httpConfig;
 @end
+
+
+SWIFT_CLASS("_TtC11PluggerCore12CommonConfig")
+@interface CommonConfig : NSObject <Config>
+@property (nonatomic, strong) HTTPConfig * _Nonnull httpConfig;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 SWIFT_PROTOCOL("_TtP11PluggerCore12Configurable_")

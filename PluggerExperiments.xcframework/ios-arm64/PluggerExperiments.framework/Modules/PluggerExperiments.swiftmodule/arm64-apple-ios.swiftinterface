@@ -90,9 +90,9 @@ public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentRespon
   @objc deinit
 }
 @objc public enum ExperimentHeader : Swift.Int {
-  case Authorization
   case GuestId
-  case DeviceId
+  case UserId
+  case ApiKey
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
