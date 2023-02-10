@@ -269,6 +269,7 @@ SWIFT_PROTOCOL("_TtP11PluggerCore20DeviceInfoDataSource_")
 - (NSString * _Nonnull)getBuildNumber SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCarrier SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getDeviceName SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDeviceScreenSize SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getManufacturer SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
 - (DeviceLocationInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
@@ -291,6 +292,7 @@ SWIFT_CLASS("_TtC11PluggerCore10DeviceInfo")
 - (NSString * _Nonnull)getBuildNumber SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCarrier SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getDeviceName SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDeviceScreenSize SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getManufacturer SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
 - (DeviceLocationInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
@@ -341,11 +343,11 @@ typedef SWIFT_ENUM(NSInteger, NetworkManagerError, open) {
 };
 static NSString * _Nonnull const NetworkManagerErrorDomain = @"PluggerCore.NetworkManagerError";
 
-enum PluggerEvents : NSInteger;
+enum PluggerNotifiableEvents : NSInteger;
 
 SWIFT_PROTOCOL("_TtP11PluggerCore10Notifiable_")
 @protocol Notifiable
-- (void)onNotifyWithEventType:(enum PluggerEvents)eventType data:(NSDictionary * _Nullable)data;
+- (void)onNotifyWithEventType:(enum PluggerNotifiableEvents)eventType data:(NSDictionary * _Nullable)data;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PluggerError, open) {
@@ -355,10 +357,15 @@ typedef SWIFT_ENUM(NSInteger, PluggerError, open) {
 };
 static NSString * _Nonnull const PluggerErrorDomain = @"PluggerCore.PluggerError";
 
-typedef SWIFT_ENUM(NSInteger, PluggerEvents, open) {
-  PluggerEventsUserLoggedIn = 0,
-  PluggerEventsUserLoggedOut = 1,
-  PluggerEventsUserLocationSet = 2,
+typedef SWIFT_ENUM(NSInteger, PluggerNotifiableEvents, open) {
+  PluggerNotifiableEventsUserLoggedIn = 0,
+  PluggerNotifiableEventsUserLoggedOut = 1,
+  PluggerNotifiableEventsUserLocationSet = 2,
+  PluggerNotifiableEventsAppDidBecomeActive = 3,
+  PluggerNotifiableEventsAppDidEnterBackground = 4,
+  PluggerNotifiableEventsAppWillEnterForeground = 5,
+  PluggerNotifiableEventsAppWillResignActive = 6,
+  PluggerNotifiableEventsAppWillTerminate = 7,
 };
 
 
@@ -691,6 +698,7 @@ SWIFT_PROTOCOL("_TtP11PluggerCore20DeviceInfoDataSource_")
 - (NSString * _Nonnull)getBuildNumber SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCarrier SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getDeviceName SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDeviceScreenSize SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getManufacturer SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
 - (DeviceLocationInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
@@ -713,6 +721,7 @@ SWIFT_CLASS("_TtC11PluggerCore10DeviceInfo")
 - (NSString * _Nonnull)getBuildNumber SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCarrier SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getDeviceName SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDeviceScreenSize SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getManufacturer SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getLanguage SWIFT_WARN_UNUSED_RESULT;
 - (DeviceLocationInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
@@ -763,11 +772,11 @@ typedef SWIFT_ENUM(NSInteger, NetworkManagerError, open) {
 };
 static NSString * _Nonnull const NetworkManagerErrorDomain = @"PluggerCore.NetworkManagerError";
 
-enum PluggerEvents : NSInteger;
+enum PluggerNotifiableEvents : NSInteger;
 
 SWIFT_PROTOCOL("_TtP11PluggerCore10Notifiable_")
 @protocol Notifiable
-- (void)onNotifyWithEventType:(enum PluggerEvents)eventType data:(NSDictionary * _Nullable)data;
+- (void)onNotifyWithEventType:(enum PluggerNotifiableEvents)eventType data:(NSDictionary * _Nullable)data;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PluggerError, open) {
@@ -777,10 +786,15 @@ typedef SWIFT_ENUM(NSInteger, PluggerError, open) {
 };
 static NSString * _Nonnull const PluggerErrorDomain = @"PluggerCore.PluggerError";
 
-typedef SWIFT_ENUM(NSInteger, PluggerEvents, open) {
-  PluggerEventsUserLoggedIn = 0,
-  PluggerEventsUserLoggedOut = 1,
-  PluggerEventsUserLocationSet = 2,
+typedef SWIFT_ENUM(NSInteger, PluggerNotifiableEvents, open) {
+  PluggerNotifiableEventsUserLoggedIn = 0,
+  PluggerNotifiableEventsUserLoggedOut = 1,
+  PluggerNotifiableEventsUserLocationSet = 2,
+  PluggerNotifiableEventsAppDidBecomeActive = 3,
+  PluggerNotifiableEventsAppDidEnterBackground = 4,
+  PluggerNotifiableEventsAppWillEnterForeground = 5,
+  PluggerNotifiableEventsAppWillResignActive = 6,
+  PluggerNotifiableEventsAppWillTerminate = 7,
 };
 
 
