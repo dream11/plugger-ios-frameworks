@@ -114,7 +114,7 @@ extension PluggerExperiments.PlugExperiments {
   final public func loadExperimentsData(completion: @escaping (PluggerExperiments.ExperimentSnapshot?, PluggerCore.StorageManagerError?) -> Swift.Void)
 }
 @objc extension PluggerExperiments.PlugExperiments : PluggerCore.Notifiable {
-  @objc final public func onNotify(eventType: PluggerCore.PluggerEvents, data: [Swift.AnyHashable : Any]?)
+  @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
 }
 extension PluggerExperiments.ExperimentHeader : Swift.Equatable {}
 extension PluggerExperiments.ExperimentHeader : Swift.Hashable {}

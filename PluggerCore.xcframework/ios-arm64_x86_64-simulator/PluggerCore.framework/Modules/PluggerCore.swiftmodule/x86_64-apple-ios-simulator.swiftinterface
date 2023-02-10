@@ -6,6 +6,7 @@ import CoreTelephony
 import Foundation
 @_exported import PluggerCore
 import Swift
+import UIKit
 import _Concurrency
 import os
 @objc public protocol Config {
@@ -43,6 +44,7 @@ import os
   @objc func getBuildNumber() -> Swift.String
   @objc func getCarrier() -> Swift.String
   @objc func getDeviceName() -> Swift.String
+  @objc func getDeviceScreenSize() -> Swift.String
   @objc func getManufacturer() -> Swift.String
   @objc func getLanguage() -> Swift.String
   @objc func getLocationInfo() -> PluggerCore.DeviceLocationInfo?
@@ -69,6 +71,7 @@ import os
   @objc final public func getBuildNumber() -> Swift.String
   @objc final public func getCarrier() -> Swift.String
   @objc final public func getDeviceName() -> Swift.String
+  @objc final public func getDeviceScreenSize() -> Swift.String
   @objc final public func getManufacturer() -> Swift.String
   @objc final public func getLanguage() -> Swift.String
   @objc final public func getLocationInfo() -> PluggerCore.DeviceLocationInfo?
@@ -164,12 +167,17 @@ public class NetworkDataOperation<T> : Foundation.Operation where T : Swift.Deco
   @objc func configure(config: PluggerCore.Config)
 }
 @objc public protocol Notifiable {
-  @objc func onNotify(eventType: PluggerCore.PluggerEvents, data: [Swift.AnyHashable : Any]?)
+  @objc func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
 }
-@objc public enum PluggerEvents : Swift.Int {
+@objc public enum PluggerNotifiableEvents : Swift.Int {
   case UserLoggedIn
   case UserLoggedOut
   case UserLocationSet
+  case AppDidBecomeActive
+  case AppDidEnterBackground
+  case AppWillEnterForeground
+  case AppWillResignActive
+  case AppWillTerminate
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -322,9 +330,9 @@ extension PluggerCore.RetrialDelayPolicy : Swift.RawRepresentable {}
 extension PluggerCore.NetworkManagerError : Swift.Equatable {}
 extension PluggerCore.NetworkManagerError : Swift.Hashable {}
 extension PluggerCore.NetworkManagerError : Swift.RawRepresentable {}
-extension PluggerCore.PluggerEvents : Swift.Equatable {}
-extension PluggerCore.PluggerEvents : Swift.Hashable {}
-extension PluggerCore.PluggerEvents : Swift.RawRepresentable {}
+extension PluggerCore.PluggerNotifiableEvents : Swift.Equatable {}
+extension PluggerCore.PluggerNotifiableEvents : Swift.Hashable {}
+extension PluggerCore.PluggerNotifiableEvents : Swift.RawRepresentable {}
 extension PluggerCore.PluggerError : Swift.Equatable {}
 extension PluggerCore.PluggerError : Swift.Hashable {}
 extension PluggerCore.PluggerError : Swift.RawRepresentable {}
