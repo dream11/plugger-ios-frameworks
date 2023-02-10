@@ -280,7 +280,7 @@ SWIFT_CLASS("_TtC18PluggerExperiments15PlugExperiments")
 
 
 @interface PlugExperiments (SWIFT_EXTENSION(PluggerExperiments)) <Notifiable>
-- (void)onNotifyWithEventType:(enum PluggerEvents)eventType data:(NSDictionary * _Nullable)data;
+- (void)onNotifyWithEventType:(enum PluggerNotifiableEvents)eventType data:(NSDictionary * _Nullable)data;
 @end
 
 
