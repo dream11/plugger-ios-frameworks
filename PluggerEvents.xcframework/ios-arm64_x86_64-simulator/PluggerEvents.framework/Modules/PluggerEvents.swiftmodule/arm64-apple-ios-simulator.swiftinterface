@@ -1,0 +1,220 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerEvents
+import Foundation
+import PluggerCore
+@_exported import PluggerEvents
+import Swift
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class DHWrapperEventIntegrationProperty : ObjectiveC.NSObject, Swift.Codable {
+  public var propertyName: Swift.String?
+  public var enabled: Swift.Bool?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class DHWrapperEventIntegration : ObjectiveC.NSObject, Swift.Codable {
+  final public let name: Swift.String
+  final public let enable: Swift.Bool
+  final public let properties: [PluggerEvents.DHWrapperEventIntegrationProperty]?
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class DHWrapperEvent : ObjectiveC.NSObject, Swift.Codable {
+  final public let name: Swift.String
+  final public let enabled: Swift.Bool
+  final public let integrations: [PluggerEvents.DHWrapperEventIntegration]
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class DHWrapperEventsData : ObjectiveC.NSObject {
+  final public let events: [PluggerEvents.DHWrapperEvent]
+  public init(events: [PluggerEvents.DHWrapperEvent] = [])
+  @objc deinit
+}
+extension PluggerEvents.DHWrapperEventsData : Swift.Encodable {
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+extension PluggerEvents.DHWrapperEventsData : Swift.Decodable {
+  convenience public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class DHWrapperType : ObjectiveC.NSObject, Swift.Codable {
+  final public let events: PluggerEvents.DHWrapperEventsData
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public class DHWrapperData : ObjectiveC.NSObject, Swift.Codable {
+  final public let type: PluggerEvents.DHWrapperType
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class UnSupportedIntegrationsData : ObjectiveC.NSObject, Swift.Codable {
+  final public let unSupportedIntegrations: [Swift.String]
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class ClientConfigData : ObjectiveC.NSObject, Swift.Codable {
+  final public let unSupportedIntegrations: PluggerEvents.UnSupportedIntegrationsData
+  final public let dh_wrapper: PluggerEvents.DHWrapperData
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class ClientConfigResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public let data: PluggerEvents.ClientConfigData
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class Event : ObjectiveC.NSObject, Swift.Codable {
+  public init(name: Swift.String, props: [Swift.String : PluggerEvents.EventProp], isPriority: Swift.Bool, destinations: [PluggerEvents.EventDestination])
+  convenience public init(name: Swift.String, props: [Swift.String : Any], isPriority: Swift.Bool, destinations: [Swift.String])
+  final public func updateProps(with newProps: [Swift.String : Any])
+  final public func getAllProps() -> [Swift.String : PluggerEvents.EventProp]
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class EventsBatchRequestPayload : ObjectiveC.NSObject, Swift.Encodable {
+  public init(batch: [PluggerEvents.Event])
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class EventSnapshot : ObjectiveC.NSObject, Swift.Codable {
+  final public let timestamp: Swift.Double
+  final public let data: [Swift.String : PluggerEvents.Event]
+  public init(timestamp: Swift.Double, data: [Swift.String : PluggerEvents.Event])
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class SendableEvent : ObjectiveC.NSObject, Swift.Codable {
+  public init(event: PluggerEvents.Event)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public enum EventDestination : Swift.Int, Swift.Codable {
+  case DATA_HIGHWAY
+  case CLEVERTAP
+  case APXOR
+  case APPSFLYER
+  case CRASHLYTICS
+  case FIREBASE_CRASHLYTICS
+  case DATADOG
+  case SEGMENT
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getDestinationName(from destination: PluggerEvents.EventDestination) -> Swift.String
+public func getEventDestination(from destinationName: Swift.String) -> PluggerEvents.EventDestination?
+@objc final public class EventProp : ObjectiveC.NSObject {
+  final public let boolValue: Swift.Bool?
+  final public let intValue: Swift.Int?
+  final public let doubleValue: Swift.Double?
+  final public let stringValue: Swift.String?
+  final public let dictionaryValue: [Swift.String : PluggerEvents.EventProp]?
+  required public init(boolValue: Swift.Bool?, intValue: Swift.Int?, doubleValue: Swift.Double?, stringValue: Swift.String?, dictionaryValue: [Swift.String : PluggerEvents.EventProp]?)
+  convenience public init(boolValue: Swift.Bool)
+  convenience public init(intValue: Swift.Int)
+  convenience public init(doubleValue: Swift.Double)
+  convenience public init(stringValue: Swift.String)
+  convenience public init(dictionaryValue: [Swift.String : PluggerEvents.EventProp])
+  @objc deinit
+}
+extension PluggerEvents.EventProp : Swift.Encodable {
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+extension PluggerEvents.EventProp : Swift.Decodable {
+  convenience public init(from decoder: Swift.Decoder) throws
+}
+extension PluggerEvents.EventProp {
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+}
+@_hasMissingDesignatedInitializers @objc final public class GlobalPropsManager : ObjectiveC.NSObject {
+  final public func getAllProps() -> [Swift.String : Any]
+  final public func updateProps(_ props: [Swift.String : Any])
+  @objc deinit
+}
+@objc public protocol EventsSendable {
+  @objc func fireEvent(_ event: PluggerEvents.Event)
+  @objc func fireEvents(_ events: [PluggerEvents.Event])
+}
+@objc public protocol GlobalPropsNotifier {
+  @objc func updateGlobalProps(_ props: [Swift.String : Any])
+}
+public protocol EventsDebuggable {
+  func getAllEventQueues() -> ([PluggerEvents.Event], [PluggerEvents.Event], [PluggerEvents.Event])
+}
+@_inheritsConvenienceInitializers @objc final public class PlugEvents : ObjectiveC.NSObject, PluggerCore.Initializable, PluggerEvents.EventsSendable, PluggerEvents.GlobalPropsNotifier {
+  @objc required override dynamic public init()
+  public static let EVENTS_PROXY_URL: Swift.String
+  public static let EVENTS_BASE_URL: Swift.String
+  public static let DEFAULT_BATCH_SIZE: Swift.Int
+  public static let DEFAULT_BATCH_INTERVAL_IN_MS: Swift.Int
+  public static let DEFAULT_PERSIST_INTERVAL_IN_MS: Swift.Int
+  @objc final public func fireEvent(_ event: PluggerEvents.Event)
+  final public func fireEventToDestinations(_ event: PluggerEvents.Event, completion: @escaping ([Swift.String : PluggerEvents.Event]?, Swift.String?) -> Swift.Void)
+  @objc final public func fireEvents(_ events: [PluggerEvents.Event])
+  @objc final public func updateGlobalProps(_ props: [Swift.String : Any])
+  @objc deinit
+}
+@objc extension PluggerEvents.PlugEvents : PluggerCore.Configurable {
+  @objc final public func configure(config: PluggerCore.Config)
+}
+@objc extension PluggerEvents.PlugEvents : PluggerCore.Notifiable {
+  @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
+}
+extension PluggerEvents.PlugEvents : PluggerEvents.EventsDebuggable {
+  final public func getAllEventQueues() -> ([PluggerEvents.Event], [PluggerEvents.Event], [PluggerEvents.Event])
+}
+@objc public class BatchingConfig : ObjectiveC.NSObject {
+  public var batchSize: Swift.Int
+  public var batchInterval: Swift.Int
+  public init(batchSize: Swift.Int, batchInterval: Swift.Int)
+  @objc deinit
+}
+@objc public class PersistEventsConfig : ObjectiveC.NSObject {
+  public var persistenceInterval: Swift.Int
+  public init(persistenceInterval: Swift.Int)
+  @objc deinit
+}
+@objc public class GlobalPropsConfig : ObjectiveC.NSObject {
+  public var shouldWaitForGlobalProps: Swift.Bool
+  public var commonProps: [Swift.String : Any]?
+  public var transformMap: [Swift.String : Swift.String]?
+  public init(shouldWaitForGlobalProps: Swift.Bool = true, commonProps: [Swift.String : Any]?, transformMap: [Swift.String : Swift.String]?)
+  @objc deinit
+}
+@objc public class BlacklistingConfig : ObjectiveC.NSObject {
+  public var url: Swift.String
+  public init(url: Swift.String)
+  @objc deinit
+}
+@objc public class EventsConfig : ObjectiveC.NSObject, PluggerCore.Config {
+  @objc public var httpConfig: PluggerCore.HTTPConfig
+  public var enableBatching: Swift.Bool
+  public var batchingConfig: PluggerEvents.BatchingConfig?
+  public var enableEventsPersistence: Swift.Bool
+  public var persistEventsConfig: PluggerEvents.PersistEventsConfig?
+  public var shouldAddGlobalProps: Swift.Bool
+  public var globalPropsConfig: PluggerEvents.GlobalPropsConfig?
+  public var enableBlacklisting: Swift.Bool
+  public var blacklistingConfig: PluggerEvents.BlacklistingConfig?
+  public init(httpConfig: PluggerCore.HTTPConfig, enableBatching: Swift.Bool = true, batchingConfig: PluggerEvents.BatchingConfig? = nil, enableEventsPersistence: Swift.Bool = true, persistEventsConfig: PluggerEvents.PersistEventsConfig? = nil, shouldAddGlobalProps: Swift.Bool = true, globalPropsConfig: PluggerEvents.GlobalPropsConfig? = nil, enableBlacklisting: Swift.Bool = false, blacklistingConfig: PluggerEvents.BlacklistingConfig? = nil)
+  @objc deinit
+}
+extension PluggerEvents.EventDestination : Swift.Equatable {}
+extension PluggerEvents.EventDestination : Swift.Hashable {}
+extension PluggerEvents.EventDestination : Swift.RawRepresentable {}

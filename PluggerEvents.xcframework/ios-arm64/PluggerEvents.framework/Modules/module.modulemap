@@ -1,0 +1,11 @@
+framework module PluggerEvents {
+  umbrella header "PluggerEvents-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PluggerEvents.Swift {
+    header "PluggerEvents-Swift.h"
+    requires objc
+}
