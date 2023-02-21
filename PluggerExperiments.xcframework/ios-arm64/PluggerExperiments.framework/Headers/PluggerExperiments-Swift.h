@@ -222,6 +222,12 @@ SWIFT_CLASS("_TtC18PluggerExperiments10Experiment")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
+
+@interface Experiment (SWIFT_EXTENSION(PluggerExperiments))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class HTTPConfig;
 
 SWIFT_CLASS("_TtC18PluggerExperiments16ExperimentConfig")
@@ -254,12 +260,12 @@ SWIFT_CLASS("_TtC18PluggerExperiments18ExperimentSnapshot")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP18PluggerExperiments21ExperimentsDataSource_")
 @protocol ExperimentsDataSource
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getIntValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -292,6 +298,7 @@ SWIFT_CLASS("_TtC18PluggerExperiments15PlugExperiments")
 @interface PlugExperiments (SWIFT_EXTENSION(PluggerExperiments)) <ExperimentsDataSource>
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getIntValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -304,6 +311,11 @@ SWIFT_CLASS("_TtC18PluggerExperiments8Variable")
 @end
 
 
+
+
+@interface Variable (SWIFT_EXTENSION(PluggerExperiments))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

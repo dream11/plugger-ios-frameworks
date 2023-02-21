@@ -39,6 +39,11 @@ import _Concurrency
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+extension PluggerExperiments.Experiment {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
 @objc final public class Variable : ObjectiveC.NSObject {
   final public let boolValue: Swift.Bool?
   final public let intValue: Swift.Int?
@@ -61,6 +66,11 @@ extension PluggerExperiments.Variable : Swift.Encodable {
 extension PluggerExperiments.Variable : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
+extension PluggerExperiments.Variable {
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+}
 @objc public protocol ExperimentsDelegate {
   @objc func onSuccess()
   @objc func onFailure(error: Swift.String)
@@ -68,6 +78,7 @@ extension PluggerExperiments.Variable : Swift.Decodable {
 @objc public protocol ExperimentsDataSource {
   @objc func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
   @objc func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
+  @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
   @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String?
   @objc func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
 }
@@ -106,6 +117,7 @@ public func getExperimentHeaderName(from header: PluggerExperiments.ExperimentHe
 @objc extension PluggerExperiments.PlugExperiments : PluggerExperiments.ExperimentsDataSource {
   @objc final public func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
   @objc final public func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
+  @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
   @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String?
   @objc final public func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
 }
