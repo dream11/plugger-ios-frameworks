@@ -272,7 +272,7 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags16PlugFeatureFlags")
 
 
 @interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <Notifiable>
-- (void)onNotifyWithEventType:(enum PluggerEvents)eventType data:(NSDictionary * _Nullable)data;
+- (void)onNotifyWithEventType:(enum PluggerNotifiableEvents)eventType data:(NSDictionary * _Nullable)data;
 @end
 
 

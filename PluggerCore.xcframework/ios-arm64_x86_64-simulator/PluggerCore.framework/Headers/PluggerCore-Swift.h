@@ -340,6 +340,7 @@ typedef SWIFT_ENUM(NSInteger, NetworkManagerError, open) {
   NetworkManagerErrorResponse = 3,
   NetworkManagerErrorMalformedData = 4,
   NetworkManagerErrorNon2XXResponse = 5,
+  NetworkManagerErrorNetworkManagerNotFound = 6,
 };
 static NSString * _Nonnull const NetworkManagerErrorDomain = @"PluggerCore.NetworkManagerError";
 
@@ -412,6 +413,7 @@ typedef SWIFT_ENUM(NSInteger, StorageManagerError, open) {
   StorageManagerErrorRead = 2,
   StorageManagerErrorWrite = 3,
   StorageManagerErrorDelete = 4,
+  StorageManagerErrorStorageManagerNotFound = 5,
 };
 static NSString * _Nonnull const StorageManagerErrorDomain = @"PluggerCore.StorageManagerError";
 
@@ -769,6 +771,7 @@ typedef SWIFT_ENUM(NSInteger, NetworkManagerError, open) {
   NetworkManagerErrorResponse = 3,
   NetworkManagerErrorMalformedData = 4,
   NetworkManagerErrorNon2XXResponse = 5,
+  NetworkManagerErrorNetworkManagerNotFound = 6,
 };
 static NSString * _Nonnull const NetworkManagerErrorDomain = @"PluggerCore.NetworkManagerError";
 
@@ -841,6 +844,7 @@ typedef SWIFT_ENUM(NSInteger, StorageManagerError, open) {
   StorageManagerErrorRead = 2,
   StorageManagerErrorWrite = 3,
   StorageManagerErrorDelete = 4,
+  StorageManagerErrorStorageManagerNotFound = 5,
 };
 static NSString * _Nonnull const StorageManagerErrorDomain = @"PluggerCore.StorageManagerError";
 

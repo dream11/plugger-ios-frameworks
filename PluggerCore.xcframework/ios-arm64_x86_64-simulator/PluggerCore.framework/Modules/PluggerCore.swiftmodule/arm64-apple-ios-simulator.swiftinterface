@@ -129,6 +129,7 @@ public func getDelayTimeFor(attemptNumber: Swift.Int, delay: PluggerCore.Delay) 
   case response
   case malformedData
   case non2XXResponse
+  case NetworkManagerNotFound
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
@@ -250,6 +251,7 @@ public func getPluginList(from pluginName: Swift.String) -> PluggerCore.PluginLi
   case Read
   case Write
   case Delete
+  case StorageManagerNotFound
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
