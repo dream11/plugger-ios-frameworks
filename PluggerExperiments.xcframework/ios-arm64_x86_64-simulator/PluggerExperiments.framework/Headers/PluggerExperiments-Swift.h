@@ -263,6 +263,13 @@ SWIFT_CLASS("_TtC18PluggerExperiments18ExperimentSnapshot")
 @end
 
 
+SWIFT_CLASS("_TtC18PluggerExperiments17ExperimentVariant")
+@interface ExperimentVariant : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP18PluggerExperiments21ExperimentsDataSource_")
 @protocol ExperimentsDataSource
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
@@ -270,6 +277,8 @@ SWIFT_PROTOCOL("_TtP18PluggerExperiments21ExperimentsDataSource_")
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -303,6 +312,8 @@ SWIFT_CLASS("_TtC18PluggerExperiments15PlugExperiments")
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -589,6 +600,13 @@ SWIFT_CLASS("_TtC18PluggerExperiments18ExperimentSnapshot")
 @end
 
 
+SWIFT_CLASS("_TtC18PluggerExperiments17ExperimentVariant")
+@interface ExperimentVariant : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP18PluggerExperiments21ExperimentsDataSource_")
 @protocol ExperimentsDataSource
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
@@ -596,6 +614,8 @@ SWIFT_PROTOCOL("_TtP18PluggerExperiments21ExperimentsDataSource_")
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -629,6 +649,8 @@ SWIFT_CLASS("_TtC18PluggerExperiments15PlugExperiments")
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

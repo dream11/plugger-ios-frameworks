@@ -27,6 +27,16 @@ import _Concurrency
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
+@objc public class ExperimentVariant : ObjectiveC.NSObject, Swift.Codable {
+  final public let experimentId: Swift.String
+  final public let variables: PluggerExperiments.Variable?
+  final public let variantName: Swift.String
+  public init(experimentId: Swift.String, variables: PluggerExperiments.Variable?, variantName: Swift.String)
+  convenience public init(experiment: PluggerExperiments.Experiment)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
 @objc public class Experiment : ObjectiveC.NSObject, Swift.Codable {
   final public let experimentId: Swift.String
   final public let userIdentifierType: Swift.String
@@ -81,6 +91,8 @@ extension PluggerExperiments.Variable {
   @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
   @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String?
   @objc func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
+  @objc func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
+  @objc func getExperimentVariantsJSON() -> Swift.String?
 }
 public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentResponse?, Swift.String?) -> Swift.Void
 @_inheritsConvenienceInitializers @objc final public class PlugExperiments : ObjectiveC.NSObject, PluggerCore.Initializable {
@@ -120,6 +132,8 @@ public func getExperimentHeaderName(from header: PluggerExperiments.ExperimentHe
   @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
   @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String?
   @objc final public func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
+  @objc final public func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
+  @objc final public func getExperimentVariantsJSON() -> Swift.String?
 }
 extension PluggerExperiments.PlugExperiments {
   final public func getDefaultExperimentValues() -> [Swift.String : PluggerExperiments.Variable]

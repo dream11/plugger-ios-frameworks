@@ -66,5 +66,5 @@ public typealias FeatureFlagsFetchResponse = (PluggerFeatureFlags.FeatureFlagRes
   @objc final public func getValue(for flagName: Swift.String) -> Swift.Bool
 }
 @objc extension PluggerFeatureFlags.PlugFeatureFlags : PluggerCore.Notifiable {
-  @objc final public func onNotify(eventType: PluggerCore.PluggerEvents, data: [Swift.AnyHashable : Any]?)
+  @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
 }
