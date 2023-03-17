@@ -275,7 +275,7 @@ SWIFT_PROTOCOL("_TtP18PluggerExperiments21ExperimentsDataSource_")
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getIntValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
 - (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;
@@ -310,7 +310,7 @@ SWIFT_CLASS("_TtC18PluggerExperiments15PlugExperiments")
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getIntValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
 - (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;
@@ -612,7 +612,7 @@ SWIFT_PROTOCOL("_TtP18PluggerExperiments21ExperimentsDataSource_")
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getIntValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
 - (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;
@@ -647,7 +647,7 @@ SWIFT_CLASS("_TtC18PluggerExperiments15PlugExperiments")
 - (BOOL)getBoolValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getIntValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (double)getDoubleValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
-- (NSString * _Nullable)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)apiPath with:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAllVariablesJSONFor:(NSString * _Nonnull)apiPath SWIFT_WARN_UNUSED_RESULT;
 - (NSDictionary<NSString *, ExperimentVariant *> * _Nonnull)getExperimentVariants SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getExperimentVariantsJSON SWIFT_WARN_UNUSED_RESULT;

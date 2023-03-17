@@ -89,7 +89,7 @@ extension PluggerExperiments.Variable {
   @objc func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
   @objc func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
   @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
-  @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String?
+  @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String
   @objc func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
   @objc func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
   @objc func getExperimentVariantsJSON() -> Swift.String?
@@ -130,7 +130,7 @@ public func getExperimentHeaderName(from header: PluggerExperiments.ExperimentHe
   @objc final public func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
   @objc final public func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
   @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
-  @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String?
+  @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String
   @objc final public func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
   @objc final public func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
   @objc final public func getExperimentVariantsJSON() -> Swift.String?
