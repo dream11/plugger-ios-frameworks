@@ -1,0 +1,146 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerExperiments
+import Foundation
+import PluggerCore
+@_exported import PluggerExperiments
+import Swift
+import _Concurrency
+@objc public class ExperimentSnapshot : ObjectiveC.NSObject, Swift.Codable {
+  final public let timestamp: Swift.Double
+  final public let data: [Swift.String : PluggerExperiments.Experiment]
+  public init(timestamp: Swift.Double, data: [Swift.String : PluggerExperiments.Experiment])
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class ExperimentResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public let data: [PluggerExperiments.Experiment]?
+  final public let error: PluggerExperiments.ExperimentResponseError?
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class ExperimentResponseError : ObjectiveC.NSObject, Swift.Codable {
+  final public let message: Swift.String?
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class ExperimentVariant : ObjectiveC.NSObject, Swift.Codable {
+  final public let experimentId: Swift.String
+  final public let variantName: Swift.String
+  public init(experimentId: Swift.String, variantName: Swift.String)
+  convenience public init(experiment: PluggerExperiments.Experiment)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class Experiment : ObjectiveC.NSObject, Swift.Codable {
+  final public let experimentId: Swift.String
+  final public let userIdentifierType: Swift.String
+  final public let status: Swift.String
+  final public let variables: PluggerExperiments.Variable?
+  final public let apiPath: Swift.String
+  final public let variantName: Swift.String
+  public init(experimentId: Swift.String, userIdentifierType: Swift.String, status: Swift.String, variables: PluggerExperiments.Variable?, apiPath: Swift.String, variantName: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+extension PluggerExperiments.Experiment {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+@objc final public class Variable : ObjectiveC.NSObject {
+  final public let boolValue: Swift.Bool?
+  final public let intValue: Swift.Int?
+  final public let doubleValue: Swift.Double?
+  final public let stringValue: Swift.String?
+  final public let listValue: [PluggerExperiments.Variable]?
+  final public let dictionaryValue: [Swift.String : PluggerExperiments.Variable]?
+  required public init(boolValue: Swift.Bool? = nil, intValue: Swift.Int? = nil, doubleValue: Swift.Double? = nil, stringValue: Swift.String? = nil, listValue: [PluggerExperiments.Variable]? = nil, dictionaryValue: [Swift.String : PluggerExperiments.Variable]? = nil)
+  convenience public init(boolValue: Swift.Bool? = nil)
+  convenience public init(intValue: Swift.Int? = nil)
+  convenience public init(doubleValue: Swift.Double? = nil)
+  convenience public init(stringValue: Swift.String? = nil)
+  convenience public init(listValue: [PluggerExperiments.Variable]? = nil)
+  convenience public init(dictionaryValue: [Swift.String : PluggerExperiments.Variable]? = nil)
+  @objc deinit
+}
+extension PluggerExperiments.Variable : Swift.Encodable {
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+extension PluggerExperiments.Variable : Swift.Decodable {
+  convenience public init(from decoder: Swift.Decoder) throws
+}
+extension PluggerExperiments.Variable {
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+}
+@objc public protocol ExperimentsDelegate {
+  @objc func onSuccess()
+  @objc func onFailure(error: Swift.String)
+}
+@objc public protocol ExperimentsDataSource {
+  @objc func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
+  @objc func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
+  @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
+  @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String
+  @objc func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
+  @objc func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
+  @objc func getExperimentVariantsJSON() -> Swift.String?
+}
+public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentResponse?, Swift.String?) -> Swift.Void
+@_inheritsConvenienceInitializers @objc final public class PlugExperiments : ObjectiveC.NSObject, PluggerCore.Initializable {
+  public static let EXPERIMENTS_BASE_URL: Swift.String
+  @objc required override dynamic public init()
+  public static let shared: PluggerExperiments.PlugExperiments
+  weak final public var delegate: PluggerExperiments.ExperimentsDelegate?
+  final public func fetchExperiments(for apiPaths: [Swift.String : PluggerExperiments.Variable], completion: @escaping PluggerExperiments.ExperimentsFetchResponse)
+  final public func refreshExperiments(completion: @escaping PluggerExperiments.ExperimentsFetchResponse)
+  @objc deinit
+}
+@objc public class ExperimentConfig : ObjectiveC.NSObject, PluggerCore.Config {
+  @objc public var httpConfig: PluggerCore.HTTPConfig
+  public var shouldFetchOnInit: Swift.Bool
+  public var shouldFetchOnLogout: Swift.Bool
+  public var defaultValues: [Swift.String : PluggerExperiments.Variable]
+  public init(httpConfig: PluggerCore.HTTPConfig, shouldFetchOnInit: Swift.Bool, shouldFetchOnLogout: Swift.Bool = false, defaultAPIPaths: [Swift.String : PluggerExperiments.Variable])
+  @objc deinit
+}
+@objc public enum ExperimentHeader : Swift.Int {
+  case GuestId
+  case UserId
+  case ApiKey
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getExperimentHeaderName(from header: PluggerExperiments.ExperimentHeader) -> Swift.String
+@objc extension PluggerExperiments.PlugExperiments : PluggerCore.Configurable {
+  @objc final public func configure(config: PluggerCore.Config)
+}
+@objc extension PluggerExperiments.PlugExperiments : PluggerExperiments.ExperimentsDataSource {
+  @objc final public func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
+  @objc final public func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
+  @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
+  @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String
+  @objc final public func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
+  @objc final public func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
+  @objc final public func getExperimentVariantsJSON() -> Swift.String?
+}
+extension PluggerExperiments.PlugExperiments {
+  final public func getDefaultExperimentValues() -> [Swift.String : PluggerExperiments.Variable]
+  final public func loadExperimentsData(completion: @escaping (PluggerExperiments.ExperimentSnapshot?, PluggerCore.StorageManagerError?) -> Swift.Void)
+}
+@objc extension PluggerExperiments.PlugExperiments : PluggerCore.Notifiable {
+  @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
+}
+extension PluggerExperiments.ExperimentHeader : Swift.Equatable {}
+extension PluggerExperiments.ExperimentHeader : Swift.Hashable {}
+extension PluggerExperiments.ExperimentHeader : Swift.RawRepresentable {}
