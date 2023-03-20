@@ -29,9 +29,8 @@ import _Concurrency
 }
 @objc public class ExperimentVariant : ObjectiveC.NSObject, Swift.Codable {
   final public let experimentId: Swift.String
-  final public let variables: PluggerExperiments.Variable?
   final public let variantName: Swift.String
-  public init(experimentId: Swift.String, variables: PluggerExperiments.Variable?, variantName: Swift.String)
+  public init(experimentId: Swift.String, variantName: Swift.String)
   convenience public init(experiment: PluggerExperiments.Experiment)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
@@ -96,7 +95,6 @@ extension PluggerExperiments.Variable {
 }
 public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentResponse?, Swift.String?) -> Swift.Void
 @_inheritsConvenienceInitializers @objc final public class PlugExperiments : ObjectiveC.NSObject, PluggerCore.Initializable {
-  public static let EXPERIMENTS_BASE_URL: Swift.String
   @objc required override dynamic public init()
   public static let shared: PluggerExperiments.PlugExperiments
   weak final public var delegate: PluggerExperiments.ExperimentsDelegate?

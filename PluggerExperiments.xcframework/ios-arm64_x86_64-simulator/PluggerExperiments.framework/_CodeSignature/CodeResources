@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KnhBqCaYfPFSMCzt67bLrmDi1oI=
+		Ffl8/UrFoDzakRgzZpGMVMGF7Io=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tMbRig0Q3ElQ3vgLe3K8xt6/8pA=
+		EJM37edtLDABsh4hKzqlt7ueiSE=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LR4cgqt7OoUi9kbPvkpT4hyy6uI=
+		Pf/YGv7O+58/3jtWOWyCFUBWViM=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HyOcQRwT3+OU/OI1ojG8qj1S8T0=
+		j17MkF6sPQXHdH4OA+iLzJ+Jelk=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r0I4U9mAdAPXCwZut4ArzmRXI24=
+		wEyp0yXrdTzaSZ2uAH4cmVilM3U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1PsC1+u2wBG8fa2q422dOhvPaG8+2XNX7upGvBssIM=
+			iwHq200GhE9zsfMWXIZ5EFe2xcZXAf61ALhRqCs+aRw=
 			</data>
 		</dict>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mpIZO0kmSKsF/b73ERyI+I7bp1zWX0YGo4gRhXJzRk0=
+			spXLULGqiARW5uO8eVbUg5EYGpBd3oumNdP7fazRzZ8=
 			</data>
 		</dict>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			17QYlX4OcIDx7GNpeWp/JoFlwHoCC6tnXXwpbP5Isw4=
+			sHubf3gkMw/l7WvgqPjc/n70zMtxO2ztXxJwFVXBQiM=
 			</data>
 		</dict>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RxHrBvujJko9Lvr3A1AG7DtfqDERZ9zaLWbjdSkaWv8=
+			bKI+aNURDiw6mYLuyvjVxrVKOR2WrJSjh/ZeKjf+sfY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
