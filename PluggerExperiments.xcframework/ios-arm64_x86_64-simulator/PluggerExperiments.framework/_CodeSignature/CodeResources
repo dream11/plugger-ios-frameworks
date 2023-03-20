@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PluggerExperiments-Swift.h</key>
 		<data>
-		qtEKHqae4d3Atp+2bk89JjXyky8=
+		CQ+F1dSsKpH0cFKw0yFMaSX/7Y0=
 		</data>
 		<key>Headers/PluggerExperiments-umbrella.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NRfsxNZ0FXTmK4FZniBaKGom5WA=
+		KnhBqCaYfPFSMCzt67bLrmDi1oI=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1lBkpnu96ak35zo+YgF9H8kjiks=
+		i4tGHCrQowztxkq08TCzD5OszWs=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		o+Syc48j/JxLwIfn+Cgy6YAG7+M=
+		8jxtTTEfTRutdq6rxaa6z+p9Zvs=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NHy4W+xz6uNJgOdSmHLpWm9iIMY=
+		Otu0Z1qL+k3A94MNhGV87BYGHzI=
 		</data>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r4JJxUd5Wv7Elp92uJXG/matNgU=
+		6vcc9BDEeoU/cuh6Hy1tRTB78+M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BsC6o9hZyygFXL0Exuhd2f1larj+Bc+6m1UQo9x2CXM=
+			FALEX2noHgfECPW6or701oME26xHj4vwHtWs48j0ZL0=
 			</data>
 		</dict>
 		<key>Headers/PluggerExperiments-umbrella.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aeJ++ArZJfzLcs33BbMmOQEtSIRxh8WNWm8a45QsjOY=
+			XFU1/RBHZ5Jh3geQNLztiINWNndtXRd5PpqpvnZbYRk=
 			</data>
 		</dict>
 		<key>Modules/PluggerExperiments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AvKe2diou+VMG3+bn/1yoEYn7I0VuG32uHC83DVMdIM=
+			iFDHXQByyvMLM5qdjwiH43LIszFXOlIMkpYJKb8/abA=
 			</data>
 		</dict>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hxch+oSmDKyfeKpUb5875BKcrMRAKt5utbgaXYegMYY=
+			r5YeOMgzMxa77Gjt9YpjcxFo8mQj9ijBTzO9RrfuE8E=
 			</data>
 		</dict>
 		<key>Modules/PluggerExperiments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zEV4LVv3/kcU2cOOQo8Juh83AVV4C+xk04J9Vph9xeE=
+			S5FQuAf8WPPhrvbAzZ+XJftNyTt6gawH+HB0hPolsz4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
