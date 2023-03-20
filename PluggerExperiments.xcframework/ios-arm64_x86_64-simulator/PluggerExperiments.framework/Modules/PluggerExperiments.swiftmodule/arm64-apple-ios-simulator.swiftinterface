@@ -29,9 +29,8 @@ import _Concurrency
 }
 @objc public class ExperimentVariant : ObjectiveC.NSObject, Swift.Codable {
   final public let experimentId: Swift.String
-  final public let variables: PluggerExperiments.Variable?
   final public let variantName: Swift.String
-  public init(experimentId: Swift.String, variables: PluggerExperiments.Variable?, variantName: Swift.String)
+  public init(experimentId: Swift.String, variantName: Swift.String)
   convenience public init(experiment: PluggerExperiments.Experiment)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
