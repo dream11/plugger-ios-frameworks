@@ -95,7 +95,6 @@ extension PluggerExperiments.Variable {
 }
 public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentResponse?, Swift.String?) -> Swift.Void
 @_inheritsConvenienceInitializers @objc final public class PlugExperiments : ObjectiveC.NSObject, PluggerCore.Initializable {
-  public static let EXPERIMENTS_BASE_URL: Swift.String
   @objc required override dynamic public init()
   public static let shared: PluggerExperiments.PlugExperiments
   weak final public var delegate: PluggerExperiments.ExperimentsDelegate?
