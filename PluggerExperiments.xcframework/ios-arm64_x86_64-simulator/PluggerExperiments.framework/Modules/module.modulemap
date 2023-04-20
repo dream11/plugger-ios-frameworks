@@ -6,6 +6,6 @@ framework module PluggerExperiments {
 }
 
 module PluggerExperiments.Swift {
-    header "PluggerExperiments-Swift.h"
-    requires objc
+  header "PluggerExperiments-Swift.h"
+  requires objc
 }
