@@ -1,0 +1,5067 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentSnapshot",
+        "printedName": "ExperimentSnapshot",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments18ExperimentSnapshotC9timestampSdvp",
+            "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC9timestampSdvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments18ExperimentSnapshotC9timestampSdvg",
+                "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC9timestampSdvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.Experiment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Experiment",
+                    "printedName": "PluggerExperiments.Experiment",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments18ExperimentSnapshotC4dataSDySSAA0C0CGvp",
+            "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC4dataSDySSAA0C0CGvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : PluggerExperiments.Experiment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Experiment",
+                        "printedName": "PluggerExperiments.Experiment",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments18ExperimentSnapshotC4dataSDySSAA0C0CGvg",
+                "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC4dataSDySSAA0C0CGvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(timestamp:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentSnapshot",
+                "printedName": "PluggerExperiments.ExperimentSnapshot",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentSnapshot"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.Experiment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Experiment",
+                    "printedName": "PluggerExperiments.Experiment",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments18ExperimentSnapshotC9timestamp4dataACSd_SDySSAA0C0CGtcfc",
+            "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC9timestamp4dataACSd_SDySSAA0C0CGtcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentSnapshot",
+                "printedName": "PluggerExperiments.ExperimentSnapshot",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentSnapshot"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentSnapshot(im)init",
+            "mangledName": "$s18PluggerExperiments18ExperimentSnapshotCACycfc",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentSnapshot",
+                "printedName": "PluggerExperiments.ExperimentSnapshot",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentSnapshot"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments18ExperimentSnapshotC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments18ExperimentSnapshotC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentSnapshot",
+        "mangledName": "$s18PluggerExperiments18ExperimentSnapshotC",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentResponse",
+        "printedName": "ExperimentResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PluggerExperiments.Experiment]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PluggerExperiments.Experiment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Experiment",
+                        "printedName": "PluggerExperiments.Experiment",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments18ExperimentResponseC4dataSayAA0C0CGSgvp",
+            "mangledName": "$s18PluggerExperiments18ExperimentResponseC4dataSayAA0C0CGSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PluggerExperiments.Experiment]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PluggerExperiments.Experiment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Experiment",
+                            "printedName": "PluggerExperiments.Experiment",
+                            "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments18ExperimentResponseC4dataSayAA0C0CGSgvg",
+                "mangledName": "$s18PluggerExperiments18ExperimentResponseC4dataSayAA0C0CGSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerExperiments.ExperimentResponseError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentResponseError",
+                    "printedName": "PluggerExperiments.ExperimentResponseError",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponseError"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments18ExperimentResponseC5errorAA0cD5ErrorCSgvp",
+            "mangledName": "$s18PluggerExperiments18ExperimentResponseC5errorAA0cD5ErrorCSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerExperiments.ExperimentResponseError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExperimentResponseError",
+                        "printedName": "PluggerExperiments.ExperimentResponseError",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponseError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments18ExperimentResponseC5errorAA0cD5ErrorCSgvg",
+                "mangledName": "$s18PluggerExperiments18ExperimentResponseC5errorAA0cD5ErrorCSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(data:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentResponse",
+                "printedName": "PluggerExperiments.ExperimentResponse",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PluggerExperiments.Experiment]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PluggerExperiments.Experiment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Experiment",
+                        "printedName": "PluggerExperiments.Experiment",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerExperiments.ExperimentResponseError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentResponseError",
+                    "printedName": "PluggerExperiments.ExperimentResponseError",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponseError"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments18ExperimentResponseC4data5errorACSayAA0C0CGSg_AA0cD5ErrorCSgtcfc",
+            "mangledName": "$s18PluggerExperiments18ExperimentResponseC4data5errorACSayAA0C0CGSg_AA0cD5ErrorCSgtcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentResponse",
+                "printedName": "PluggerExperiments.ExperimentResponse",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponse"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponse(im)init",
+            "mangledName": "$s18PluggerExperiments18ExperimentResponseCACycfc",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentResponse",
+                "printedName": "PluggerExperiments.ExperimentResponse",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments18ExperimentResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18PluggerExperiments18ExperimentResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments18ExperimentResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18PluggerExperiments18ExperimentResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponse",
+        "mangledName": "$s18PluggerExperiments18ExperimentResponseC",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentResponseError",
+        "printedName": "ExperimentResponseError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments23ExperimentResponseErrorC7messageSSSgvp",
+            "mangledName": "$s18PluggerExperiments23ExperimentResponseErrorC7messageSSSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments23ExperimentResponseErrorC7messageSSSgvg",
+                "mangledName": "$s18PluggerExperiments23ExperimentResponseErrorC7messageSSSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentResponseError",
+                "printedName": "PluggerExperiments.ExperimentResponseError",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponseError"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments23ExperimentResponseErrorC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18PluggerExperiments23ExperimentResponseErrorC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments23ExperimentResponseErrorC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18PluggerExperiments23ExperimentResponseErrorC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponseError",
+        "mangledName": "$s18PluggerExperiments23ExperimentResponseErrorC",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentVariant",
+        "printedName": "ExperimentVariant",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "experimentId",
+            "printedName": "experimentId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments17ExperimentVariantC12experimentIdSSvp",
+            "mangledName": "$s18PluggerExperiments17ExperimentVariantC12experimentIdSSvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments17ExperimentVariantC12experimentIdSSvg",
+                "mangledName": "$s18PluggerExperiments17ExperimentVariantC12experimentIdSSvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "variantName",
+            "printedName": "variantName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments17ExperimentVariantC11variantNameSSvp",
+            "mangledName": "$s18PluggerExperiments17ExperimentVariantC11variantNameSSvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments17ExperimentVariantC11variantNameSSvg",
+                "mangledName": "$s18PluggerExperiments17ExperimentVariantC11variantNameSSvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(experimentId:variantName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentVariant",
+                "printedName": "PluggerExperiments.ExperimentVariant",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments17ExperimentVariantC12experimentId11variantNameACSS_SStcfc",
+            "mangledName": "$s18PluggerExperiments17ExperimentVariantC12experimentId11variantNameACSS_SStcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(experiment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentVariant",
+                "printedName": "PluggerExperiments.ExperimentVariant",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Experiment",
+                "printedName": "PluggerExperiments.Experiment",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments17ExperimentVariantC10experimentAcA0C0C_tcfc",
+            "mangledName": "$s18PluggerExperiments17ExperimentVariantC10experimentAcA0C0C_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentVariant",
+                "printedName": "PluggerExperiments.ExperimentVariant",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant(im)init",
+            "mangledName": "$s18PluggerExperiments17ExperimentVariantCACycfc",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentVariant",
+                "printedName": "PluggerExperiments.ExperimentVariant",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments17ExperimentVariantC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18PluggerExperiments17ExperimentVariantC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments17ExperimentVariantC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18PluggerExperiments17ExperimentVariantC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant",
+        "mangledName": "$s18PluggerExperiments17ExperimentVariantC",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Experiment",
+        "printedName": "Experiment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "experimentId",
+            "printedName": "experimentId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments10ExperimentC12experimentIdSSvp",
+            "mangledName": "$s18PluggerExperiments10ExperimentC12experimentIdSSvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments10ExperimentC12experimentIdSSvg",
+                "mangledName": "$s18PluggerExperiments10ExperimentC12experimentIdSSvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userIdentifierType",
+            "printedName": "userIdentifierType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments10ExperimentC18userIdentifierTypeSSvp",
+            "mangledName": "$s18PluggerExperiments10ExperimentC18userIdentifierTypeSSvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments10ExperimentC18userIdentifierTypeSSvg",
+                "mangledName": "$s18PluggerExperiments10ExperimentC18userIdentifierTypeSSvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments10ExperimentC6statusSSvp",
+            "mangledName": "$s18PluggerExperiments10ExperimentC6statusSSvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments10ExperimentC6statusSSvg",
+                "mangledName": "$s18PluggerExperiments10ExperimentC6statusSSvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "variables",
+            "printedName": "variables",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerExperiments.Variable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Variable",
+                    "printedName": "PluggerExperiments.Variable",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments10ExperimentC9variablesAA8VariableCSgvp",
+            "mangledName": "$s18PluggerExperiments10ExperimentC9variablesAA8VariableCSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerExperiments.Variable?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments10ExperimentC9variablesAA8VariableCSgvg",
+                "mangledName": "$s18PluggerExperiments10ExperimentC9variablesAA8VariableCSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiPath",
+            "printedName": "apiPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments10ExperimentC7apiPathSSvp",
+            "mangledName": "$s18PluggerExperiments10ExperimentC7apiPathSSvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments10ExperimentC7apiPathSSvg",
+                "mangledName": "$s18PluggerExperiments10ExperimentC7apiPathSSvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "variantName",
+            "printedName": "variantName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments10ExperimentC11variantNameSSvp",
+            "mangledName": "$s18PluggerExperiments10ExperimentC11variantNameSSvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments10ExperimentC11variantNameSSvg",
+                "mangledName": "$s18PluggerExperiments10ExperimentC11variantNameSSvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(experimentId:userIdentifierType:status:variables:apiPath:variantName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Experiment",
+                "printedName": "PluggerExperiments.Experiment",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerExperiments.Variable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Variable",
+                    "printedName": "PluggerExperiments.Variable",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments10ExperimentC12experimentId18userIdentifierType6status9variables7apiPath11variantNameACSS_S2SAA8VariableCSgS2Stcfc",
+            "mangledName": "$s18PluggerExperiments10ExperimentC12experimentId18userIdentifierType6status9variables7apiPath11variantNameACSS_S2SAA8VariableCSgS2Stcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Experiment",
+                "printedName": "PluggerExperiments.Experiment",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerExperiments@objc(cs)Experiment(im)init",
+            "mangledName": "$s18PluggerExperiments10ExperimentCACycfc",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Experiment",
+                "printedName": "PluggerExperiments.Experiment",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Experiment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments10ExperimentC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18PluggerExperiments10ExperimentC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments10ExperimentC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18PluggerExperiments10ExperimentC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)Experiment(py)description",
+            "mangledName": "$s18PluggerExperiments10ExperimentC11descriptionSSvp",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PluggerExperiments@objc(cs)Experiment(im)description",
+                "mangledName": "$s18PluggerExperiments10ExperimentC11descriptionSSvg",
+                "moduleName": "PluggerExperiments",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)Experiment",
+        "mangledName": "$s18PluggerExperiments10ExperimentC",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Variable",
+        "printedName": "Variable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "boolValue",
+            "printedName": "boolValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments8VariableC9boolValueSbSgvp",
+            "mangledName": "$s18PluggerExperiments8VariableC9boolValueSbSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments8VariableC9boolValueSbSgvg",
+                "mangledName": "$s18PluggerExperiments8VariableC9boolValueSbSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "intValue",
+            "printedName": "intValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments8VariableC8intValueSiSgvp",
+            "mangledName": "$s18PluggerExperiments8VariableC8intValueSiSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments8VariableC8intValueSiSgvg",
+                "mangledName": "$s18PluggerExperiments8VariableC8intValueSiSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "doubleValue",
+            "printedName": "doubleValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments8VariableC11doubleValueSdSgvp",
+            "mangledName": "$s18PluggerExperiments8VariableC11doubleValueSdSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments8VariableC11doubleValueSdSgvg",
+                "mangledName": "$s18PluggerExperiments8VariableC11doubleValueSdSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments8VariableC11stringValueSSSgvp",
+            "mangledName": "$s18PluggerExperiments8VariableC11stringValueSSSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments8VariableC11stringValueSSSgvg",
+                "mangledName": "$s18PluggerExperiments8VariableC11stringValueSSSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "listValue",
+            "printedName": "listValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PluggerExperiments.Variable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments8VariableC9listValueSayACGSgvp",
+            "mangledName": "$s18PluggerExperiments8VariableC9listValueSayACGSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PluggerExperiments.Variable]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PluggerExperiments.Variable]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Variable",
+                            "printedName": "PluggerExperiments.Variable",
+                            "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments8VariableC9listValueSayACGSgvg",
+                "mangledName": "$s18PluggerExperiments8VariableC9listValueSayACGSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dictionaryValue",
+            "printedName": "dictionaryValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : PluggerExperiments.Variable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments8VariableC15dictionaryValueSDySSACGSgvp",
+            "mangledName": "$s18PluggerExperiments8VariableC15dictionaryValueSDySSACGSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : PluggerExperiments.Variable]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Variable",
+                            "printedName": "PluggerExperiments.Variable",
+                            "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments8VariableC15dictionaryValueSDySSACGSgvg",
+                "mangledName": "$s18PluggerExperiments8VariableC15dictionaryValueSDySSACGSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(boolValue:intValue:doubleValue:stringValue:listValue:dictionaryValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PluggerExperiments.Variable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : PluggerExperiments.Variable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC9boolValue03intE006doubleE006stringE004listE0010dictionaryE0ACSbSg_SiSgSdSgSSSgSayACGSgSDySSACGSgtcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC9boolValue03intE006doubleE006stringE004listE0010dictionaryE0ACSbSg_SiSgSdSgSSSgSayACGSgSDySSACGSgtcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(boolValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC9boolValueACSbSg_tcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC9boolValueACSbSg_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(intValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC8intValueACSiSg_tcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC8intValueACSiSg_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(doubleValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC11doubleValueACSdSg_tcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC11doubleValueACSdSg_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(stringValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC11stringValueACSSSg_tcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC11stringValueACSSSg_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(listValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PluggerExperiments.Variable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC9listValueACSayACGSg_tcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC9listValueACSayACGSg_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionaryValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : PluggerExperiments.Variable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC15dictionaryValueACSDySSACGSg_tcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC15dictionaryValueACSDySSACGSg_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerExperiments@objc(cs)Variable(im)init",
+            "mangledName": "$s18PluggerExperiments8VariableCACycfc",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments8VariableC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18PluggerExperiments8VariableC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)Variable(py)description",
+            "mangledName": "$s18PluggerExperiments8VariableC11descriptionSSvp",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PluggerExperiments@objc(cs)Variable(im)description",
+                "mangledName": "$s18PluggerExperiments8VariableC11descriptionSSvg",
+                "moduleName": "PluggerExperiments",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)Variable",
+        "mangledName": "$s18PluggerExperiments8VariableC",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerExperiments"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerExperiments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentsDelegate",
+        "printedName": "ExperimentsDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDelegate(im)onSuccess",
+            "mangledName": "$s18PluggerExperiments0B8DelegateP9onSuccessyyF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDelegate>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFailure",
+            "printedName": "onFailure(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDelegate(im)onFailureWithError:",
+            "mangledName": "$s18PluggerExperiments0B8DelegateP9onFailure5errorySS_tF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDelegate>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDelegate",
+        "mangledName": "$s18PluggerExperiments0B8DelegateP",
+        "moduleName": "PluggerExperiments",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentsDataSource",
+        "printedName": "ExperimentsDataSource",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getBoolValue",
+            "printedName": "getBoolValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getBoolValueFor:with:",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP12getBoolValue3for4withSbSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIntValue",
+            "printedName": "getIntValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getIntValueFor:with:",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP11getIntValue3for4withSiSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDoubleValue",
+            "printedName": "getDoubleValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getDoubleValueFor:with:",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP14getDoubleValue3for4withSdSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStringValue",
+            "printedName": "getStringValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getStringValueFor:with:",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP14getStringValue3for4withS2S_SStF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllVariablesJSON",
+            "printedName": "getAllVariablesJSON(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getAllVariablesJSONFor:",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP19getAllVariablesJSON3forSSSgSS_tF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getExperimentVariants",
+            "printedName": "getExperimentVariants()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.ExperimentVariant]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentVariant",
+                    "printedName": "PluggerExperiments.ExperimentVariant",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getExperimentVariants",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP21getExperimentVariantsSDySSAA0F7VariantCGyF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getExperimentVariantsJSON",
+            "printedName": "getExperimentVariantsJSON()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getExperimentVariantsJSON",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP25getExperimentVariantsJSONSSSgyF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource",
+        "mangledName": "$s18PluggerExperiments0B10DataSourceP",
+        "moduleName": "PluggerExperiments",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlugExperiments",
+        "printedName": "PlugExperiments",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlugExperiments",
+                "printedName": "PluggerExperiments.PlugExperiments",
+                "usr": "c:@M@PluggerExperiments@objc(cs)PlugExperiments"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerExperiments@objc(cs)PlugExperiments(im)init",
+            "mangledName": "$s18PluggerExperiments04PlugB0CACycfc",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlugExperiments",
+                "printedName": "PluggerExperiments.PlugExperiments",
+                "usr": "c:@M@PluggerExperiments@objc(cs)PlugExperiments"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments04PlugB0C6sharedACvpZ",
+            "mangledName": "$s18PluggerExperiments04PlugB0C6sharedACvpZ",
+            "moduleName": "PluggerExperiments",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlugExperiments",
+                    "printedName": "PluggerExperiments.PlugExperiments",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)PlugExperiments"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments04PlugB0C6sharedACvgZ",
+                "mangledName": "$s18PluggerExperiments04PlugB0C6sharedACvgZ",
+                "moduleName": "PluggerExperiments",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PluggerExperiments.ExperimentsDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvp",
+            "mangledName": "$s18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerExperiments.ExperimentsDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExperimentsDelegate",
+                        "printedName": "PluggerExperiments.ExperimentsDelegate",
+                        "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvg",
+                "mangledName": "$s18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerExperiments.ExperimentsDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExperimentsDelegate",
+                        "printedName": "PluggerExperiments.ExperimentsDelegate",
+                        "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvs",
+                "mangledName": "$s18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvs",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvM",
+                "mangledName": "$s18PluggerExperiments04PlugB0C8delegateAA0B8Delegate_pSgvM",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchExperiments",
+            "printedName": "fetchExperiments(for:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Variable",
+                    "printedName": "PluggerExperiments.Variable",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerExperiments.ExperimentResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PluggerExperiments.ExperimentResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PluggerExperiments.ExperimentResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExperimentResponse",
+                            "printedName": "PluggerExperiments.ExperimentResponse",
+                            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments04PlugB0C05fetchB03for10completionySDySSAA8VariableCG_yAA18ExperimentResponseCSg_SSSgtctF",
+            "mangledName": "$s18PluggerExperiments04PlugB0C05fetchB03for10completionySDySSAA8VariableCG_yAA18ExperimentResponseCSg_SSSgtctF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshExperiments",
+            "printedName": "refreshExperiments(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerExperiments.ExperimentResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PluggerExperiments.ExperimentResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PluggerExperiments.ExperimentResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExperimentResponse",
+                            "printedName": "PluggerExperiments.ExperimentResponse",
+                            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments04PlugB0C07refreshB010completionyyAA18ExperimentResponseCSg_SSSgtc_tF",
+            "mangledName": "$s18PluggerExperiments04PlugB0C07refreshB010completionyyAA18ExperimentResponseCSg_SSSgtc_tF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Config",
+                "printedName": "PluggerCore.Config",
+                "usr": "c:@M@PluggerCore@objc(pl)Config"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)configureWithConfig:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C9configure6configy0A4Core6Config_p_tF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "configureWithConfig:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBoolValue",
+            "printedName": "getBoolValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getBoolValueFor:with:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C12getBoolValue3for4withSbSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getBoolValueFor:with:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIntValue",
+            "printedName": "getIntValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getIntValueFor:with:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C11getIntValue3for4withSiSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getIntValueFor:with:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDoubleValue",
+            "printedName": "getDoubleValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getDoubleValueFor:with:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C14getDoubleValue3for4withSdSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getDoubleValueFor:with:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStringValue",
+            "printedName": "getStringValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getStringValueFor:with:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C14getStringValue3for4withS2S_SStF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getStringValueFor:with:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllVariablesJSON",
+            "printedName": "getAllVariablesJSON(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getAllVariablesJSONFor:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C19getAllVariablesJSON3forSSSgSS_tF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getAllVariablesJSONFor:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getExperimentVariants",
+            "printedName": "getExperimentVariants()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.ExperimentVariant]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentVariant",
+                    "printedName": "PluggerExperiments.ExperimentVariant",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentVariant"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getExperimentVariants",
+            "mangledName": "$s18PluggerExperiments04PlugB0C21getExperimentVariantsSDySSAA0E7VariantCGyF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getExperimentVariants",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getExperimentVariantsJSON",
+            "printedName": "getExperimentVariantsJSON()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getExperimentVariantsJSON",
+            "mangledName": "$s18PluggerExperiments04PlugB0C25getExperimentVariantsJSONSSSgyF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getExperimentVariantsJSON",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDefaultExperimentValues",
+            "printedName": "getDefaultExperimentValues()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Variable",
+                    "printedName": "PluggerExperiments.Variable",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments04PlugB0C26getDefaultExperimentValuesSDySSAA8VariableCGyF",
+            "mangledName": "$s18PluggerExperiments04PlugB0C26getDefaultExperimentValuesSDySSAA8VariableCGyF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadExperimentsData",
+            "printedName": "loadExperimentsData(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerExperiments.ExperimentSnapshot?, PluggerCore.StorageManagerError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PluggerExperiments.ExperimentSnapshot?, PluggerCore.StorageManagerError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PluggerExperiments.ExperimentSnapshot?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExperimentSnapshot",
+                            "printedName": "PluggerExperiments.ExperimentSnapshot",
+                            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentSnapshot"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PluggerCore.StorageManagerError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "StorageManagerError",
+                            "printedName": "PluggerCore.StorageManagerError",
+                            "usr": "c:@M@PluggerCore@E@StorageManagerError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PluggerExperiments04PlugB0C04loadB4Data10completionyyAA18ExperimentSnapshotCSg_0A4Core19StorageManagerErrorOSgtc_tF",
+            "mangledName": "$s18PluggerExperiments04PlugB0C04loadB4Data10completionyyAA18ExperimentSnapshotCSg_0A4Core19StorageManagerErrorOSgtc_tF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNotify",
+            "printedName": "onNotify(eventType:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PluggerNotifiableEvents",
+                "printedName": "PluggerCore.PluggerNotifiableEvents",
+                "usr": "c:@M@PluggerCore@E@PluggerNotifiableEvents"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)onNotifyWithEventType:data:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C8onNotify9eventType4datay0A4Core0A16NotifiableEventsO_SDys11AnyHashableVypGSgtF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "onNotifyWithEventType:data:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)PlugExperiments",
+        "mangledName": "$s18PluggerExperiments04PlugB0C",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Initializable",
+            "printedName": "Initializable",
+            "usr": "c:@M@PluggerCore@objc(pl)Initializable",
+            "mangledName": "$s11PluggerCore13InitializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Configurable",
+            "printedName": "Configurable",
+            "usr": "c:@M@PluggerCore@objc(pl)Configurable",
+            "mangledName": "$s11PluggerCore12ConfigurableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExperimentsDataSource",
+            "printedName": "ExperimentsDataSource",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Notifiable",
+            "printedName": "Notifiable",
+            "usr": "c:@M@PluggerCore@objc(pl)Notifiable",
+            "mangledName": "$s11PluggerCore10NotifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentConfig",
+        "printedName": "ExperimentConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "httpConfig",
+            "printedName": "httpConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPConfig",
+                "printedName": "PluggerCore.HTTPConfig",
+                "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentConfig(py)httpConfig",
+            "mangledName": "$s18PluggerExperiments16ExperimentConfigC04httpD00A4Core10HTTPConfigCvp",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "httpConfig",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPConfig",
+                    "printedName": "PluggerCore.HTTPConfig",
+                    "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentConfig(im)httpConfig",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC04httpD00A4Core10HTTPConfigCvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "objc_name": "httpConfig",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPConfig",
+                    "printedName": "PluggerCore.HTTPConfig",
+                    "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentConfig(im)setHttpConfig:",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC04httpD00A4Core10HTTPConfigCvs",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "objc_name": "setHttpConfig:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC04httpD00A4Core10HTTPConfigCvM",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC04httpD00A4Core10HTTPConfigCvM",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldFetchOnInit",
+            "printedName": "shouldFetchOnInit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvp",
+            "mangledName": "$s18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvg",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvs",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvs",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvM",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC17shouldFetchOnInitSbvM",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldFetchOnLogout",
+            "printedName": "shouldFetchOnLogout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvp",
+            "mangledName": "$s18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvg",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvs",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvs",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvM",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC19shouldFetchOnLogoutSbvM",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultValues",
+            "printedName": "defaultValues",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Variable",
+                    "printedName": "PluggerExperiments.Variable",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvp",
+            "mangledName": "$s18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvg",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Variable",
+                        "printedName": "PluggerExperiments.Variable",
+                        "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvs",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvs",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvM",
+                "mangledName": "$s18PluggerExperiments16ExperimentConfigC13defaultValuesSDySSAA8VariableCGvM",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(httpConfig:shouldFetchOnInit:shouldFetchOnLogout:defaultAPIPaths:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentConfig",
+                "printedName": "PluggerExperiments.ExperimentConfig",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPConfig",
+                "printedName": "PluggerCore.HTTPConfig",
+                "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerExperiments.Variable]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Variable",
+                    "printedName": "PluggerExperiments.Variable",
+                    "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments16ExperimentConfigC04httpD017shouldFetchOnInit0fgH6Logout15defaultAPIPathsAC0A4Core10HTTPConfigC_S2bSDySSAA8VariableCGtcfc",
+            "mangledName": "$s18PluggerExperiments16ExperimentConfigC04httpD017shouldFetchOnInit0fgH6Logout15defaultAPIPathsAC0A4Core10HTTPConfigC_S2bSDySSAA8VariableCGtcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExperimentConfig",
+                "printedName": "PluggerExperiments.ExperimentConfig",
+                "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentConfig(im)init",
+            "mangledName": "$s18PluggerExperiments16ExperimentConfigCACycfc",
+            "moduleName": "PluggerExperiments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerExperiments@objc(cs)ExperimentConfig",
+        "mangledName": "$s18PluggerExperiments16ExperimentConfigC",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Config",
+            "printedName": "Config",
+            "usr": "c:@M@PluggerCore@objc(pl)Config",
+            "mangledName": "$s11PluggerCore6ConfigP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExperimentHeader",
+        "printedName": "ExperimentHeader",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "GuestId",
+            "printedName": "GuestId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerExperiments.ExperimentHeader.Type) -> PluggerExperiments.ExperimentHeader",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentHeader",
+                    "printedName": "PluggerExperiments.ExperimentHeader",
+                    "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerExperiments.ExperimentHeader.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExperimentHeader",
+                        "printedName": "PluggerExperiments.ExperimentHeader",
+                        "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PluggerExperiments@E@ExperimentHeader@ExperimentHeaderGuestId",
+            "mangledName": "$s18PluggerExperiments16ExperimentHeaderO7GuestIdyA2CmF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "UserId",
+            "printedName": "UserId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerExperiments.ExperimentHeader.Type) -> PluggerExperiments.ExperimentHeader",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentHeader",
+                    "printedName": "PluggerExperiments.ExperimentHeader",
+                    "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerExperiments.ExperimentHeader.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExperimentHeader",
+                        "printedName": "PluggerExperiments.ExperimentHeader",
+                        "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PluggerExperiments@E@ExperimentHeader@ExperimentHeaderUserId",
+            "mangledName": "$s18PluggerExperiments16ExperimentHeaderO6UserIdyA2CmF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "ApiKey",
+            "printedName": "ApiKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerExperiments.ExperimentHeader.Type) -> PluggerExperiments.ExperimentHeader",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentHeader",
+                    "printedName": "PluggerExperiments.ExperimentHeader",
+                    "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerExperiments.ExperimentHeader.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExperimentHeader",
+                        "printedName": "PluggerExperiments.ExperimentHeader",
+                        "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PluggerExperiments@E@ExperimentHeader@ExperimentHeaderApiKey",
+            "mangledName": "$s18PluggerExperiments16ExperimentHeaderO6ApiKeyyA2CmF",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerExperiments.ExperimentHeader?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExperimentHeader",
+                    "printedName": "PluggerExperiments.ExperimentHeader",
+                    "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments16ExperimentHeaderO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18PluggerExperiments16ExperimentHeaderO8rawValueACSgSi_tcfc",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments16ExperimentHeaderO8rawValueSivp",
+            "mangledName": "$s18PluggerExperiments16ExperimentHeaderO8rawValueSivp",
+            "moduleName": "PluggerExperiments",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments16ExperimentHeaderO8rawValueSivg",
+                "mangledName": "$s18PluggerExperiments16ExperimentHeaderO8rawValueSivg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@PluggerExperiments@E@ExperimentHeader",
+        "mangledName": "$s18PluggerExperiments16ExperimentHeaderO",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "getExperimentHeaderName",
+        "printedName": "getExperimentHeaderName(from:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "ExperimentHeader",
+            "printedName": "PluggerExperiments.ExperimentHeader",
+            "usr": "c:@M@PluggerExperiments@E@ExperimentHeader"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:18PluggerExperiments23getExperimentHeaderName4fromSSAA0dE0O_tF",
+        "mangledName": "$s18PluggerExperiments23getExperimentHeaderName4fromSSAA0dE0O_tF",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerExperiments"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerExperiments"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerExperiments"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "kind": "StringLiteral",
+      "offset": 19,
+      "length": 18,
+      "value": "\"PluggerExperiments.ExperimentSnapshot\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 18,
+      "value": "\"PluggerExperiments.ExperimentResponse\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "kind": "StringLiteral",
+      "offset": 704,
+      "length": 17,
+      "value": "\"PluggerExperiments.ExperimentVariant\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "kind": "StringLiteral",
+      "offset": 1147,
+      "length": 10,
+      "value": "\"PluggerExperiments.Experiment\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/ExperimentVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 25,
+      "length": 8,
+      "value": "\"PluggerExperiments.Variable\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "Dictionary",
+      "offset": 2411,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "Dictionary",
+      "offset": 2668,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "Dictionary",
+      "offset": 2734,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7717,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "StringLiteral",
+      "offset": 7415,
+      "length": 16,
+      "value": "\"PluggerExperiments.ExperimentConfig\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8058,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8074,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8058,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8074,
+      "length": 6,
+      "value": "2"
+    }
+  ]
+}
