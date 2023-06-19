@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
 import CoreTelephony
 import Foundation
@@ -9,7 +8,6 @@ import Foundation
 import Swift
 import UIKit
 import _Concurrency
-import _StringProcessing
 import os
 @objc public protocol Config {
   @objc var httpConfig: PluggerCore.HTTPConfig { get set }
@@ -97,7 +95,7 @@ public func getHTTPMethodString(from method: PluggerCore.HTTPMethod) -> Swift.St
   @objc deinit
 }
 @objc public class RetrialConfig : ObjectiveC.NSObject {
-  public init(attempts: Swift.Int, delay: PluggerCore.Delay?)
+  public init(attempts: Swift.Int, delay: PluggerCore.Delay?, omitRetrialForStatusCode: Swift.Set<Swift.Int> = [])
   @objc deinit
 }
 @objc public class TimeoutConfig : ObjectiveC.NSObject {
@@ -144,13 +142,17 @@ public func getDelayTimeFor(attemptNumber: Swift.Int, delay: PluggerCore.Delay) 
 public func getErrorDescription(from error: PluggerCore.NetworkManagerError) -> Swift.String
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NetworkManager : ObjectiveC.NSObject {
   public static let shared: PluggerCore.NetworkManager
-  final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, queryParams: [Swift.String : Swift.String]? = nil, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, useStatusCodeAsResponse: Swift.Bool = false, completion: @escaping (T?, PluggerCore.NetworkManagerError?) -> Swift.Void) where T : Swift.Decodable
+  final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, queryParams: [Swift.String : Swift.String]? = nil, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, useStatusCodeAsResponse: Swift.Bool = false, completion: @escaping (T?, PluggerCore.NetworkManagerError?, PluggerCore.NetworkOperationResponseInfo?) -> Swift.Void) where T : Swift.Decodable
   @objc deinit
 }
 public struct NetworkOperationInfo {
 }
+public struct NetworkOperationResponseInfo {
+  public let allHeaderFields: [Swift.AnyHashable : Any]
+  public let statusCode: Swift.Int
+}
 public class NetworkDataOperation<T> : Foundation.Operation where T : Swift.Decodable {
-  public init(info: PluggerCore.NetworkOperationInfo, onFinishCallback: @escaping (T?, PluggerCore.NetworkManagerError?, PluggerCore.NetworkOperationInfo) -> Swift.Void)
+  public init(info: PluggerCore.NetworkOperationInfo, onFinishCallback: @escaping (T?, PluggerCore.NetworkManagerError?, PluggerCore.NetworkOperationResponseInfo?) -> Swift.Void)
   @objc override dynamic public var isAsynchronous: Swift.Bool {
     @objc get
   }
