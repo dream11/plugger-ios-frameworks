@@ -1,0 +1,2269 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlagSnapshot",
+        "printedName": "FeatureFlagSnapshot",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B12FlagSnapshotC9timestampSdvp",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC9timestampSdvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B12FlagSnapshotC9timestampSdvg",
+                "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC9timestampSdvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerFeatureFlags.FeatureFlag]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlag",
+                    "printedName": "PluggerFeatureFlags.FeatureFlag",
+                    "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B12FlagSnapshotC4dataSDySSAA0bD0CGvp",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC4dataSDySSAA0bD0CGvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : PluggerFeatureFlags.FeatureFlag]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureFlag",
+                        "printedName": "PluggerFeatureFlags.FeatureFlag",
+                        "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B12FlagSnapshotC4dataSDySSAA0bD0CGvg",
+                "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC4dataSDySSAA0bD0CGvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(timestamp:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagSnapshot",
+                "printedName": "PluggerFeatureFlags.FeatureFlagSnapshot",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagSnapshot"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PluggerFeatureFlags.FeatureFlag]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FeatureFlag",
+                    "printedName": "PluggerFeatureFlags.FeatureFlag",
+                    "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerFeatureFlags0B12FlagSnapshotC9timestamp4dataACSd_SDySSAA0bD0CGtcfc",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC9timestamp4dataACSd_SDySSAA0bD0CGtcfc",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagSnapshot",
+                "printedName": "PluggerFeatureFlags.FeatureFlagSnapshot",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagSnapshot"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagSnapshot(im)init",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotCACycfc",
+            "moduleName": "PluggerFeatureFlags",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagSnapshot",
+                "printedName": "PluggerFeatureFlags.FeatureFlagSnapshot",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagSnapshot"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerFeatureFlags0B12FlagSnapshotC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerFeatureFlags",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerFeatureFlags0B12FlagSnapshotC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerFeatureFlags",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagSnapshot",
+        "mangledName": "$s19PluggerFeatureFlags0B12FlagSnapshotC",
+        "moduleName": "PluggerFeatureFlags",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlagResponse",
+        "printedName": "FeatureFlagResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "assignedFeatureFlags",
+            "printedName": "assignedFeatureFlags",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PluggerFeatureFlags.FeatureFlag]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PluggerFeatureFlags.FeatureFlag]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureFlag",
+                        "printedName": "PluggerFeatureFlags.FeatureFlag",
+                        "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B12FlagResponseC08assignedbC0SayAA0bD0CGSgvp",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagResponseC08assignedbC0SayAA0bD0CGSgvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PluggerFeatureFlags.FeatureFlag]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PluggerFeatureFlags.FeatureFlag]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FeatureFlag",
+                            "printedName": "PluggerFeatureFlags.FeatureFlag",
+                            "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B12FlagResponseC08assignedbC0SayAA0bD0CGSgvg",
+                "mangledName": "$s19PluggerFeatureFlags0B12FlagResponseC08assignedbC0SayAA0bD0CGSgvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B12FlagResponseC7messageSSSgvp",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagResponseC7messageSSSgvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B12FlagResponseC7messageSSSgvg",
+                "mangledName": "$s19PluggerFeatureFlags0B12FlagResponseC7messageSSSgvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagResponse",
+                "printedName": "PluggerFeatureFlags.FeatureFlagResponse",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerFeatureFlags0B12FlagResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerFeatureFlags",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerFeatureFlags0B12FlagResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19PluggerFeatureFlags0B12FlagResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerFeatureFlags",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagResponse",
+        "mangledName": "$s19PluggerFeatureFlags0B12FlagResponseC",
+        "moduleName": "PluggerFeatureFlags",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlag",
+        "printedName": "FeatureFlag",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ASSIGNED_STATUS",
+            "printedName": "ASSIGNED_STATUS",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC15ASSIGNED_STATUSSSvpZ",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC15ASSIGNED_STATUSSSvpZ",
+            "moduleName": "PluggerFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B4FlagC15ASSIGNED_STATUSSSvgZ",
+                "mangledName": "$s19PluggerFeatureFlags0B4FlagC15ASSIGNED_STATUSSSvgZ",
+                "moduleName": "PluggerFeatureFlags",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unitId",
+            "printedName": "unitId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC6unitIdSivp",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC6unitIdSivp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B4FlagC6unitIdSivg",
+                "mangledName": "$s19PluggerFeatureFlags0B4FlagC6unitIdSivg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC6statusSSvp",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC6statusSSvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B4FlagC6statusSSvg",
+                "mangledName": "$s19PluggerFeatureFlags0B4FlagC6statusSSvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unitName",
+            "printedName": "unitName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC8unitNameSSvp",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC8unitNameSSvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B4FlagC8unitNameSSvg",
+                "mangledName": "$s19PluggerFeatureFlags0B4FlagC8unitNameSSvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEnabled",
+            "printedName": "isEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC9isEnabledSbvp",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC9isEnabledSbvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B4FlagC9isEnabledSbvg",
+                "mangledName": "$s19PluggerFeatureFlags0B4FlagC9isEnabledSbvg",
+                "moduleName": "PluggerFeatureFlags",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(unitId:status:unitName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "PluggerFeatureFlags.FeatureFlag",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC6unitId6status0E4NameACSi_S2Stcfc",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC6unitId6status0E4NameACSi_S2Stcfc",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "PluggerFeatureFlags.FeatureFlag",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag(im)init",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagCACycfc",
+            "moduleName": "PluggerFeatureFlags",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlag",
+                "printedName": "PluggerFeatureFlags.FeatureFlag",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerFeatureFlags",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerFeatureFlags",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlag",
+        "mangledName": "$s19PluggerFeatureFlags0B4FlagC",
+        "moduleName": "PluggerFeatureFlags",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerFeatureFlags"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerFeatureFlags"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlagsDelegate",
+        "printedName": "FeatureFlagsDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDelegate(im)onSuccess",
+            "mangledName": "$s19PluggerFeatureFlags0bC8DelegateP9onSuccessyyF",
+            "moduleName": "PluggerFeatureFlags",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDelegate>",
+            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFailure",
+            "printedName": "onFailure(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDelegate(im)onFailureWithError:",
+            "mangledName": "$s19PluggerFeatureFlags0bC8DelegateP9onFailure5errorySS_tF",
+            "moduleName": "PluggerFeatureFlags",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDelegate>",
+            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDelegate",
+        "mangledName": "$s19PluggerFeatureFlags0bC8DelegateP",
+        "moduleName": "PluggerFeatureFlags",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlagsDataSource",
+        "printedName": "FeatureFlagsDataSource",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isEnabled",
+            "printedName": "isEnabled(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)isEnabledFor:",
+            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP9isEnabled3forSbSS_tF",
+            "moduleName": "PluggerFeatureFlags",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getValue",
+            "printedName": "getValue(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getValueFor:",
+            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP8getValue3forSbSS_tF",
+            "moduleName": "PluggerFeatureFlags",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource",
+        "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP",
+        "moduleName": "PluggerFeatureFlags",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlugFeatureFlags",
+        "printedName": "PlugFeatureFlags",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "FEATURES_BASE_URL",
+            "printedName": "FEATURES_BASE_URL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C17FEATURES_BASE_URLSSvpZ",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C17FEATURES_BASE_URLSSvpZ",
+            "moduleName": "PluggerFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags04PlugbC0C17FEATURES_BASE_URLSSvgZ",
+                "mangledName": "$s19PluggerFeatureFlags04PlugbC0C17FEATURES_BASE_URLSSvgZ",
+                "moduleName": "PluggerFeatureFlags",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FEATURES_INT_BASE_URL",
+            "printedName": "FEATURES_INT_BASE_URL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C21FEATURES_INT_BASE_URLSSvpZ",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C21FEATURES_INT_BASE_URLSSvpZ",
+            "moduleName": "PluggerFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags04PlugbC0C21FEATURES_INT_BASE_URLSSvgZ",
+                "mangledName": "$s19PluggerFeatureFlags04PlugbC0C21FEATURES_INT_BASE_URLSSvgZ",
+                "moduleName": "PluggerFeatureFlags",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlugFeatureFlags",
+                "printedName": "PluggerFeatureFlags.PlugFeatureFlags",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)PlugFeatureFlags"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)init",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0CACycfc",
+            "moduleName": "PluggerFeatureFlags",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlugFeatureFlags",
+                "printedName": "PluggerFeatureFlags.PlugFeatureFlags",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)PlugFeatureFlags"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C6sharedACvpZ",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C6sharedACvpZ",
+            "moduleName": "PluggerFeatureFlags",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlugFeatureFlags",
+                    "printedName": "PluggerFeatureFlags.PlugFeatureFlags",
+                    "usr": "c:@M@PluggerFeatureFlags@objc(cs)PlugFeatureFlags"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags04PlugbC0C6sharedACvgZ",
+                "mangledName": "$s19PluggerFeatureFlags04PlugbC0C6sharedACvgZ",
+                "moduleName": "PluggerFeatureFlags",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PluggerFeatureFlags.FeatureFlagsDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvp",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerFeatureFlags.FeatureFlagsDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureFlagsDelegate",
+                        "printedName": "PluggerFeatureFlags.FeatureFlagsDelegate",
+                        "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvg",
+                "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerFeatureFlags.FeatureFlagsDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FeatureFlagsDelegate",
+                        "printedName": "PluggerFeatureFlags.FeatureFlagsDelegate",
+                        "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvs",
+                "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvs",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvM",
+                "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8delegateAA0bC8Delegate_pSgvM",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchFeatureFlags",
+            "printedName": "fetchFeatureFlags(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerFeatureFlags.FeatureFlagResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PluggerFeatureFlags.FeatureFlagResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PluggerFeatureFlags.FeatureFlagResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FeatureFlagResponse",
+                            "printedName": "PluggerFeatureFlags.FeatureFlagResponse",
+                            "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C05fetchbC010completionyyAA0B12FlagResponseCSg_SSSgtc_tF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C05fetchbC010completionyyAA0B12FlagResponseCSg_SSSgtc_tF",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Config",
+                "printedName": "PluggerCore.Config",
+                "usr": "c:@M@PluggerCore@objc(pl)Config"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)configureWithConfig:",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C9configure6configy0A4Core6Config_p_tF",
+            "moduleName": "PluggerFeatureFlags",
+            "objc_name": "configureWithConfig:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEnabled",
+            "printedName": "isEnabled(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)isEnabledFor:",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C9isEnabled3forSbSS_tF",
+            "moduleName": "PluggerFeatureFlags",
+            "objc_name": "isEnabledFor:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getValue",
+            "printedName": "getValue(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getValueFor:",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8getValue3forSbSS_tF",
+            "moduleName": "PluggerFeatureFlags",
+            "objc_name": "getValueFor:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNotify",
+            "printedName": "onNotify(eventType:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PluggerNotifiableEvents",
+                "printedName": "PluggerCore.PluggerNotifiableEvents",
+                "usr": "c:@M@PluggerCore@E@PluggerNotifiableEvents"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)onNotifyWithEventType:data:",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8onNotify9eventType4datay0A4Core0A16NotifiableEventsO_SDys11AnyHashableVypGSgtF",
+            "moduleName": "PluggerFeatureFlags",
+            "objc_name": "onNotifyWithEventType:data:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerFeatureFlags@objc(cs)PlugFeatureFlags",
+        "mangledName": "$s19PluggerFeatureFlags04PlugbC0C",
+        "moduleName": "PluggerFeatureFlags",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Initializable",
+            "printedName": "Initializable",
+            "usr": "c:@M@PluggerCore@objc(pl)Initializable",
+            "mangledName": "$s11PluggerCore13InitializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Configurable",
+            "printedName": "Configurable",
+            "usr": "c:@M@PluggerCore@objc(pl)Configurable",
+            "mangledName": "$s11PluggerCore12ConfigurableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "FeatureFlagsDataSource",
+            "printedName": "FeatureFlagsDataSource",
+            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource",
+            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Notifiable",
+            "printedName": "Notifiable",
+            "usr": "c:@M@PluggerCore@objc(pl)Notifiable",
+            "mangledName": "$s11PluggerCore10NotifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FeatureFlagsConfig",
+        "printedName": "FeatureFlagsConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "httpConfig",
+            "printedName": "httpConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPConfig",
+                "printedName": "PluggerCore.HTTPConfig",
+                "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagsConfig(py)httpConfig",
+            "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC04httpD00A4Core10HTTPConfigCvp",
+            "moduleName": "PluggerFeatureFlags",
+            "objc_name": "httpConfig",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPConfig",
+                    "printedName": "PluggerCore.HTTPConfig",
+                    "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagsConfig(im)httpConfig",
+                "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC04httpD00A4Core10HTTPConfigCvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "objc_name": "httpConfig",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPConfig",
+                    "printedName": "PluggerCore.HTTPConfig",
+                    "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagsConfig(im)setHttpConfig:",
+                "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC04httpD00A4Core10HTTPConfigCvs",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "objc_name": "setHttpConfig:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0bC6ConfigC04httpD00A4Core10HTTPConfigCvM",
+                "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC04httpD00A4Core10HTTPConfigCvM",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldFetchOnInit",
+            "printedName": "shouldFetchOnInit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvp",
+            "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvg",
+                "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvs",
+                "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvs",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvM",
+                "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC17shouldFetchOnInitSbvM",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(httpConfig:shouldFetchOnInit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagsConfig",
+                "printedName": "PluggerFeatureFlags.FeatureFlagsConfig",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagsConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPConfig",
+                "printedName": "PluggerCore.HTTPConfig",
+                "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerFeatureFlags0bC6ConfigC04httpD017shouldFetchOnInitAC0A4Core10HTTPConfigC_Sbtcfc",
+            "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC04httpD017shouldFetchOnInitAC0A4Core10HTTPConfigC_Sbtcfc",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FeatureFlagsConfig",
+                "printedName": "PluggerFeatureFlags.FeatureFlagsConfig",
+                "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagsConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagsConfig(im)init",
+            "mangledName": "$s19PluggerFeatureFlags0bC6ConfigCACycfc",
+            "moduleName": "PluggerFeatureFlags",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerFeatureFlags@objc(cs)FeatureFlagsConfig",
+        "mangledName": "$s19PluggerFeatureFlags0bC6ConfigC",
+        "moduleName": "PluggerFeatureFlags",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Config",
+            "printedName": "Config",
+            "usr": "c:@M@PluggerCore@objc(pl)Config",
+            "mangledName": "$s11PluggerCore6ConfigP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerFeatureFlags"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerFeatureFlags"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerFeatureFlags"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 25,
+      "length": 19,
+      "value": "\"PluggerFeatureFlags.FeatureFlagSnapshot\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 10,
+      "value": "\"assigned\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlag.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 11,
+      "value": "\"PluggerFeatureFlags.FeatureFlag\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 508,
+      "length": 25,
+      "value": "\"https:\/\/api.dream11.com\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 580,
+      "length": 44,
+      "value": "\"http:\/\/feature-flag-int.dream11-stag.local\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1868,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "Dictionary",
+      "offset": 2319,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5670,
+      "length": 18,
+      "value": "\"PluggerFeatureFlags.FeatureFlagsConfig\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6037,
+      "length": 13,
+      "value": "\"auth-userid\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6070,
+      "length": 10,
+      "value": "\"guest-id\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6037,
+      "length": 13,
+      "value": "\"auth-userid\""
+    },
+    {
+      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6070,
+      "length": 10,
+      "value": "\"guest-id\""
+    }
+  ]
+}

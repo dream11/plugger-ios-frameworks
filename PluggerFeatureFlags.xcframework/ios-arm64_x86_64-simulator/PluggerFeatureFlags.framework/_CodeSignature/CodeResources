@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PluggerFeatureFlags-Swift.h</key>
 		<data>
-		6SZYwigf7v5RdOJ7Zwe5iBWB1sM=
+		9pF7cta092hHSuw6ch6kA9c/jcg=
 		</data>
 		<key>Headers/PluggerFeatureFlags-umbrella.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		udTQUJH0J6018O3THwXvINB6Z1w=
+		Te+QKOe30E4aLBA6ide2w1WfM0c=
+		</data>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		2JvBCyxHClEoq6Rubqg3+dXknqI=
+		</data>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		q2iwTUED/yezt0itMJ3M+GHElLw=
 		</data>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tY41DjfznMIoB7CGf452c+W6ams=
+		jTVCA4s82xBlo5SmodbyxbrljeM=
 		</data>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bNxLhF+l44DTfLUqjQp//EEJskM=
+		q2iwTUED/yezt0itMJ3M+GHElLw=
 		</data>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zALR0mSVRXT4HUBnTEVcLtpS0Wk=
+		Ip6VHppNq+vMNbYqn3/MJFPS+9I=
 		</data>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		tY41DjfznMIoB7CGf452c+W6ams=
+		2JvBCyxHClEoq6Rubqg3+dXknqI=
 		</data>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bNxLhF+l44DTfLUqjQp//EEJskM=
-		</data>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		zALR0mSVRXT4HUBnTEVcLtpS0Wk=
+		l6QK2Ai7SJB2lsIvmJObMmDUcMU=
 		</data>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		eDW1hnpmYX/N0uYj/eap0oomDRk=
+		eAg0yc9YQoVFMor7T1eYqHU9KQM=
 		</data>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Hk+bVdY5qVD6EG45ihhqMaR79fA=
+		l6QK2Ai7SJB2lsIvmJObMmDUcMU=
 		</data>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ml+JJ3nhNwMGwwD7/1HZb7J+1bg=
-		</data>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		eDW1hnpmYX/N0uYj/eap0oomDRk=
-		</data>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		Hk+bVdY5qVD6EG45ihhqMaR79fA=
-		</data>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		ml+JJ3nhNwMGwwD7/1HZb7J+1bg=
+		x70nfYAscuTf+26HPVISVKjitiA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		wnFhe8laWCnqnzosoVjTVM9Mzk4=
+		3LtRIIVMHAOoW2JUw8WLW6yn7tk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V4BRP+scE4iQyniVh2uI1v1p93nfKFITRS02fbBIt6s=
+			1Ax6mUcxBOA+NQzBSn/i+iCmGhFWMWhZRuyOZ1Zwlag=
 			</data>
 		</dict>
 		<key>Headers/PluggerFeatureFlags-umbrella.h</key>
@@ -85,95 +77,81 @@
 			eV52Qd18jqmiPAdlDIv3OnMTX+FgyGAvL+7Wkf8lyvY=
 			</data>
 		</dict>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KKvUg0efc5hXnaT/Hfo8B0F3GhIrwyj9ofXZl3FMbWk=
+			</data>
+		</dict>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/SqJ5wdfZvz/+m2CrdOUdrxqXd8dE3VFmYtQro1LgQ0=
+			</data>
+		</dict>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FMVOSBHJ9yiISPI9QRWsnCkZXpc1G1650HpQFH9A3Ik=
+			oi/mrBJUsIlXPosvVMu7fttM/FpWbISpVuQqs37pCKw=
 			</data>
 		</dict>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rvjYqNOHhZ11/E9b7jaDEGL8kr46clDLytf3vJv8AR8=
+			/SqJ5wdfZvz/+m2CrdOUdrxqXd8dE3VFmYtQro1LgQ0=
 			</data>
 		</dict>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z+v4/bBI9vMNGXd266vMiDDpyR6wKHaChw7DmaafRDE=
+			rypmTqU9U6GzBuOVT8Rp6g620ohk3D1nTodSRznIiz0=
 			</data>
 		</dict>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FMVOSBHJ9yiISPI9QRWsnCkZXpc1G1650HpQFH9A3Ik=
+			KKvUg0efc5hXnaT/Hfo8B0F3GhIrwyj9ofXZl3FMbWk=
 			</data>
 		</dict>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rvjYqNOHhZ11/E9b7jaDEGL8kr46clDLytf3vJv8AR8=
-			</data>
-		</dict>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			z+v4/bBI9vMNGXd266vMiDDpyR6wKHaChw7DmaafRDE=
+			Tk+4CWCBgfVSFuQLROeGOk0qcJ/VCt6KTQQeQ4i2H9Y=
 			</data>
 		</dict>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QKoDT8a9HrGL1FFNjcuB/gua2VPTs3xI1lQvPeB0vic=
+			2CF6wazninX/zPltbCVivM1wyUaeg62RlbYoZDwaRrc=
 			</data>
 		</dict>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ivvkx14JvvcOpAhnpPkOHGxZeH2OE3YKhN8AmIXeTo=
+			Tk+4CWCBgfVSFuQLROeGOk0qcJ/VCt6KTQQeQ4i2H9Y=
 			</data>
 		</dict>
 		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y5lrrXlEBFhD4RR6RwN1RDZyppMmU3VwsOhrvb2A4Zo=
-			</data>
-		</dict>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QKoDT8a9HrGL1FFNjcuB/gua2VPTs3xI1lQvPeB0vic=
-			</data>
-		</dict>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3ivvkx14JvvcOpAhnpPkOHGxZeH2OE3YKhN8AmIXeTo=
-			</data>
-		</dict>
-		<key>Modules/PluggerFeatureFlags.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Y5lrrXlEBFhD4RR6RwN1RDZyppMmU3VwsOhrvb2A4Zo=
+			5BIBGLVodANWDjAAVvxU+myeUC5iDnfc39pgHe2bffQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LrSTXkAnxXAwTG0eamyEmn9eekirBj1UQtHtsdmbSho=
+			lXXMfK+F1x0Ib/MJcn0ZlrWbXjlPOV2d9AO9XdNOywk=
 			</data>
 		</dict>
 	</dict>
