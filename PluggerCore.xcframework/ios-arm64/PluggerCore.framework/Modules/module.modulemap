@@ -6,6 +6,6 @@ framework module PluggerCore {
 }
 
 module PluggerCore.Swift {
-    header "PluggerCore-Swift.h"
-    requires objc
+  header "PluggerCore-Swift.h"
+  requires objc
 }
