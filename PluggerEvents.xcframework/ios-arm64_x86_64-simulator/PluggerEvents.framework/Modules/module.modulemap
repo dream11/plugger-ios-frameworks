@@ -6,6 +6,6 @@ framework module PluggerEvents {
 }
 
 module PluggerEvents.Swift {
-    header "PluggerEvents-Swift.h"
-    requires objc
+  header "PluggerEvents-Swift.h"
+  requires objc
 }

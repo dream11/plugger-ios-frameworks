@@ -6,6 +6,6 @@ framework module PluggerFeatureFlags {
 }
 
 module PluggerFeatureFlags.Swift {
-    header "PluggerFeatureFlags-Swift.h"
-    requires objc
+  header "PluggerFeatureFlags-Swift.h"
+  requires objc
 }
