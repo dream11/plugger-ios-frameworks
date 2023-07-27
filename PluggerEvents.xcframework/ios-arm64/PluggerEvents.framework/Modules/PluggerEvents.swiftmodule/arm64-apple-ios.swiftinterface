@@ -1,11 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerEvents
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import PluggerCore
 @_exported import PluggerEvents
 import Swift
 import _Concurrency
+import _StringProcessing
 @objc final public class ClientConfigEventAction : ObjectiveC.NSObject {
   final public let eventName: Swift.String
   final public let reversedAction: [Swift.String]
@@ -118,6 +120,7 @@ extension PluggerEvents.EventProp {
 }
 @objc public protocol EventsSendable {
   @objc func fireEvent(_ event: PluggerEvents.Event)
+  @objc func fireEventToDestinations(_ event: PluggerEvents.Event, completion: @escaping ([Swift.String : PluggerEvents.Event]?, Swift.String?) -> Swift.Void)
   @objc func fireEvents(_ events: [PluggerEvents.Event])
 }
 @objc public protocol GlobalPropsNotifier {
@@ -134,7 +137,7 @@ public protocol EventsDebuggable {
   public static let DEFAULT_BATCH_INTERVAL_IN_MS: Swift.Int
   public static let DEFAULT_PERSIST_INTERVAL_IN_MS: Swift.Int
   @objc final public func fireEvent(_ event: PluggerEvents.Event)
-  final public func fireEventToDestinations(_ event: PluggerEvents.Event, completion: @escaping ([Swift.String : PluggerEvents.Event]?, Swift.String?) -> Swift.Void)
+  @objc final public func fireEventToDestinations(_ event: PluggerEvents.Event, completion: @escaping ([Swift.String : PluggerEvents.Event]?, Swift.String?) -> Swift.Void)
   @objc final public func fireEvents(_ events: [PluggerEvents.Event])
   @objc final public func updateGlobalProps(_ props: [Swift.String : Any])
   @objc deinit
@@ -167,8 +170,11 @@ extension PluggerEvents.PlugEvents : PluggerEvents.EventsDebuggable {
   @objc deinit
 }
 @objc public class BlacklistingConfig : ObjectiveC.NSObject {
-  public var url: Swift.String
-  public init(url: Swift.String)
+  final public let url: Swift.String
+  final public let apiEndpoint: Swift.String
+  final public let params: [Swift.String : Swift.String]
+  final public let headers: [Swift.String : Swift.String]?
+  public init(url: Swift.String, apiEndpoint: Swift.String, params: [Swift.String : Swift.String], headers: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
 @objc public class EventsConfig : ObjectiveC.NSObject, PluggerCore.Config {
@@ -183,6 +189,7 @@ extension PluggerEvents.PlugEvents : PluggerEvents.EventsDebuggable {
   public var blacklistingConfig: PluggerEvents.BlacklistingConfig?
   public init(httpConfig: PluggerCore.HTTPConfig, enableBatching: Swift.Bool = true, batchingConfig: PluggerEvents.BatchingConfig? = nil, enableEventsPersistence: Swift.Bool = true, persistEventsConfig: PluggerEvents.PersistEventsConfig? = nil, shouldAddGlobalProps: Swift.Bool = true, globalPropsConfig: PluggerEvents.GlobalPropsConfig? = nil, enableBlacklisting: Swift.Bool = false, blacklistingConfig: PluggerEvents.BlacklistingConfig? = nil)
   public static let defaultActionsMap: [Swift.String : Swift.Int]
+  public static let dhDefaultActionsMap: [Swift.String : Swift.Int]
   @objc deinit
 }
 extension PluggerEvents.EventDestination : Swift.Equatable {}
