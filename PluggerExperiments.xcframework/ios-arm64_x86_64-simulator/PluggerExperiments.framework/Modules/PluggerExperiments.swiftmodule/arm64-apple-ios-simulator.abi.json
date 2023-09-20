@@ -1948,6 +1948,70 @@
           },
           {
             "kind": "Var",
+            "name": "longValue",
+            "printedName": "longValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PluggerExperiments8VariableC9longValues5Int64VSgvp",
+            "mangledName": "$s18PluggerExperiments8VariableC9longValues5Int64VSgvp",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PluggerExperiments8VariableC9longValues5Int64VSgvg",
+                "mangledName": "$s18PluggerExperiments8VariableC9longValues5Int64VSgvg",
+                "moduleName": "PluggerExperiments",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "doubleValue",
             "printedName": "doubleValue",
             "children": [
@@ -2249,7 +2313,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(boolValue:intValue:doubleValue:stringValue:listValue:dictionaryValue:)",
+            "printedName": "init(boolValue:intValue:longValue:doubleValue:stringValue:listValue:dictionaryValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2285,6 +2349,20 @@
                   }
                 ],
                 "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
                 "usr": "s:Sq"
               },
               {
@@ -2371,8 +2449,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18PluggerExperiments8VariableC9boolValue03intE006doubleE006stringE004listE0010dictionaryE0ACSbSg_SiSgSdSgSSSgSayACGSgSDySSACGSgtcfc",
-            "mangledName": "$s18PluggerExperiments8VariableC9boolValue03intE006doubleE006stringE004listE0010dictionaryE0ACSbSg_SiSgSdSgSSSgSayACGSgSDySSACGSgtcfc",
+            "usr": "s:18PluggerExperiments8VariableC9boolValue03intE004longE006doubleE006stringE004listE0010dictionaryE0ACSbSg_SiSgs5Int64VSgSdSgSSSgSayACGSgSDySSACGSgtcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC9boolValue03intE004longE006doubleE006stringE004listE0010dictionaryE0ACSbSg_SiSgs5Int64VSgSdSgSSSgSayACGSgSDySSACGSgtcfc",
             "moduleName": "PluggerExperiments",
             "declAttributes": [
               "Required",
@@ -2447,6 +2525,43 @@
             "declKind": "Constructor",
             "usr": "s:18PluggerExperiments8VariableC8intValueACSiSg_tcfc",
             "mangledName": "$s18PluggerExperiments8VariableC8intValueACSiSg_tcfc",
+            "moduleName": "PluggerExperiments",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(longValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Variable",
+                "printedName": "PluggerExperiments.Variable",
+                "usr": "c:@M@PluggerExperiments@objc(cs)Variable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PluggerExperiments8VariableC9longValueACs5Int64VSg_tcfc",
+            "mangledName": "$s18PluggerExperiments8VariableC9longValueACs5Int64VSg_tcfc",
             "moduleName": "PluggerExperiments",
             "declAttributes": [
               "Convenience",
@@ -2847,6 +2962,23 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "PluggerExperiments",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerExperiments"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "PluggerExperiments"
       },
       {
@@ -2996,6 +3128,43 @@
             "declKind": "Func",
             "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getIntValueFor:with:",
             "mangledName": "$s18PluggerExperiments0B10DataSourceP11getIntValue3for4withSiSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
+            "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLongValue",
+            "printedName": "getLongValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerExperiments@objc(pl)ExperimentsDataSource(im)getLongValueFor:with:",
+            "mangledName": "$s18PluggerExperiments0B10DataSourceP12getLongValue3for4withs5Int64VSS_SStF",
             "moduleName": "PluggerExperiments",
             "genericSig": "<τ_0_0 where τ_0_0 : PluggerExperiments.ExperimentsDataSource>",
             "sugared_genericSig": "<Self where Self : PluggerExperiments.ExperimentsDataSource>",
@@ -3651,6 +3820,43 @@
             "mangledName": "$s18PluggerExperiments04PlugB0C11getIntValue3for4withSiSS_SStF",
             "moduleName": "PluggerExperiments",
             "objc_name": "getIntValueFor:with:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLongValue",
+            "printedName": "getLongValue(for:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerExperiments@objc(cs)PlugExperiments(im)getLongValueFor:with:",
+            "mangledName": "$s18PluggerExperiments04PlugB0C12getLongValue3for4withs5Int64VSS_SStF",
+            "moduleName": "PluggerExperiments",
+            "objc_name": "getLongValueFor:with:",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -5041,23 +5247,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PluggerExperiments",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PluggerCore",
-        "printedName": "PluggerCore",
-        "declKind": "Import",
-        "moduleName": "PluggerExperiments"
-      },
-      {
-        "kind": "Import",
         "name": "PluggerCore",
         "printedName": "PluggerCore",
         "declKind": "Import",
@@ -5068,151 +5257,151 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
       "kind": "StringLiteral",
       "offset": 19,
       "length": 18,
       "value": "\"PluggerExperiments.ExperimentSnapshot\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
       "kind": "StringLiteral",
       "offset": 322,
       "length": 18,
       "value": "\"PluggerExperiments.ExperimentResponse\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
       "kind": "StringLiteral",
       "offset": 704,
       "length": 17,
       "value": "\"PluggerExperiments.ExperimentVariant\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/Experiment.swift",
       "kind": "StringLiteral",
       "offset": 1147,
       "length": 10,
       "value": "\"PluggerExperiments.Experiment\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/ExperimentVariable.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/Models\/ExperimentVariable.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 8,
       "value": "\"PluggerExperiments.Variable\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "Dictionary",
-      "offset": 2607,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "Dictionary",
-      "offset": 2864,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "Dictionary",
-      "offset": 2930,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3162,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8505,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8583,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/ForegroundHandlerProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8156,
-      "length": 16,
-      "value": "\"PluggerExperiments.ExperimentConfig\""
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8954,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8970,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8954,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8970,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/ForegroundHandlerProtocol.swift",
-      "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 547,
       "length": 15,
       "value": "\"Last-Modified\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/ForegroundHandlerProtocol.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/ForegroundHandlerProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 578,
+      "offset": 601,
       "length": 9,
       "value": "\"Max-Age\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/ForegroundHandlerProtocol.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/ForegroundHandlerProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 636,
+      "offset": 659,
       "length": 3,
       "value": "304"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/ForegroundHandlerProtocol.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/ForegroundHandlerProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 695,
+      "offset": 718,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerExperiments\/ForegroundHandlerProtocol.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/ForegroundHandlerProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 792,
+      "offset": 815,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "Dictionary",
+      "offset": 2714,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "Dictionary",
+      "offset": 2971,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "Dictionary",
+      "offset": 3037,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3269,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8613,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8691,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "StringLiteral",
+      "offset": 8264,
+      "length": 16,
+      "value": "\"PluggerExperiments.ExperimentConfig\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9062,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9078,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9062,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9078,
+      "length": 6,
+      "value": "2"
     }
   ]
 }
