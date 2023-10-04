@@ -3051,6 +3051,70 @@
           },
           {
             "kind": "Var",
+            "name": "longValue",
+            "printedName": "longValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PluggerEvents9EventPropC9longValues5Int64VSgvp",
+            "mangledName": "$s13PluggerEvents9EventPropC9longValues5Int64VSgvp",
+            "moduleName": "PluggerEvents",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PluggerEvents9EventPropC9longValues5Int64VSgvg",
+                "mangledName": "$s13PluggerEvents9EventPropC9longValues5Int64VSgvg",
+                "moduleName": "PluggerEvents",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "doubleValue",
             "printedName": "doubleValue",
             "children": [
@@ -3272,7 +3336,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(boolValue:intValue:doubleValue:stringValue:dictionaryValue:)",
+            "printedName": "init(boolValue:intValue:longValue:doubleValue:stringValue:dictionaryValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3292,6 +3356,7 @@
                     "usr": "s:Sb"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -3306,6 +3371,22 @@
                     "usr": "s:Si"
                   }
                 ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -3320,6 +3401,7 @@
                     "usr": "s:Sd"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -3334,6 +3416,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -3362,12 +3445,13 @@
                     "usr": "s:SD"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13PluggerEvents9EventPropC9boolValue03intF006doubleF006stringF0010dictionaryF0ACSbSg_SiSgSdSgSSSgSDySSACGSgtcfc",
-            "mangledName": "$s13PluggerEvents9EventPropC9boolValue03intF006doubleF006stringF0010dictionaryF0ACSbSg_SiSgSdSgSSSgSDySSACGSgtcfc",
+            "usr": "s:13PluggerEvents9EventPropC9boolValue03intF004longF006doubleF006stringF0010dictionaryF0ACSbSg_SiSgs5Int64VSgSdSgSSSgSDySSACGSgtcfc",
+            "mangledName": "$s13PluggerEvents9EventPropC9boolValue03intF004longF006doubleF006stringF0010dictionaryF0ACSbSg_SiSgs5Int64VSgSdSgSSSgSDySSACGSgtcfc",
             "moduleName": "PluggerEvents",
             "declAttributes": [
               "Required",
@@ -3424,6 +3508,34 @@
             "declKind": "Constructor",
             "usr": "s:13PluggerEvents9EventPropC8intValueACSi_tcfc",
             "mangledName": "$s13PluggerEvents9EventPropC8intValueACSi_tcfc",
+            "moduleName": "PluggerEvents",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(longValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EventProp",
+                "printedName": "PluggerEvents.EventProp",
+                "usr": "c:@M@PluggerEvents@objc(cs)EventProp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PluggerEvents9EventPropC9longValueACs5Int64V_tcfc",
+            "mangledName": "$s13PluggerEvents9EventPropC9longValueACs5Int64V_tcfc",
             "moduleName": "PluggerEvents",
             "declAttributes": [
               "Convenience",
@@ -4001,6 +4113,97 @@
             "declKind": "Func",
             "usr": "c:@M@PluggerEvents@objc(pl)EventsSendable(im)fireEvent:",
             "mangledName": "$s13PluggerEvents0B8SendableP9fireEventyyAA0E0CF",
+            "moduleName": "PluggerEvents",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerEvents.EventsSendable>",
+            "sugared_genericSig": "<Self where Self : PluggerEvents.EventsSendable>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fireEventToDestinations",
+            "printedName": "fireEventToDestinations(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "PluggerEvents.Event",
+                "usr": "c:@M@PluggerEvents@objc(cs)Event"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : PluggerEvents.Event]?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([Swift.String : PluggerEvents.Event]?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : PluggerEvents.Event]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : PluggerEvents.Event]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Event",
+                                "printedName": "PluggerEvents.Event",
+                                "usr": "c:@M@PluggerEvents@objc(cs)Event"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerEvents@objc(pl)EventsSendable(im)fireEventToDestinations:completion:",
+            "mangledName": "$s13PluggerEvents0B8SendableP23fireEventToDestinations_10completionyAA0E0C_ySDySSAGGSg_SSSgtctF",
             "moduleName": "PluggerEvents",
             "genericSig": "<τ_0_0 where τ_0_0 : PluggerEvents.EventsSendable>",
             "sugared_genericSig": "<Self where Self : PluggerEvents.EventsSendable>",
@@ -4595,11 +4798,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13PluggerEvents04PlugB0C23fireEventToDestinations_10completionyAA0E0C_ySDySSAGGSg_SSSgtctF",
+            "usr": "c:@M@PluggerEvents@objc(cs)PlugEvents(im)fireEventToDestinations:completion:",
             "mangledName": "$s13PluggerEvents04PlugB0C23fireEventToDestinations_10completionyAA0E0C_ySDySSAGGSg_SSSgtctF",
             "moduleName": "PluggerEvents",
+            "objc_name": "fireEventToDestinations:completion:",
             "declAttributes": [
               "Final",
+              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -5886,6 +6091,7 @@
                     "usr": "s:SD"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -5914,6 +6120,7 @@
                     "usr": "s:SD"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -6039,9 +6246,11 @@
             "mangledName": "$s13PluggerEvents18BlacklistingConfigC3urlSSvp",
             "moduleName": "PluggerEvents",
             "declAttributes": [
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -6061,18 +6270,42 @@
                 "mangledName": "$s13PluggerEvents18BlacklistingConfigC3urlSSvg",
                 "moduleName": "PluggerEvents",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
-              },
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiEndpoint",
+            "printedName": "apiEndpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PluggerEvents18BlacklistingConfigC11apiEndpointSSvp",
+            "mangledName": "$s13PluggerEvents18BlacklistingConfigC11apiEndpointSSvp",
+            "moduleName": "PluggerEvents",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
               {
                 "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
+                "name": "Get",
+                "printedName": "Get()",
                 "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
                   {
                     "kind": "TypeNominal",
                     "name": "String",
@@ -6081,36 +6314,189 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13PluggerEvents18BlacklistingConfigC3urlSSvs",
-                "mangledName": "$s13PluggerEvents18BlacklistingConfigC3urlSSvs",
+                "usr": "s:13PluggerEvents18BlacklistingConfigC11apiEndpointSSvg",
+                "mangledName": "$s13PluggerEvents18BlacklistingConfigC11apiEndpointSSvg",
                 "moduleName": "PluggerEvents",
                 "implicit": true,
-                "accessorKind": "set"
-              },
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "params",
+            "printedName": "params",
+            "children": [
               {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PluggerEvents18BlacklistingConfigC6paramsSDyS2SGvp",
+            "mangledName": "$s13PluggerEvents18BlacklistingConfigC6paramsSDyS2SGvp",
+            "moduleName": "PluggerEvents",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13PluggerEvents18BlacklistingConfigC3urlSSvM",
-                "mangledName": "$s13PluggerEvents18BlacklistingConfigC3urlSSvM",
+                "usr": "s:13PluggerEvents18BlacklistingConfigC6paramsSDyS2SGvg",
+                "mangledName": "$s13PluggerEvents18BlacklistingConfigC6paramsSDyS2SGvg",
                 "moduleName": "PluggerEvents",
                 "implicit": true,
-                "accessorKind": "_modify"
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PluggerEvents18BlacklistingConfigC7headersSDyS2SGSgvp",
+            "mangledName": "$s13PluggerEvents18BlacklistingConfigC7headersSDyS2SGSgvp",
+            "moduleName": "PluggerEvents",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PluggerEvents18BlacklistingConfigC7headersSDyS2SGSgvg",
+                "mangledName": "$s13PluggerEvents18BlacklistingConfigC7headersSDyS2SGSgvg",
+                "moduleName": "PluggerEvents",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(url:)",
+            "printedName": "init(url:apiEndpoint:params:headers:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6123,11 +6509,66 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13PluggerEvents18BlacklistingConfigC3urlACSS_tcfc",
-            "mangledName": "$s13PluggerEvents18BlacklistingConfigC3urlACSS_tcfc",
+            "usr": "s:13PluggerEvents18BlacklistingConfigC3url11apiEndpoint6params7headersACSS_SSSDyS2SGAHSgtcfc",
+            "mangledName": "$s13PluggerEvents18BlacklistingConfigC3url11apiEndpoint6params7headersACSS_SSSDyS2SGAHSgtcfc",
             "moduleName": "PluggerEvents",
             "declAttributes": [
               "AccessControl"
@@ -7300,6 +7741,85 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "dhDefaultActionsMap",
+            "printedName": "dhDefaultActionsMap",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PluggerEvents0B6ConfigC19dhDefaultActionsMapSDySSSiGvpZ",
+            "mangledName": "$s13PluggerEvents0B6ConfigC19dhDefaultActionsMapSDySSSiGvpZ",
+            "moduleName": "PluggerEvents",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PluggerEvents0B6ConfigC19dhDefaultActionsMapSDySSSiGvgZ",
+                "mangledName": "$s13PluggerEvents0B6ConfigC19dhDefaultActionsMapSDySSSiGvgZ",
+                "moduleName": "PluggerEvents",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -7402,464 +7922,471 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
       "kind": "Array",
       "offset": 210,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 23,
       "value": "\"PluggerEvents.ClientConfigEventAction\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 17,
       "value": "\"_eventTimestamp\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "Array",
       "offset": 348,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 5,
       "value": "\"PluggerEvents.Event\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3105,
+      "offset": 3217,
       "length": 25,
       "value": "\"PluggerEvents.EventsBatchRequestPayload\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3301,
+      "offset": 3413,
       "length": 13,
       "value": "\"PluggerEvents.EventSnapshot\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3589,
+      "offset": 3701,
       "length": 13,
       "value": "\"PluggerEvents.SendableEvent\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 82,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 101,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 116,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 135,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
       "length": 11,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 175,
       "length": 20,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 7,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 82,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 101,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 116,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 135,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
       "length": 11,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 175,
       "length": 20,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 7,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 9,
       "value": "\"PluggerEvents.EventProp\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 15,
       "value": "\"\/users\/events\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 10,
       "value": "\"\/process\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "Array",
       "offset": 1011,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "Array",
       "offset": 1054,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "Array",
       "offset": 1098,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 1429,
       "length": 28,
       "value": "\"Error sending batch events\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 1681,
       "length": 32,
       "value": "\"Successfully sent batch events\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 2083,
       "length": 91,
       "value": "\"Error: failed and successful event arrays are empty in batchingOperationCompletionHandler\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2266,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
       "kind": "Dictionary",
       "offset": 176,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
       "kind": "StringLiteral",
       "offset": 63,
       "length": 18,
       "value": "\"PluggerEvents.GlobalPropsManager\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 227,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 16224,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 16253,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "StringLiteral",
       "offset": 16038,
       "length": 15,
       "value": "\"PluggerEvents.BackupOperation\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 3191,
+      "offset": 3299,
       "length": 23,
       "value": "\"http:\/\/localhost:7001\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 3255,
+      "offset": 3363,
       "length": 42,
       "value": "\"https:\/\/d11-events-framework.dream11.com\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 3341,
+      "offset": 3449,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 3397,
+      "offset": 3505,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 3458,
+      "offset": 3566,
       "length": 4,
       "value": "5000"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 3759,
+      "offset": 3867,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "Dictionary",
-      "offset": 3924,
+      "offset": 4032,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 13474,
+      "offset": 14002,
       "length": 14,
       "value": "\"PluggerEvents.BatchingConfig\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 13760,
+      "offset": 14288,
       "length": 19,
       "value": "\"PluggerEvents.PersistEventsConfig\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 14214,
+      "offset": 14742,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 13994,
+      "offset": 14522,
       "length": 17,
       "value": "\"PluggerEvents.GlobalPropsConfig\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 14487,
+      "offset": 15027,
       "length": 18,
       "value": "\"PluggerEvents.BlacklistingConfig\""
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 15176,
+      "offset": 16018,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 15253,
+      "offset": 16095,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 15337,
+      "offset": 16179,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 15415,
+      "offset": 16257,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16081,
+      "offset": 16923,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16132,
+      "offset": 16974,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16183,
+      "offset": 17025,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16230,
+      "offset": 17072,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16281,
+      "offset": 17123,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16334,
+      "offset": 17176,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16396,
+      "offset": 17238,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16445,
+      "offset": 17287,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 16494,
+      "offset": 17336,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/bhargav.akbari\/Desktop\/plugger\/pluggerIos\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17461,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 14662,
+      "offset": 15504,
       "length": 12,
       "value": "\"PluggerEvents.EventsConfig\""
     }

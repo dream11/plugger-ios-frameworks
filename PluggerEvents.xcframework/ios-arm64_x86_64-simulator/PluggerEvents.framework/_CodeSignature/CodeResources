@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PluggerEvents-Swift.h</key>
 		<data>
-		rJaEkDpg+1REcFPJnuRDsNT/zfY=
+		KEhsYnBJqoC6mqMntNwIDRMq2PM=
 		</data>
 		<key>Headers/PluggerEvents-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4eWY5Qh3G4hXtoYJADqer0G9oGA=
+		im6TSEMcWOl4YrUEmF985w4vq74=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		uszjbgqblBtOxF/OG/0ksSspGbE=
+		oGFim/BdcL0tNZ9w1o+uRm+1ueQ=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dhyZm/MDpvs+KCyaKQFNF1b6XaI=
+		m7iODLmLK+DI25v2WG28PKsGlrQ=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dhyZm/MDpvs+KCyaKQFNF1b6XaI=
+		m7iODLmLK+DI25v2WG28PKsGlrQ=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HWus7w/kaNpfTLtqEHAkVsSN1No=
+		jRMY+mD4a1a+ELjPbdBBi1UH9t4=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		uszjbgqblBtOxF/OG/0ksSspGbE=
+		oGFim/BdcL0tNZ9w1o+uRm+1ueQ=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Pz1gH6nUQs2nqzTP81TPXmfEzJ0=
+		8mHEAxVfqprD+Mn41iqgAubiqac=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Pz1gH6nUQs2nqzTP81TPXmfEzJ0=
+		8mHEAxVfqprD+Mn41iqgAubiqac=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aWTnx8G5sLh8ixLLuepY4zgb31g=
+		uq2DXZWnUMsXCSKPsGwVjJIDqy8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TrRwmZ6RFhVe5fmfwIN77iFEvGuOedGYKAhWyF3ngT0=
+			bzbbSMNyvx8g5i1VwBQdYRdLVjk2Gm79zK3uecx3oD8=
 			</data>
 		</dict>
 		<key>Headers/PluggerEvents-umbrella.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ymHRPfG9IYnrl6Ye0thsjdB240P5KcVbE3cYL9G6EA0=
+			d1DzhEAztTovBZsr70RdPtjpgXrYNGq+Bnh4aOKRt7g=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5HveAgkvHNMMqS6zJNYmkmQNhLMkub5xLfDaGRtZi0U=
+			3wmgtgJyVapNXZY2FWs3BWzPee1qjVmQ9FPDRTiWuJU=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5HveAgkvHNMMqS6zJNYmkmQNhLMkub5xLfDaGRtZi0U=
+			3wmgtgJyVapNXZY2FWs3BWzPee1qjVmQ9FPDRTiWuJU=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xme6g96MDRCiUR2S2UOetx/opkCT9Nqjv85lCIkb4i8=
+			xPC2XjjgYDAR0RiCk8aL2+pb2Y9oypF8dlhGwd2ZT94=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ymHRPfG9IYnrl6Ye0thsjdB240P5KcVbE3cYL9G6EA0=
+			d1DzhEAztTovBZsr70RdPtjpgXrYNGq+Bnh4aOKRt7g=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jlSZpIO5f+TAPCjLuxtOFhPOApGfdqgOev9D7aT7hbA=
+			aFYRH+1e7eKeTBay9yi7iSHe/1AKivVnp1k47LbLz78=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jlSZpIO5f+TAPCjLuxtOFhPOApGfdqgOev9D7aT7hbA=
+			aFYRH+1e7eKeTBay9yi7iSHe/1AKivVnp1k47LbLz78=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pdMPpPeSN0FUXjI9CcmGfCykq0vVmj3/G+5i/iLwXfg=
+			TEs9GE+MlgFjZpe1ePcQmE/quhEdPaP9WMVIRzc5zy8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
