@@ -355,6 +355,7 @@ SWIFT_CLASS("_TtC13PluggerEvents12EventsConfig")
 SWIFT_PROTOCOL("_TtP13PluggerEvents14EventsSendable_")
 @protocol EventsSendable
 - (void)fireEvent:(Event * _Nonnull)event;
+- (void)fireEventToDestinations:(Event * _Nonnull)event completion:(void (^ _Nonnull)(NSDictionary<NSString *, Event *> * _Nullable, NSString * _Nullable))completion;
 - (void)fireEvents:(NSArray<Event *> * _Nonnull)events;
 @end
 
@@ -390,6 +391,7 @@ SWIFT_CLASS("_TtC13PluggerEvents10PlugEvents")
 @interface PlugEvents : NSObject <Initializable, EventsSendable, GlobalPropsNotifier>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)fireEvent:(Event * _Nonnull)event;
+- (void)fireEventToDestinations:(Event * _Nonnull)event completion:(void (^ _Nonnull)(NSDictionary<NSString *, Event *> * _Nullable, NSString * _Nullable))completion;
 - (void)fireEvents:(NSArray<Event *> * _Nonnull)events;
 - (void)updateGlobalProps:(NSDictionary<NSString *, id> * _Nonnull)props;
 @end
@@ -777,6 +779,7 @@ SWIFT_CLASS("_TtC13PluggerEvents12EventsConfig")
 SWIFT_PROTOCOL("_TtP13PluggerEvents14EventsSendable_")
 @protocol EventsSendable
 - (void)fireEvent:(Event * _Nonnull)event;
+- (void)fireEventToDestinations:(Event * _Nonnull)event completion:(void (^ _Nonnull)(NSDictionary<NSString *, Event *> * _Nullable, NSString * _Nullable))completion;
 - (void)fireEvents:(NSArray<Event *> * _Nonnull)events;
 @end
 
@@ -812,6 +815,7 @@ SWIFT_CLASS("_TtC13PluggerEvents10PlugEvents")
 @interface PlugEvents : NSObject <Initializable, EventsSendable, GlobalPropsNotifier>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)fireEvent:(Event * _Nonnull)event;
+- (void)fireEventToDestinations:(Event * _Nonnull)event completion:(void (^ _Nonnull)(NSDictionary<NSString *, Event *> * _Nullable, NSString * _Nullable))completion;
 - (void)fireEvents:(NSArray<Event *> * _Nonnull)events;
 - (void)updateGlobalProps:(NSDictionary<NSString *, id> * _Nonnull)props;
 @end

@@ -91,12 +91,14 @@ public func getDefaultActionName(from eventDestination: PluggerEvents.EventDesti
 @objc final public class EventProp : ObjectiveC.NSObject {
   final public let boolValue: Swift.Bool?
   final public let intValue: Swift.Int?
+  final public let longValue: Swift.Int64?
   final public let doubleValue: Swift.Double?
   final public let stringValue: Swift.String?
   final public let dictionaryValue: [Swift.String : PluggerEvents.EventProp]?
-  required public init(boolValue: Swift.Bool?, intValue: Swift.Int?, doubleValue: Swift.Double?, stringValue: Swift.String?, dictionaryValue: [Swift.String : PluggerEvents.EventProp]?)
+  required public init(boolValue: Swift.Bool? = nil, intValue: Swift.Int? = nil, longValue: Swift.Int64? = nil, doubleValue: Swift.Double? = nil, stringValue: Swift.String? = nil, dictionaryValue: [Swift.String : PluggerEvents.EventProp]? = nil)
   convenience public init(boolValue: Swift.Bool)
   convenience public init(intValue: Swift.Int)
+  convenience public init(longValue: Swift.Int64)
   convenience public init(doubleValue: Swift.Double)
   convenience public init(stringValue: Swift.String)
   convenience public init(dictionaryValue: [Swift.String : PluggerEvents.EventProp])
@@ -120,6 +122,7 @@ extension PluggerEvents.EventProp {
 }
 @objc public protocol EventsSendable {
   @objc func fireEvent(_ event: PluggerEvents.Event)
+  @objc func fireEventToDestinations(_ event: PluggerEvents.Event, completion: @escaping ([Swift.String : PluggerEvents.Event]?, Swift.String?) -> Swift.Void)
   @objc func fireEvents(_ events: [PluggerEvents.Event])
 }
 @objc public protocol GlobalPropsNotifier {
@@ -136,7 +139,7 @@ public protocol EventsDebuggable {
   public static let DEFAULT_BATCH_INTERVAL_IN_MS: Swift.Int
   public static let DEFAULT_PERSIST_INTERVAL_IN_MS: Swift.Int
   @objc final public func fireEvent(_ event: PluggerEvents.Event)
-  final public func fireEventToDestinations(_ event: PluggerEvents.Event, completion: @escaping ([Swift.String : PluggerEvents.Event]?, Swift.String?) -> Swift.Void)
+  @objc final public func fireEventToDestinations(_ event: PluggerEvents.Event, completion: @escaping ([Swift.String : PluggerEvents.Event]?, Swift.String?) -> Swift.Void)
   @objc final public func fireEvents(_ events: [PluggerEvents.Event])
   @objc final public func updateGlobalProps(_ props: [Swift.String : Any])
   @objc deinit
@@ -165,12 +168,15 @@ extension PluggerEvents.PlugEvents : PluggerEvents.EventsDebuggable {
   public var shouldWaitForGlobalProps: Swift.Bool
   public var commonProps: [Swift.String : Any]?
   public var transformMap: [Swift.String : Swift.String]?
-  public init(shouldWaitForGlobalProps: Swift.Bool = true, commonProps: [Swift.String : Any]?, transformMap: [Swift.String : Swift.String]?)
+  public init(shouldWaitForGlobalProps: Swift.Bool = true, commonProps: [Swift.String : Any]? = nil, transformMap: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
 @objc public class BlacklistingConfig : ObjectiveC.NSObject {
-  public var url: Swift.String
-  public init(url: Swift.String)
+  final public let url: Swift.String
+  final public let apiEndpoint: Swift.String
+  final public let params: [Swift.String : Swift.String]
+  final public let headers: [Swift.String : Swift.String]?
+  public init(url: Swift.String, apiEndpoint: Swift.String, params: [Swift.String : Swift.String], headers: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
 @objc public class EventsConfig : ObjectiveC.NSObject, PluggerCore.Config {
@@ -185,6 +191,7 @@ extension PluggerEvents.PlugEvents : PluggerEvents.EventsDebuggable {
   public var blacklistingConfig: PluggerEvents.BlacklistingConfig?
   public init(httpConfig: PluggerCore.HTTPConfig, enableBatching: Swift.Bool = true, batchingConfig: PluggerEvents.BatchingConfig? = nil, enableEventsPersistence: Swift.Bool = true, persistEventsConfig: PluggerEvents.PersistEventsConfig? = nil, shouldAddGlobalProps: Swift.Bool = true, globalPropsConfig: PluggerEvents.GlobalPropsConfig? = nil, enableBlacklisting: Swift.Bool = false, blacklistingConfig: PluggerEvents.BlacklistingConfig? = nil)
   public static let defaultActionsMap: [Swift.String : Swift.Int]
+  public static let dhDefaultActionsMap: [Swift.String : Swift.Int]
   @objc deinit
 }
 extension PluggerEvents.EventDestination : Swift.Equatable {}
