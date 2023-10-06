@@ -1215,6 +1215,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerEvents"
+      },
+      {
         "kind": "TypeDecl",
         "name": "Event",
         "printedName": "Event",
@@ -7938,42 +7945,42 @@
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 214,
+      "offset": 233,
       "length": 17,
-      "value": "\"_eventTimestamp\""
+      "value": "\"_pluggerEventId\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "Array",
-      "offset": 348,
+      "offset": 367,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 25,
+      "offset": 44,
       "length": 5,
       "value": "\"PluggerEvents.Event\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3217,
+      "offset": 3214,
       "length": 25,
       "value": "\"PluggerEvents.EventsBatchRequestPayload\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3413,
+      "offset": 3410,
       "length": 13,
       "value": "\"PluggerEvents.EventSnapshot\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3701,
+      "offset": 3698,
       "length": 13,
       "value": "\"PluggerEvents.SendableEvent\""
     },
