@@ -64,7 +64,7 @@ extension PluggerExperiments.Experiment {
   final public let stringValue: Swift.String?
   final public let listValue: [PluggerExperiments.Variable]?
   final public let dictionaryValue: [Swift.String : PluggerExperiments.Variable]?
-  required public init(boolValue: Swift.Bool? = nil, intValue: Swift.Int? = nil, longValue: Swift.Int64?, doubleValue: Swift.Double? = nil, stringValue: Swift.String? = nil, listValue: [PluggerExperiments.Variable]? = nil, dictionaryValue: [Swift.String : PluggerExperiments.Variable]? = nil)
+  required public init(boolValue: Swift.Bool? = nil, intValue: Swift.Int? = nil, longValue: Swift.Int64? = nil, doubleValue: Swift.Double? = nil, stringValue: Swift.String? = nil, listValue: [PluggerExperiments.Variable]? = nil, dictionaryValue: [Swift.String : PluggerExperiments.Variable]? = nil)
   convenience public init(boolValue: Swift.Bool? = nil)
   convenience public init(intValue: Swift.Int? = nil)
   convenience public init(longValue: Swift.Int64? = nil)
