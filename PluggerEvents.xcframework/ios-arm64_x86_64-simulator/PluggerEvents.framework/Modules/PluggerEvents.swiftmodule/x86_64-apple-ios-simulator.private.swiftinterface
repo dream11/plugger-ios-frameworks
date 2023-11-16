@@ -168,7 +168,8 @@ extension PluggerEvents.PlugEvents : PluggerEvents.EventsDebuggable {
   public var shouldWaitForGlobalProps: Swift.Bool
   public var commonProps: [Swift.String : Any]?
   public var transformMap: [Swift.String : Swift.String]?
-  public init(shouldWaitForGlobalProps: Swift.Bool = true, commonProps: [Swift.String : Any]? = nil, transformMap: [Swift.String : Swift.String]? = nil)
+  public var appendPropsBeforeDispatch: (() -> [Swift.String : Any]?)?
+  public init(shouldWaitForGlobalProps: Swift.Bool = true, commonProps: [Swift.String : Any]? = nil, transformMap: [Swift.String : Swift.String]? = nil, appendPropsBeforeDispatch: (() -> [Swift.String : Any]?)? = nil)
   @objc deinit
 }
 @objc public class BlacklistingConfig : ObjectiveC.NSObject {
