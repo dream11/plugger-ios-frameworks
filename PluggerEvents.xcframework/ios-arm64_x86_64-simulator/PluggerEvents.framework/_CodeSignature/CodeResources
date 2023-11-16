@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eTwzhhCTKWt9E94aDKCv9FyL+0k=
+		tSSR+BJvPch+Ehhv9e+/J/FZv54=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8hD2/+kioKGc/8OpP9eXI0xeRGQ=
+		DwTRmCRa57WYx7n5kDhdKrF0yho=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		m7iODLmLK+DI25v2WG28PKsGlrQ=
+		3mf0VBdoYOKzVMtQ+0b6aDgEryI=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		m7iODLmLK+DI25v2WG28PKsGlrQ=
+		3mf0VBdoYOKzVMtQ+0b6aDgEryI=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IHdgk7MvyCQG2WoaY5QtLwqIB0E=
+		yGFfBM7n0ZgVzIKh2/0nBfxpLng=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8hD2/+kioKGc/8OpP9eXI0xeRGQ=
+		DwTRmCRa57WYx7n5kDhdKrF0yho=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8mHEAxVfqprD+Mn41iqgAubiqac=
+		yX+z4+aUAW8ErQacMmpyqi0aaLA=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8mHEAxVfqprD+Mn41iqgAubiqac=
+		yX+z4+aUAW8ErQacMmpyqi0aaLA=
 		</data>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ausFNGmTMzeAWE2Hn6dEll/+b/M=
+		s3WQKxR513K8sX2XAMrDUnlFxyw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kB3IVpynauzgFcfKnMP6W06ooWcy+eNrt/fmHnzLI9A=
+			H+AhmV5MQtu1i/v5Qx0P4u1Bco77ZYbQcwLsu2+0+Vo=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3wmgtgJyVapNXZY2FWs3BWzPee1qjVmQ9FPDRTiWuJU=
+			Ba6nvBIWkvwnNO0wR4PzZKT2T9SB5FUcDj63Aw7BWq8=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3wmgtgJyVapNXZY2FWs3BWzPee1qjVmQ9FPDRTiWuJU=
+			Ba6nvBIWkvwnNO0wR4PzZKT2T9SB5FUcDj63Aw7BWq8=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uIBZTKXYGBqjCHkYd86utcq5YQaihx7LfbPOBDM1+Qo=
+			QKLDCeBHJsIRUtXy3EEnHjD6dXt3Z7zQv0U5dbPK134=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kB3IVpynauzgFcfKnMP6W06ooWcy+eNrt/fmHnzLI9A=
+			H+AhmV5MQtu1i/v5Qx0P4u1Bco77ZYbQcwLsu2+0+Vo=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aFYRH+1e7eKeTBay9yi7iSHe/1AKivVnp1k47LbLz78=
+			2YmY1wKRcRqY4ID7dp/SP8rq15y8qD3lRSk3eXiiTYY=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aFYRH+1e7eKeTBay9yi7iSHe/1AKivVnp1k47LbLz78=
+			2YmY1wKRcRqY4ID7dp/SP8rq15y8qD3lRSk3eXiiTYY=
 			</data>
 		</dict>
 		<key>Modules/PluggerEvents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			97dh72SQE0Z3D3yVVaXqqgkZj/UdtNLUmGBWjLF+eCA=
+			DCS0GCSoev8g2uh+xtvCI5qB2Nx3DPehMT8ZjzQEpcc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
