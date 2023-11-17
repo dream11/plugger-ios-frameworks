@@ -8223,21 +8223,21 @@
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3214,
+      "offset": 3058,
       "length": 25,
       "value": "\"PluggerEvents.EventsBatchRequestPayload\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3410,
+      "offset": 3254,
       "length": 13,
       "value": "\"PluggerEvents.EventSnapshot\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 3698,
+      "offset": 3542,
       "length": 13,
       "value": "\"PluggerEvents.SendableEvent\""
     },
@@ -8517,140 +8517,140 @@
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 14262,
+      "offset": 14401,
       "length": 14,
       "value": "\"PluggerEvents.BatchingConfig\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 14548,
+      "offset": 14687,
       "length": 19,
       "value": "\"PluggerEvents.PersistEventsConfig\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 15065,
+      "offset": 15204,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 14782,
+      "offset": 14921,
       "length": 17,
       "value": "\"PluggerEvents.GlobalPropsConfig\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 15466,
+      "offset": 15605,
       "length": 18,
       "value": "\"PluggerEvents.BlacklistingConfig\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 16457,
+      "offset": 16596,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 16534,
+      "offset": 16673,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 16618,
+      "offset": 16757,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 16696,
+      "offset": 16835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17362,
+      "offset": 17501,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17413,
+      "offset": 17552,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17464,
+      "offset": 17603,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17511,
+      "offset": 17650,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17562,
+      "offset": 17701,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17615,
+      "offset": 17754,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17677,
+      "offset": 17816,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17726,
+      "offset": 17865,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17775,
+      "offset": 17914,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 17900,
+      "offset": 18039,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 15943,
+      "offset": 16082,
       "length": 12,
       "value": "\"PluggerEvents.EventsConfig\""
     }
