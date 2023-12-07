@@ -46,7 +46,7 @@ import _StringProcessing
   final public let variables: PluggerExperiments.Variable?
   final public let apiPath: Swift.String
   final public let variantName: Swift.String
-  public init(experimentId: Swift.String, userIdentifierType: Swift.String, status: Swift.String, variables: PluggerExperiments.Variable?, apiPath: Swift.String, variantName: Swift.String)
+  public init(experimentId: Swift.String, userIdentifierType: Swift.String, status: Swift.String, variables: PluggerExperiments.Variable? = nil, apiPath: Swift.String, variantName: Swift.String)
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
