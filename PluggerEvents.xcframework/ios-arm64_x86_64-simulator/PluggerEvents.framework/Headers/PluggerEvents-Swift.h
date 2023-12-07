@@ -313,6 +313,10 @@ typedef SWIFT_ENUM(NSInteger, EventDestination, open) {
   EventDestinationSEGMENT = 8,
 };
 
+typedef SWIFT_ENUM(NSInteger, EventHeader, open) {
+  EventHeaderApiKey = 0,
+};
+
 
 SWIFT_CLASS("_TtC13PluggerEvents9EventProp")
 @interface EventProp : NSObject
@@ -735,6 +739,10 @@ typedef SWIFT_ENUM(NSInteger, EventDestination, open) {
   EventDestinationFIREBASE_CRASHLYTICS = 6,
   EventDestinationDATADOG = 7,
   EventDestinationSEGMENT = 8,
+};
+
+typedef SWIFT_ENUM(NSInteger, EventHeader, open) {
+  EventHeaderApiKey = 0,
 };
 
 

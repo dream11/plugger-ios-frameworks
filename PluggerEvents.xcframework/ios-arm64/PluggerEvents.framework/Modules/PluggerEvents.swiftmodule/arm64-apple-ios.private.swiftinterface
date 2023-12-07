@@ -195,6 +195,18 @@ extension PluggerEvents.PlugEvents : PluggerEvents.EventsDebuggable {
   public static let dhDefaultActionsMap: [Swift.String : Swift.Int]
   @objc deinit
 }
+@objc public enum EventHeader : Swift.Int {
+  case ApiKey
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func getEventstHeaderName(from header: PluggerEvents.EventHeader) -> Swift.String
 extension PluggerEvents.EventDestination : Swift.Equatable {}
 extension PluggerEvents.EventDestination : Swift.Hashable {}
 extension PluggerEvents.EventDestination : Swift.RawRepresentable {}
+extension PluggerEvents.EventHeader : Swift.Equatable {}
+extension PluggerEvents.EventHeader : Swift.Hashable {}
+extension PluggerEvents.EventHeader : Swift.RawRepresentable {}
