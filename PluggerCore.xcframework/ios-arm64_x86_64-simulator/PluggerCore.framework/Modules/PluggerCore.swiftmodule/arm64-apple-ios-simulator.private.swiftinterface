@@ -15,15 +15,15 @@ import os
   @objc var httpConfig: PluggerCore.HTTPConfig { get set }
 }
 @objc public class ClientConfig : ObjectiveC.NSObject {
-  public init(accountId: Swift.String)
-  public func getAccountId() -> Swift.String
+  public init(apiKey: Swift.String)
+  public func getApiKey() -> Swift.String
   @objc deinit
 }
 @objc public class CommonConfig : ObjectiveC.NSObject, PluggerCore.Config {
   public var plugins: [PluggerCore.Plugin]
   @objc public var httpConfig: PluggerCore.HTTPConfig
-  public var clientConfig: PluggerCore.ClientConfig?
-  public init(plugins: [PluggerCore.Plugin] = [], httpConfig: PluggerCore.HTTPConfig, clientConfig: PluggerCore.ClientConfig? = nil)
+  public var clientConfig: PluggerCore.ClientConfig
+  public init(plugins: [PluggerCore.Plugin] = [], httpConfig: PluggerCore.HTTPConfig, clientConfig: PluggerCore.ClientConfig)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ConfigProvider {
