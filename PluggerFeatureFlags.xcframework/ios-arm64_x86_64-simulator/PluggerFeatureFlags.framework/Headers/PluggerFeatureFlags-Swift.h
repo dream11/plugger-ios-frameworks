@@ -266,6 +266,11 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagResponse")
 @end
 
 
+SWIFT_CLASS("_TtC19PluggerFeatureFlags24FeatureFlagResponseError")
+@interface FeatureFlagResponseError : NSObject
+@end
+
+
 SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagSnapshot")
 @interface FeatureFlagSnapshot : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -287,6 +292,22 @@ SWIFT_PROTOCOL("_TtP19PluggerFeatureFlags22FeatureFlagsDataSource_")
 @protocol FeatureFlagsDataSource
 - (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -303,12 +324,6 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags16PlugFeatureFlags")
 @end
 
 
-@interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <FeatureFlagsDataSource>
-- (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 @interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <Notifiable>
 - (void)onNotifyWithEventType:(enum PluggerNotifiableEvents)eventType data:(NSDictionary * _Nullable)data;
 @end
@@ -316,6 +331,42 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags16PlugFeatureFlags")
 
 @interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <Configurable>
 - (void)configureWithConfig:(id <Config> _Nonnull)config;
+@end
+
+
+@interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <FeatureFlagsDataSource>
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC19PluggerFeatureFlags8Variable")
+@interface Variable : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+
+@interface Variable (SWIFT_EXTENSION(PluggerFeatureFlags))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 #endif
@@ -594,6 +645,11 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagResponse")
 @end
 
 
+SWIFT_CLASS("_TtC19PluggerFeatureFlags24FeatureFlagResponseError")
+@interface FeatureFlagResponseError : NSObject
+@end
+
+
 SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagSnapshot")
 @interface FeatureFlagSnapshot : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -615,6 +671,22 @@ SWIFT_PROTOCOL("_TtP19PluggerFeatureFlags22FeatureFlagsDataSource_")
 @protocol FeatureFlagsDataSource
 - (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -631,12 +703,6 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags16PlugFeatureFlags")
 @end
 
 
-@interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <FeatureFlagsDataSource>
-- (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 @interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <Notifiable>
 - (void)onNotifyWithEventType:(enum PluggerNotifiableEvents)eventType data:(NSDictionary * _Nullable)data;
 @end
@@ -644,6 +710,42 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags16PlugFeatureFlags")
 
 @interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <Configurable>
 - (void)configureWithConfig:(id <Config> _Nonnull)config;
+@end
+
+
+@interface PlugFeatureFlags (SWIFT_EXTENSION(PluggerFeatureFlags)) <FeatureFlagsDataSource>
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getBooleanValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getStringValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getIntValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (int64_t)getLongValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (double)getDoubleValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSArray * _Nonnull)getArrayValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, id> * _Nonnull)getDictionaryValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC19PluggerFeatureFlags8Variable")
+@interface Variable : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+
+@interface Variable (SWIFT_EXTENSION(PluggerFeatureFlags))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 #endif
