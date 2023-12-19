@@ -277,6 +277,21 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagSnapshot")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagVariable")
+@interface FeatureFlagVariable : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@class NSString;
+
+@interface FeatureFlagVariable (SWIFT_EXTENSION(PluggerFeatureFlags))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class HTTPConfig;
 
 SWIFT_CLASS("_TtC19PluggerFeatureFlags18FeatureFlagsConfig")
@@ -286,7 +301,6 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags18FeatureFlagsConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP19PluggerFeatureFlags22FeatureFlagsDataSource_")
 @protocol FeatureFlagsDataSource
@@ -353,20 +367,6 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags16PlugFeatureFlags")
 - (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-SWIFT_CLASS("_TtC19PluggerFeatureFlags8Variable")
-@interface Variable : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-@interface Variable (SWIFT_EXTENSION(PluggerFeatureFlags))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 #endif
@@ -656,6 +656,21 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagSnapshot")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC19PluggerFeatureFlags19FeatureFlagVariable")
+@interface FeatureFlagVariable : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@class NSString;
+
+@interface FeatureFlagVariable (SWIFT_EXTENSION(PluggerFeatureFlags))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class HTTPConfig;
 
 SWIFT_CLASS("_TtC19PluggerFeatureFlags18FeatureFlagsConfig")
@@ -665,7 +680,6 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags18FeatureFlagsConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP19PluggerFeatureFlags22FeatureFlagsDataSource_")
 @protocol FeatureFlagsDataSource
@@ -732,20 +746,6 @@ SWIFT_CLASS("_TtC19PluggerFeatureFlags16PlugFeatureFlags")
 - (id _Nullable)getJsonObjectValueFor:(NSString * _Nonnull)name variable:(NSString * _Nonnull)variable SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isEnabledFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)getValueFor:(NSString * _Nonnull)flagName SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-SWIFT_CLASS("_TtC19PluggerFeatureFlags8Variable")
-@interface Variable : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-@interface Variable (SWIFT_EXTENSION(PluggerFeatureFlags))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 #endif

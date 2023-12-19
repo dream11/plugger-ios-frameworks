@@ -39,8 +39,8 @@ import _StringProcessing
 @objc final public class FeatureFlag : ObjectiveC.NSObject, Swift.Codable {
   public static let ASSIGNED_STATUS: Swift.String
   final public let name: Swift.String
-  final public let variables: [Swift.String : PluggerFeatureFlags.Variable]
-  public init(name: Swift.String, id: Swift.Int, variables: [Swift.String : PluggerFeatureFlags.Variable])
+  final public let variables: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable]
+  public init(name: Swift.String, id: Swift.Int, variables: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable])
   @objc deinit
   final public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
@@ -78,31 +78,31 @@ import _StringProcessing
   @objc func getDictionaryValue(for name: Swift.String, variable: Swift.String) -> [Swift.String : Any]
   @objc func getJsonObjectValue(for name: Swift.String, variable: Swift.String) -> Any?
 }
-@objc final public class Variable : ObjectiveC.NSObject {
+@objc final public class FeatureFlagVariable : ObjectiveC.NSObject {
   final public let boolValue: Swift.Bool?
   final public let intValue: Swift.Int?
   final public let longValue: Swift.Int64?
   final public let doubleValue: Swift.Double?
   final public let stringValue: Swift.String?
-  final public let listValue: [PluggerFeatureFlags.Variable]?
-  final public let dictionaryValue: [Swift.String : PluggerFeatureFlags.Variable]?
-  required public init(boolValue: Swift.Bool? = nil, intValue: Swift.Int? = nil, longValue: Swift.Int64? = nil, doubleValue: Swift.Double? = nil, stringValue: Swift.String? = nil, listValue: [PluggerFeatureFlags.Variable]? = nil, dictionaryValue: [Swift.String : PluggerFeatureFlags.Variable]? = nil)
+  final public let listValue: [PluggerFeatureFlags.FeatureFlagVariable]?
+  final public let dictionaryValue: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable]?
+  required public init(boolValue: Swift.Bool? = nil, intValue: Swift.Int? = nil, longValue: Swift.Int64? = nil, doubleValue: Swift.Double? = nil, stringValue: Swift.String? = nil, listValue: [PluggerFeatureFlags.FeatureFlagVariable]? = nil, dictionaryValue: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable]? = nil)
   convenience public init(boolValue: Swift.Bool? = nil)
   convenience public init(intValue: Swift.Int? = nil)
   convenience public init(longValue: Swift.Int64? = nil)
   convenience public init(doubleValue: Swift.Double? = nil)
   convenience public init(stringValue: Swift.String? = nil)
-  convenience public init(listValue: [PluggerFeatureFlags.Variable]? = nil)
-  convenience public init(dictionaryValue: [Swift.String : PluggerFeatureFlags.Variable]? = nil)
+  convenience public init(listValue: [PluggerFeatureFlags.FeatureFlagVariable]? = nil)
+  convenience public init(dictionaryValue: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable]? = nil)
   @objc deinit
 }
-extension PluggerFeatureFlags.Variable : Swift.Encodable {
+extension PluggerFeatureFlags.FeatureFlagVariable : Swift.Encodable {
   final public func encode(to encoder: Swift.Encoder) throws
 }
-extension PluggerFeatureFlags.Variable : Swift.Decodable {
+extension PluggerFeatureFlags.FeatureFlagVariable : Swift.Decodable {
   convenience public init(from decoder: Swift.Decoder) throws
 }
-extension PluggerFeatureFlags.Variable {
+extension PluggerFeatureFlags.FeatureFlagVariable {
   @objc override final public var description: Swift.String {
     @objc get
   }

@@ -10,7 +10,6 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-import os
 @objc public protocol Config {
   @objc var httpConfig: PluggerCore.HTTPConfig { get set }
 }
@@ -214,12 +213,45 @@ public typealias PluginInterface = PluggerCore.Configurable & PluggerCore.Initia
   public static func isInitialized() -> Swift.Bool
   @objc deinit
 }
+public enum LogType : Swift.String {
+  case EXCEPTION
+  case ERROR
+  case WARN
+  case INFO
+  case DEBUG
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct LogDetail {
+  public var tag: Swift.String {
+    get
+  }
+  public var traceId: Swift.String {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public var exception: Swift.Error {
+    get
+  }
+  public var meta: [Swift.String : Swift.String]? {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class PluggerLog {
   public static let shared: PluggerCore.PluggerLog
-  public static func initialize(traceId: Swift.Double?)
-  public static func log(message: Swift.String)
-  public static func warn(message: Swift.String)
-  public static func error(message: Swift.String)
+  public func initialize(traceId: Swift.String = "", callback: @escaping (PluggerCore.LogType, PluggerCore.LogDetail) -> Swift.Void)
+  public func setLevel(level: PluggerCore.LogType)
+  public func setSilent()
+  public func e(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
+  public func e(tag: Swift.String, e: Swift.Error, meta: [Swift.String : Swift.String]? = nil)
+  public func w(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
+  public func i(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
+  public func d(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class PluggerUser : ObjectiveC.NSObject {
@@ -274,6 +306,9 @@ public func getErrorDescription(from error: PluggerCore.StorageManagerError) -> 
   final public func save<T>(data: T, at url: Foundation.URL, completion: @escaping (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Encodable
   final public func load<T>(from url: Foundation.URL, completion: @escaping (Swift.Result<T, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Decodable
   final public func delete(from url: Foundation.URL, completion: @escaping (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void)
+  final public func saveSync<T>(data: T, forKey key: Swift.String, completion: (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Encodable
+  final public func loadSync<T>(forKey key: Swift.String, completion: (Swift.Result<T, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Decodable
+  final public func deleteSync(forKey key: Swift.String, completion: (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void)
   @objc deinit
 }
 public struct StorageWriteOperationInfo<T> {
@@ -345,6 +380,9 @@ extension PluggerCore.PluggerNotifiableEvents : Swift.RawRepresentable {}
 extension PluggerCore.PluggerError : Swift.Equatable {}
 extension PluggerCore.PluggerError : Swift.Hashable {}
 extension PluggerCore.PluggerError : Swift.RawRepresentable {}
+extension PluggerCore.LogType : Swift.Equatable {}
+extension PluggerCore.LogType : Swift.Hashable {}
+extension PluggerCore.LogType : Swift.RawRepresentable {}
 extension PluggerCore.PluginList : Swift.Equatable {}
 extension PluggerCore.PluginList : Swift.Hashable {}
 extension PluggerCore.PluginList : Swift.RawRepresentable {}

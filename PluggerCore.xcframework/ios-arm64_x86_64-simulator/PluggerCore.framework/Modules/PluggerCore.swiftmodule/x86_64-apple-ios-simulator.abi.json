@@ -6616,11 +6616,593 @@
         "moduleName": "PluggerCore"
       },
       {
-        "kind": "Import",
-        "name": "os",
-        "printedName": "os",
-        "declKind": "Import",
-        "moduleName": "PluggerCore"
+        "kind": "TypeDecl",
+        "name": "LogType",
+        "printedName": "LogType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "EXCEPTION",
+            "printedName": "EXCEPTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerCore.LogType.Type) -> PluggerCore.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "PluggerCore.LogType",
+                    "usr": "s:11PluggerCore7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerCore.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "PluggerCore.LogType",
+                        "usr": "s:11PluggerCore7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PluggerCore7LogTypeO9EXCEPTIONyA2CmF",
+            "mangledName": "$s11PluggerCore7LogTypeO9EXCEPTIONyA2CmF",
+            "moduleName": "PluggerCore"
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR",
+            "printedName": "ERROR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerCore.LogType.Type) -> PluggerCore.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "PluggerCore.LogType",
+                    "usr": "s:11PluggerCore7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerCore.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "PluggerCore.LogType",
+                        "usr": "s:11PluggerCore7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PluggerCore7LogTypeO5ERRORyA2CmF",
+            "mangledName": "$s11PluggerCore7LogTypeO5ERRORyA2CmF",
+            "moduleName": "PluggerCore"
+          },
+          {
+            "kind": "Var",
+            "name": "WARN",
+            "printedName": "WARN",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerCore.LogType.Type) -> PluggerCore.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "PluggerCore.LogType",
+                    "usr": "s:11PluggerCore7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerCore.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "PluggerCore.LogType",
+                        "usr": "s:11PluggerCore7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PluggerCore7LogTypeO4WARNyA2CmF",
+            "mangledName": "$s11PluggerCore7LogTypeO4WARNyA2CmF",
+            "moduleName": "PluggerCore"
+          },
+          {
+            "kind": "Var",
+            "name": "INFO",
+            "printedName": "INFO",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerCore.LogType.Type) -> PluggerCore.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "PluggerCore.LogType",
+                    "usr": "s:11PluggerCore7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerCore.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "PluggerCore.LogType",
+                        "usr": "s:11PluggerCore7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PluggerCore7LogTypeO4INFOyA2CmF",
+            "mangledName": "$s11PluggerCore7LogTypeO4INFOyA2CmF",
+            "moduleName": "PluggerCore"
+          },
+          {
+            "kind": "Var",
+            "name": "DEBUG",
+            "printedName": "DEBUG",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerCore.LogType.Type) -> PluggerCore.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "PluggerCore.LogType",
+                    "usr": "s:11PluggerCore7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PluggerCore.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "PluggerCore.LogType",
+                        "usr": "s:11PluggerCore7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PluggerCore7LogTypeO5DEBUGyA2CmF",
+            "mangledName": "$s11PluggerCore7LogTypeO5DEBUGyA2CmF",
+            "moduleName": "PluggerCore"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerCore.LogType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "PluggerCore.LogType",
+                    "usr": "s:11PluggerCore7LogTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11PluggerCore7LogTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11PluggerCore7LogTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "PluggerCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PluggerCore7LogTypeO8rawValueSSvp",
+            "mangledName": "$s11PluggerCore7LogTypeO8rawValueSSvp",
+            "moduleName": "PluggerCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PluggerCore7LogTypeO8rawValueSSvg",
+                "mangledName": "$s11PluggerCore7LogTypeO8rawValueSSvg",
+                "moduleName": "PluggerCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11PluggerCore7LogTypeO",
+        "mangledName": "$s11PluggerCore7LogTypeO",
+        "moduleName": "PluggerCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LogDetail",
+        "printedName": "LogDetail",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tag",
+            "printedName": "tag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PluggerCore9LogDetailV3tagSSvp",
+            "mangledName": "$s11PluggerCore9LogDetailV3tagSSvp",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PluggerCore9LogDetailV3tagSSvg",
+                "mangledName": "$s11PluggerCore9LogDetailV3tagSSvg",
+                "moduleName": "PluggerCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "traceId",
+            "printedName": "traceId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PluggerCore9LogDetailV7traceIdSSvp",
+            "mangledName": "$s11PluggerCore9LogDetailV7traceIdSSvp",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PluggerCore9LogDetailV7traceIdSSvg",
+                "mangledName": "$s11PluggerCore9LogDetailV7traceIdSSvg",
+                "moduleName": "PluggerCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PluggerCore9LogDetailV11descriptionSSvp",
+            "mangledName": "$s11PluggerCore9LogDetailV11descriptionSSvp",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PluggerCore9LogDetailV11descriptionSSvg",
+                "mangledName": "$s11PluggerCore9LogDetailV11descriptionSSvg",
+                "moduleName": "PluggerCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exception",
+            "printedName": "exception",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PluggerCore9LogDetailV9exceptions5Error_pvp",
+            "mangledName": "$s11PluggerCore9LogDetailV9exceptions5Error_pvp",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PluggerCore9LogDetailV9exceptions5Error_pvg",
+                "mangledName": "$s11PluggerCore9LogDetailV9exceptions5Error_pvg",
+                "moduleName": "PluggerCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "meta",
+            "printedName": "meta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PluggerCore9LogDetailV4metaSDyS2SGSgvp",
+            "mangledName": "$s11PluggerCore9LogDetailV4metaSDyS2SGSgvp",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PluggerCore9LogDetailV4metaSDyS2SGSgvg",
+                "mangledName": "$s11PluggerCore9LogDetailV4metaSDyS2SGSgvg",
+                "moduleName": "PluggerCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11PluggerCore9LogDetailV",
+        "mangledName": "$s11PluggerCore9LogDetailV",
+        "moduleName": "PluggerCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6681,43 +7263,172 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(traceId:)",
+            "printedName": "initialize(traceId:callback:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerCore.LogType, PluggerCore.LogDetail) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PluggerCore.LogType, PluggerCore.LogDetail)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "PluggerCore.LogType",
+                        "usr": "s:11PluggerCore7LogTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogDetail",
+                        "printedName": "PluggerCore.LogDetail",
+                        "usr": "s:11PluggerCore9LogDetailV"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PluggerCore0A3LogC10initialize7traceId8callbackySS_yAA0C4TypeO_AA0C6DetailVtctF",
+            "mangledName": "$s11PluggerCore0A3LogC10initialize7traceId8callbackySS_yAA0C4TypeO_AA0C6DetailVtctF",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLevel",
+            "printedName": "setLevel(level:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogType",
+                "printedName": "PluggerCore.LogType",
+                "usr": "s:11PluggerCore7LogTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PluggerCore0A3LogC8setLevel5levelyAA0C4TypeO_tF",
+            "mangledName": "$s11PluggerCore0A3LogC8setLevel5levelyAA0C4TypeO_tF",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSilent",
+            "printedName": "setSilent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PluggerCore0A3LogC9setSilentyyF",
+            "mangledName": "$s11PluggerCore0A3LogC9setSilentyyF",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "e",
+            "printedName": "e(tag:log:meta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Double?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11PluggerCore0A3LogC10initialize7traceIdySdSg_tFZ",
-            "mangledName": "$s11PluggerCore0A3LogC10initialize7traceIdySdSg_tFZ",
+            "usr": "s:11PluggerCore0A3LogC1e3tag3log4metaySS_SSSDyS2SGSgtF",
+            "mangledName": "$s11PluggerCore0A3LogC1e3tag3log4metaySS_SSSDyS2SGSgtF",
             "moduleName": "PluggerCore",
-            "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "log",
-            "printedName": "log(message:)",
+            "name": "e",
+            "printedName": "e(tag:e:meta:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6729,23 +7440,56 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11PluggerCore0A3LogC3log7messageySS_tFZ",
-            "mangledName": "$s11PluggerCore0A3LogC3log7messageySS_tFZ",
+            "usr": "s:11PluggerCore0A3LogC1e3tagAD4metaySS_s5Error_pSDyS2SGSgtF",
+            "mangledName": "$s11PluggerCore0A3LogC1e3tagAD4metaySS_s5Error_pSDyS2SGSgtF",
             "moduleName": "PluggerCore",
-            "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "warn",
-            "printedName": "warn(message:)",
+            "name": "w",
+            "printedName": "w(tag:log:meta:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6757,23 +7501,56 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11PluggerCore0A3LogC4warn7messageySS_tFZ",
-            "mangledName": "$s11PluggerCore0A3LogC4warn7messageySS_tFZ",
+            "usr": "s:11PluggerCore0A3LogC1w3tag3log4metaySS_SSSDyS2SGSgtF",
+            "mangledName": "$s11PluggerCore0A3LogC1w3tag3log4metaySS_SSSDyS2SGSgtF",
             "moduleName": "PluggerCore",
-            "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "error",
-            "printedName": "error(message:)",
+            "name": "i",
+            "printedName": "i(tag:log:meta:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6785,15 +7562,109 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11PluggerCore0A3LogC5error7messageySS_tFZ",
-            "mangledName": "$s11PluggerCore0A3LogC5error7messageySS_tFZ",
+            "usr": "s:11PluggerCore0A3LogC1i3tag3log4metaySS_SSSDyS2SGSgtF",
+            "mangledName": "$s11PluggerCore0A3LogC1i3tag3log4metaySS_SSSDyS2SGSgtF",
             "moduleName": "PluggerCore",
-            "static": true,
             "declAttributes": [
-              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "d",
+            "printedName": "d(tag:log:meta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PluggerCore0A3LogC1d3tag3log4metaySS_SSSDyS2SGSgtF",
+            "mangledName": "$s11PluggerCore0A3LogC1d3tag3log4metaySS_SSSDyS2SGSgtF",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -8477,6 +9348,200 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveSync",
+            "printedName": "saveSync(data:forKey:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageManagerError",
+                        "printedName": "PluggerCore.StorageManagerError",
+                        "usr": "c:@M@PluggerCore@E@StorageManagerError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PluggerCore14StorageManagerC8saveSync4data6forKey10completionyx_SSys6ResultOySbAA0cD5ErrorOGXEtSERzlF",
+            "mangledName": "$s11PluggerCore14StorageManagerC8saveSync4data6forKey10completionyx_SSys6ResultOySbAA0cD5ErrorOGXEtSERzlF",
+            "moduleName": "PluggerCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Encodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadSync",
+            "printedName": "loadSync(forKey:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<τ_0_0, PluggerCore.StorageManagerError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<τ_0_0, PluggerCore.StorageManagerError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageManagerError",
+                        "printedName": "PluggerCore.StorageManagerError",
+                        "usr": "c:@M@PluggerCore@E@StorageManagerError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PluggerCore14StorageManagerC8loadSync6forKey10completionySS_ys6ResultOyxAA0cD5ErrorOGXEtSeRzlF",
+            "mangledName": "$s11PluggerCore14StorageManagerC8loadSync6forKey10completionySS_ys6ResultOyxAA0cD5ErrorOGXEtSeRzlF",
+            "moduleName": "PluggerCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteSync",
+            "printedName": "deleteSync(forKey:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StorageManagerError",
+                        "printedName": "PluggerCore.StorageManagerError",
+                        "usr": "c:@M@PluggerCore@E@StorageManagerError"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PluggerCore14StorageManagerC10deleteSync6forKey10completionySS_ys6ResultOySbAA0cD5ErrorOGXEtF",
+            "mangledName": "$s11PluggerCore14StorageManagerC10deleteSync6forKey10completionySS_ys6ResultOySbAA0cD5ErrorOGXEtF",
+            "moduleName": "PluggerCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -9914,693 +10979,805 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
       "kind": "StringLiteral",
       "offset": 96,
       "length": 12,
       "value": "\"PluggerCore.ClientConfig\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
       "kind": "Array",
       "offset": 523,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 12,
       "value": "\"PluggerCore.CommonConfig\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/ConfigProvider.swift",
       "kind": "Dictionary",
       "offset": 795,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/DeviceInfo.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 677,
       "length": 18,
       "value": "\"PluggerCore.DeviceLocationInfo\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 58,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 72,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 85,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 58,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 72,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 85,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 402,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 5,
       "value": "\"PluggerCore.Delay\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 676,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "Array",
       "offset": 751,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "Array",
       "offset": 841,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 626,
       "length": 13,
       "value": "\"PluggerCore.RetrialConfig\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 1074,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 1021,
       "length": 13,
       "value": "\"PluggerCore.TimeoutConfig\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 1268,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 1289,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 1268,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 1289,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "BooleanLiteral",
       "offset": 2407,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 1714,
       "length": 10,
       "value": "\"PluggerCore.HTTPConfig\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2779,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2799,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2816,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2834,
       "length": 13,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2857,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2881,
       "length": 22,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2779,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2799,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2816,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2834,
       "length": 13,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2857,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 2881,
       "length": 22,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 3969,
       "length": 3,
       "value": "304"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 4003,
       "length": 7,
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 4040,
       "length": 6,
       "value": "\"http\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 4082,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 4131,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "StringLiteral",
       "offset": 4170,
       "length": 8,
       "value": "\"Accept\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 4230,
       "length": 4,
       "value": "5000"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "Array",
       "offset": 5811,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "Array",
       "offset": 8367,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Networking.swift",
       "kind": "BooleanLiteral",
       "offset": 9619,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/NetworkOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/NetworkOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 427,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/NetworkOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/NetworkOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 448,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/NetworkOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/NetworkOperation.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 20,
       "value": "\"PluggerCore.NetworkDataOperation\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 346,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 369,
       "length": 15,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 394,
       "length": 18,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 422,
       "length": 21,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 22,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 485,
       "length": 19,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 514,
       "length": 16,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 346,
       "length": 13,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 369,
       "length": 15,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 394,
       "length": 18,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 422,
       "length": 21,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 22,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 485,
       "length": 19,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 514,
       "length": 16,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 616,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 640,
       "length": 19,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 616,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Plugger.swift",
       "kind": "IntegerLiteral",
       "offset": 640,
       "length": 19,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
       "kind": "StringLiteral",
-      "offset": 204,
-      "length": 34,
-      "value": "\"com.dream11.platform.plugger-ios\""
+      "offset": 70,
+      "length": 11,
+      "value": "\"Exception\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 99,
+      "length": 7,
+      "value": "\"Error\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 123,
+      "length": 6,
+      "value": "\"Warn\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 146,
+      "length": 6,
+      "value": "\"Info\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 7,
+      "value": "\"Debug\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 70,
+      "length": 11,
+      "value": "\"Exception\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 99,
+      "length": 7,
+      "value": "\"Error\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 123,
+      "length": 6,
+      "value": "\"Warn\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 146,
+      "length": 6,
+      "value": "\"Info\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 7,
+      "value": "\"Debug\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 25,
+      "value": "\"PLUGGER_EMPTY_EXCEPTION\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 569,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
       "kind": "FloatLiteral",
-      "offset": 318,
+      "offset": 912,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/PluggerUser.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1026,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 11,
+      "value": "\"Plugger::\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1110,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluggerLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1158,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/PluggerUser.swift",
       "kind": "StringLiteral",
       "offset": 104,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/PluggerUser.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/PluggerUser.swift",
       "kind": "StringLiteral",
       "offset": 140,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "Dictionary",
       "offset": 130,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "Dictionary",
       "offset": 187,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2644,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2665,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2683,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2644,
       "length": 11,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2665,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/PluginManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2683,
       "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 84,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 106,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 120,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 135,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 151,
       "length": 22,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 84,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 106,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 120,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 135,
       "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 151,
       "length": 22,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/Storage.swift",
+      "kind": "StringLiteral",
+      "offset": 1303,
+      "length": 13,
+      "value": "\"com.plugger\""
+    },
+    {
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 216,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 245,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "StringLiteral",
       "offset": 144,
       "length": 21,
       "value": "\"PluggerCore.StorageWriteOperation\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 2329,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 2358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "StringLiteral",
       "offset": 2258,
       "length": 20,
       "value": "\"PluggerCore.StorageReadOperation\""
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 4215,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "BooleanLiteral",
       "offset": 4244,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashutoshpalania\/work\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
+      "filePath": "\/Users\/itspare008\/Documents\/Project\/plugger-ios\/PluggerCore\/PluggerCore\/Classes\/Modules\/StorageOperation.swift",
       "kind": "StringLiteral",
       "offset": 4156,
       "length": 22,
