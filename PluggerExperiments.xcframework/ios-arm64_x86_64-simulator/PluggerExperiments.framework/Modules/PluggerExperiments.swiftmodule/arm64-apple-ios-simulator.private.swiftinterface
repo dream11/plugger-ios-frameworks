@@ -127,7 +127,6 @@ public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentRespon
     get
   }
 }
-public func getExperimentHeaderName(from header: PluggerExperiments.ExperimentHeader) -> Swift.String
 @objc extension PluggerExperiments.PlugExperiments : PluggerCore.Configurable {
   @objc final public func configure(config: PluggerCore.Config)
 }
