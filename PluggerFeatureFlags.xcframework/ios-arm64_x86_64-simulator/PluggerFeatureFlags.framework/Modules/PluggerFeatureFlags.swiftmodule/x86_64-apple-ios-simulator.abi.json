@@ -1159,9 +1159,89 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "refreshableVariables",
+            "printedName": "refreshableVariables",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC20refreshableVariablesSaySSGSgvp",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC20refreshableVariablesSaySSGSgvp",
+            "moduleName": "PluggerFeatureFlags",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerFeatureFlags0B4FlagC20refreshableVariablesSaySSGSgvg",
+                "mangledName": "$s19PluggerFeatureFlags0B4FlagC20refreshableVariablesSaySSGSgvg",
+                "moduleName": "PluggerFeatureFlags",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:id:variables:)",
+            "printedName": "init(name:id:variables:refreshableVariables:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1200,11 +1280,33 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:19PluggerFeatureFlags0B4FlagC4name2id9variablesACSS_SiSDySSAA0bD8VariableCGtcfc",
-            "mangledName": "$s19PluggerFeatureFlags0B4FlagC4name2id9variablesACSS_SiSDySSAA0bD8VariableCGtcfc",
+            "usr": "s:19PluggerFeatureFlags0B4FlagC4name2id9variables20refreshableVariablesACSS_SiSDySSAA0bD8VariableCGSaySSGSgtcfc",
+            "mangledName": "$s19PluggerFeatureFlags0B4FlagC4name2id9variables20refreshableVariablesACSS_SiSDySSAA0bD8VariableCGSaySSGSgtcfc",
             "moduleName": "PluggerFeatureFlags",
             "declAttributes": [
               "AccessControl"
@@ -2103,685 +2205,6 @@
         "declKind": "Protocol",
         "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDelegate",
         "mangledName": "$s19PluggerFeatureFlags0bC8DelegateP",
-        "moduleName": "PluggerFeatureFlags",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FeatureFlagsDataSource",
-        "printedName": "FeatureFlagsDataSource",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "isEnabled",
-            "printedName": "isEnabled(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)isEnabledFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP9isEnabled3forSbSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getValue",
-            "printedName": "getValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP8getValue3forSbSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBooleanValue",
-            "printedName": "getBooleanValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getBooleanValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP15getBooleanValue3forSbSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getStringValue",
-            "printedName": "getStringValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getStringValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP14getStringValue3forS2S_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getIntValue",
-            "printedName": "getIntValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getIntValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP11getIntValue3forSiSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLongValue",
-            "printedName": "getLongValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int64",
-                "printedName": "Swift.Int64",
-                "usr": "s:s5Int64V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getLongValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP12getLongValue3fors5Int64VSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDoubleValue",
-            "printedName": "getDoubleValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getDoubleValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP14getDoubleValue3forSdSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getArrayValue",
-            "printedName": "getArrayValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getArrayValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP13getArrayValue3forSayypGSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDictionaryValue",
-            "printedName": "getDictionaryValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getDictionaryValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP18getDictionaryValue3forSDySSypGSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getJsonObjectValue",
-            "printedName": "getJsonObjectValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getJsonObjectValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP18getJsonObjectValue3forypSgSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getBooleanValue",
-            "printedName": "getBooleanValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getBooleanValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP15getBooleanValue3for8variableSbSS_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getStringValue",
-            "printedName": "getStringValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getStringValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP14getStringValue3for8variableS2S_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getIntValue",
-            "printedName": "getIntValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getIntValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP11getIntValue3for8variableSiSS_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLongValue",
-            "printedName": "getLongValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int64",
-                "printedName": "Swift.Int64",
-                "usr": "s:s5Int64V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getLongValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP12getLongValue3for8variables5Int64VSS_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDoubleValue",
-            "printedName": "getDoubleValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getDoubleValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP14getDoubleValue3for8variableSdSS_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getArrayValue",
-            "printedName": "getArrayValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getArrayValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP13getArrayValue3for8variableSayypGSS_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDictionaryValue",
-            "printedName": "getDictionaryValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getDictionaryValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP18getDictionaryValue3for8variableSDySSypGSS_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getJsonObjectValue",
-            "printedName": "getJsonObjectValue(for:variable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource(im)getJsonObjectValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP18getJsonObjectValue3for8variableypSgSS_SStF",
-            "moduleName": "PluggerFeatureFlags",
-            "genericSig": "<τ_0_0 where τ_0_0 : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "sugared_genericSig": "<Self where Self : PluggerFeatureFlags.FeatureFlagsDataSource>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource",
-        "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP",
         "moduleName": "PluggerFeatureFlags",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -4185,12 +3608,19 @@
           {
             "kind": "Function",
             "name": "fetchFeatureFlags",
-            "printedName": "fetchFeatureFlags(completion:)",
+            "printedName": "fetchFeatureFlags(isTriggeredExplicitly:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -4241,8 +3671,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:19PluggerFeatureFlags04PlugbC0C05fetchbC010completionyyAA0B12FlagResponseCSg_SSSgtc_tF",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C05fetchbC010completionyyAA0B12FlagResponseCSg_SSSgtc_tF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C05fetchbC021isTriggeredExplicitly10completionySb_yAA0B12FlagResponseCSg_SSSgtctF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C05fetchbC021isTriggeredExplicitly10completionySb_yAA0B12FlagResponseCSg_SSSgtctF",
             "moduleName": "PluggerFeatureFlags",
             "declAttributes": [
               "Final",
@@ -4282,201 +3712,8 @@
           },
           {
             "kind": "Function",
-            "name": "getBooleanValue",
-            "printedName": "getBooleanValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getBooleanValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C15getBooleanValue3forSbSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getBooleanValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getStringValue",
-            "printedName": "getStringValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getStringValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C14getStringValue3forS2S_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getStringValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getIntValue",
-            "printedName": "getIntValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getIntValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C11getIntValue3forSiSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getIntValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getLongValue",
-            "printedName": "getLongValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int64",
-                "printedName": "Swift.Int64",
-                "usr": "s:s5Int64V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getLongValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C12getLongValue3fors5Int64VSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getLongValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDoubleValue",
-            "printedName": "getDoubleValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getDoubleValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C14getDoubleValue3forSdSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getDoubleValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getArrayValue",
-            "printedName": "getArrayValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getArrayValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C13getArrayValue3forSayypGSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getArrayValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getDictionaryValue",
-            "printedName": "getDictionaryValue(for:)",
+            "name": "getValue",
+            "printedName": "getValue(for:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4505,51 +3742,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getDictionaryValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C18getDictionaryValue3forSDySSypGSS_tF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C8getValue3forSDySSypGSS_tF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8getValue3forSDySSypGSS_tF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getDictionaryValueFor:",
             "declAttributes": [
               "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getJsonObjectValue",
-            "printedName": "getJsonObjectValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getJsonObjectValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C18getJsonObjectValue3forypSgSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getJsonObjectValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4558,7 +3755,7 @@
           {
             "kind": "Function",
             "name": "getBooleanValue",
-            "printedName": "getBooleanValue(for:variable:)",
+            "printedName": "getBooleanValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4574,19 +3771,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getBooleanValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C15getBooleanValue3for8variableSbSS_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C15getBooleanValue3for07defaultG0SbSS_SbSgtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C15getBooleanValue3for07defaultG0SbSS_SbSgtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getBooleanValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4595,7 +3799,7 @@
           {
             "kind": "Function",
             "name": "getStringValue",
-            "printedName": "getStringValue(for:variable:)",
+            "printedName": "getStringValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4611,19 +3815,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getStringValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C14getStringValue3for8variableS2S_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C14getStringValue3for07defaultG0S2S_SSSgtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C14getStringValue3for07defaultG0S2S_SSSgtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getStringValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4632,7 +3843,7 @@
           {
             "kind": "Function",
             "name": "getIntValue",
-            "printedName": "getIntValue(for:variable:)",
+            "printedName": "getIntValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4648,19 +3859,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getIntValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C11getIntValue3for8variableSiSS_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C11getIntValue3for07defaultG0SiSS_SiSgtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C11getIntValue3for07defaultG0SiSS_SiSgtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getIntValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4669,7 +3887,7 @@
           {
             "kind": "Function",
             "name": "getLongValue",
-            "printedName": "getLongValue(for:variable:)",
+            "printedName": "getLongValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4685,19 +3903,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getLongValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C12getLongValue3for8variables5Int64VSS_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C12getLongValue3for07defaultG0s5Int64VSS_AHSgtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C12getLongValue3for07defaultG0s5Int64VSS_AHSgtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getLongValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4706,7 +3931,7 @@
           {
             "kind": "Function",
             "name": "getDoubleValue",
-            "printedName": "getDoubleValue(for:variable:)",
+            "printedName": "getDoubleValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4722,19 +3947,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getDoubleValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C14getDoubleValue3for8variableSdSS_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C14getDoubleValue3for07defaultG0SdSS_SdSgtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C14getDoubleValue3for07defaultG0SdSS_SdSgtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getDoubleValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4743,7 +3975,7 @@
           {
             "kind": "Function",
             "name": "getArrayValue",
-            "printedName": "getArrayValue(for:variable:)",
+            "printedName": "getArrayValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4766,19 +3998,33 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getArrayValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C13getArrayValue3for8variableSayypGSS_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C13getArrayValue3for07defaultG0SayypGSS_AGSgtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C13getArrayValue3for07defaultG0SayypGSS_AGSgtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getArrayValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4787,7 +4033,7 @@
           {
             "kind": "Function",
             "name": "getDictionaryValue",
-            "printedName": "getDictionaryValue(for:variable:)",
+            "printedName": "getDictionaryValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4816,19 +4062,39 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getDictionaryValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C18getDictionaryValue3for8variableSDySSypGSS_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C18getDictionaryValue3for07defaultG0SDySSypGSS_AGSgtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C18getDictionaryValue3for07defaultG0SDySSypGSS_AGSgtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getDictionaryValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4837,7 +4103,7 @@
           {
             "kind": "Function",
             "name": "getJsonObjectValue",
-            "printedName": "getJsonObjectValue(for:variable:)",
+            "printedName": "getJsonObjectValue(for:defaultValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4860,19 +4126,25 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getJsonObjectValueFor:variable:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C18getJsonObjectValue3for8variableypSgSS_SStF",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C18getJsonObjectValue3for07defaultH0ypSgSS_AGtF",
+            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C18getJsonObjectValue3for07defaultH0ypSgSS_AGtF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getJsonObjectValueFor:variable:",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4897,44 +4169,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)isEnabledFor:",
+            "usr": "s:19PluggerFeatureFlags04PlugbC0C9isEnabled3forSbSS_tF",
             "mangledName": "$s19PluggerFeatureFlags04PlugbC0C9isEnabled3forSbSS_tF",
             "moduleName": "PluggerFeatureFlags",
-            "objc_name": "isEnabledFor:",
             "declAttributes": [
               "Final",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getValue",
-            "printedName": "getValue(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@PluggerFeatureFlags@objc(cs)PlugFeatureFlags(im)getValueFor:",
-            "mangledName": "$s19PluggerFeatureFlags04PlugbC0C8getValue3forSbSS_tF",
-            "moduleName": "PluggerFeatureFlags",
-            "objc_name": "getValueFor:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -5075,13 +4314,6 @@
             "printedName": "Configurable",
             "usr": "c:@M@PluggerCore@objc(pl)Configurable",
             "mangledName": "$s11PluggerCore12ConfigurableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "FeatureFlagsDataSource",
-            "printedName": "FeatureFlagsDataSource",
-            "usr": "c:@M@PluggerFeatureFlags@objc(pl)FeatureFlagsDataSource",
-            "mangledName": "$s19PluggerFeatureFlags0bC10DataSourceP"
           },
           {
             "kind": "Conformance",
@@ -6297,6 +5529,13 @@
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlag.swift",
+      "kind": "Array",
+      "offset": 1186,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlag.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 11,
@@ -6324,6 +5563,76 @@
       "value": "\"PluggerFeatureFlags.FeatureFlagVariable\""
     },
     {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 3513,
+      "length": 46,
+      "value": "\"Error encoding singleValueContainer \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 3558,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 4497,
+      "length": 46,
+      "value": "\"Error decoding singleValueContainer \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 4542,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 4806,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 4915,
+      "length": 31,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 4927,
+      "length": 2,
+      "value": "\"-> \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 4943,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 5069,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/FeatureFlagVariable.swift",
+      "kind": "StringLiteral",
+      "offset": 5089,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
       "kind": "StringLiteral",
       "offset": 155,
@@ -6378,6 +5687,125 @@
       "offset": 266,
       "length": 18,
       "value": "\"DEFAULT_CONSUMER\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 8,
+      "value": "\"SERVER\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 9,
+      "value": "\"STORAGE\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 389,
+      "length": 8,
+      "value": "\"STATIC\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 414,
+      "length": 6,
+      "value": "\"NULL\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 8,
+      "value": "\"SERVER\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 9,
+      "value": "\"STORAGE\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 389,
+      "length": 8,
+      "value": "\"STATIC\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 414,
+      "length": 6,
+      "value": "\"NULL\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 611,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 8,
+      "value": "\"source\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 888,
+      "length": 16,
+      "value": "\"responseSource\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 923,
+      "length": 14,
+      "value": "\"requestedKey\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 944,
+      "length": 16,
+      "value": "\"requestedValue\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 1257,
+      "length": 18,
+      "value": "\"requestTimeStamp\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 1294,
+      "length": 19,
+      "value": "\"responseTimeStamp\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Models\/LogMeta.swift",
+      "kind": "StringLiteral",
+      "offset": 1333,
+      "length": 12,
+      "value": "\"statusCode\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
@@ -6401,60 +5829,613 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 813,
+      "offset": 2810,
       "length": 1,
       "value": "0"
     },
     {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2874,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2973,
+      "length": 4,
+      "value": "1000"
+    },
+    {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "BooleanLiteral",
-      "offset": 2724,
+      "offset": 595,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 856,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10152,
+      "offset": 1755,
+      "length": 36,
+      "value": "\"Success Fetching data from storage\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 1983,
+      "length": 65,
+      "value": "\"Error Fetching data from storage: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 2047,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2767,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3900,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3964,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3991,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4021,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4107,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 4584,
+      "length": 74,
+      "value": "\"Config fetch interval \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 4641,
+      "length": 2,
+      "value": "\" is not expired.\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 4849,
+      "length": 27,
+      "value": "\"FeatureFlagsConfig is nil\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 4967,
+      "length": 10,
+      "value": "\"app_name\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5025,
+      "length": 13,
+      "value": "\"app_version\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5088,
+      "length": 14,
+      "value": "\"build_number\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5154,
+      "length": 8,
+      "value": "\"device\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5212,
+      "length": 7,
+      "value": "\"model\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5264,
+      "length": 12,
+      "value": "\"os_version\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5325,
+      "length": 10,
+      "value": "\"platform\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "Dictionary",
+      "offset": 5520,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5609,
+      "length": 78,
+      "value": "\"Network request body: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5683,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5686,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5751,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 5834,
+      "length": 20,
+      "value": "\"\/v1\/users\/features\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6093,
+      "length": 25,
+      "value": "\"PlugFeatureFlags is nil\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6224,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6755,
+      "length": 96,
+      "value": "\"ErrorCode: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6795,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6797,
+      "length": 1,
+      "value": "\" | Network request error with response: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6850,
+      "length": 162,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6994,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 7337,
+      "length": 97,
+      "value": "\"ErrorCode: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7377,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 7379,
+      "length": 1,
+      "value": "\" | Network request error with response: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 7433,
+      "length": 162,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7577,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7835,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 8243,
+      "length": 67,
+      "value": "\"Network request successful with data parsing error: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 8309,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 8637,
+      "length": 70,
+      "value": "\"Network request successful with data: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8704,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 8706,
+      "length": 162,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8850,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 10494,
+      "length": 52,
+      "value": "\"Success cache configs: saved snapshot into storage\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 10662,
+      "length": 56,
+      "value": "\"Error cache configs: unable to write data into storage\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 10861,
+      "length": 52,
+      "value": "\"Error cache configs: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 10912,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 11000,
       "length": 9,
       "value": "\"user-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10181,
+      "offset": 11029,
       "length": 10,
       "value": "\"guest-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10210,
+      "offset": 11058,
       "length": 9,
       "value": "\"api-key\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10152,
+      "offset": 11000,
       "length": 9,
       "value": "\"user-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10181,
+      "offset": 11029,
       "length": 10,
       "value": "\"guest-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10210,
+      "offset": 11058,
       "length": 9,
       "value": "\"api-key\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Configurable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 536,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Configurable.swift",
+      "kind": "Dictionary",
+      "offset": 1502,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 9171,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9351,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 9600,
+      "length": 54,
+      "value": "\"getConfig success for old contract with server value\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 9748,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 9981,
+      "length": 55,
+      "value": "\"getConfig success for old contract with storage value\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 10131,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 10364,
+      "length": 64,
+      "value": "\"getConfig success for old contract with default consumer value\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 10531,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 10686,
+      "length": 59,
+      "value": "\"getConfig failure for old contract with default value nil\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 10826,
+      "length": 9,
+      "value": "\"default\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 11167,
+      "length": 54,
+      "value": "\"getConfig success for old contract with server value\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 11315,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 11611,
+      "length": 55,
+      "value": "\"getConfig success for old contract with storage value\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 11761,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 12045,
+      "length": 64,
+      "value": "\"getConfig success for old contract with default consumer value\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 12212,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 12417,
+      "length": 59,
+      "value": "\"getConfig failure for old contract with default value nil\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+FeatureFlagsDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 12557,
+      "length": 9,
+      "value": "\"default\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Notifiable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 180,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Notifiable.swift",
+      "kind": "StringLiteral",
+      "offset": 825,
+      "length": 58,
+      "value": "\"PlugFeatureFlags: deleted saved experiments from storage\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Notifiable.swift",
+      "kind": "StringLiteral",
+      "offset": 944,
+      "length": 67,
+      "value": "\"PlugFeatureFlags: unable to delete saved experiments from storage\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Notifiable.swift",
+      "kind": "StringLiteral",
+      "offset": 1103,
+      "length": 61,
+      "value": "\"PlugFeatureFlags error: \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Notifiable.swift",
+      "kind": "StringLiteral",
+      "offset": 1163,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Notifiable.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1713,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Constants\/PlugFeatureFlagsConstant.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Constants\/PlugFeatureFlagsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 19,
+      "value": "\"featureflags.json\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Constants\/PlugFeatureFlagsConstant.swift",
@@ -6525,6 +6506,34 @@
       "offset": 423,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Utilities\/SynchornizedDictionary.swift",
+      "kind": "StringLiteral",
+      "offset": 845,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Utilities\/SynchornizedDictionary.swift",
+      "kind": "StringLiteral",
+      "offset": 906,
+      "length": 49,
+      "value": "\"io.plugger.featureflag.\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Utilities\/SynchornizedDictionary.swift",
+      "kind": "StringLiteral",
+      "offset": 937,
+      "length": 1,
+      "value": "\".SynchronizedDict\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Utilities\/SynchornizedDictionary.swift",
+      "kind": "StringLiteral",
+      "offset": 1070,
+      "length": 41,
+      "value": "\"io.plugger.featureflag.SynchronizedDict\""
     }
   ]
 }
