@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerFeatureFlags
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -8,6 +8,7 @@ import PluggerCore
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @propertyWrapper public struct AtomicProperty<Value> {
   public init(wrappedValue: Value)
   public var wrappedValue: Value {
@@ -20,30 +21,31 @@ import _StringProcessing
   final public let data: [Swift.String : PluggerFeatureFlags.FeatureFlag]
   public init(timestamp: Swift.Double, data: [Swift.String : PluggerFeatureFlags.FeatureFlag])
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc final public class FeatureFlagResponse : ObjectiveC.NSObject, Swift.Codable {
   final public let data: [PluggerFeatureFlags.FeatureFlag]?
   final public let error: PluggerFeatureFlags.FeatureFlagResponseError?
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class FeatureFlagResponseError : ObjectiveC.NSObject, Swift.Codable {
   final public let message: Swift.String?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc final public class FeatureFlag : ObjectiveC.NSObject, Swift.Codable {
   public static let ASSIGNED_STATUS: Swift.String
   final public let name: Swift.String
   final public let variables: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable]
-  public init(name: Swift.String, id: Swift.Int, variables: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable])
+  final public let refreshableVariables: [Swift.String]?
+  public init(name: Swift.String, id: Swift.Int, variables: [Swift.String : PluggerFeatureFlags.FeatureFlagVariable], refreshableVariables: [Swift.String]?)
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class FeatureFlagsConfig : ObjectiveC.NSObject, PluggerCore.Config {
   @objc public var httpConfig: PluggerCore.HTTPConfig
@@ -57,26 +59,6 @@ import _StringProcessing
 @objc public protocol FeatureFlagsDelegate {
   @objc func onSuccess()
   @objc func onFailure(error: Swift.String)
-}
-@objc public protocol FeatureFlagsDataSource {
-  @objc func isEnabled(for flagName: Swift.String) -> Swift.Bool
-  @objc func getValue(for flagName: Swift.String) -> Swift.Bool
-  @objc func getBooleanValue(for key: Swift.String) -> Swift.Bool
-  @objc func getStringValue(for key: Swift.String) -> Swift.String
-  @objc func getIntValue(for key: Swift.String) -> Swift.Int
-  @objc func getLongValue(for key: Swift.String) -> Swift.Int64
-  @objc func getDoubleValue(for key: Swift.String) -> Swift.Double
-  @objc func getArrayValue(for key: Swift.String) -> [Any]
-  @objc func getDictionaryValue(for key: Swift.String) -> [Swift.String : Any]
-  @objc func getJsonObjectValue(for key: Swift.String) -> Any?
-  @objc func getBooleanValue(for name: Swift.String, variable: Swift.String) -> Swift.Bool
-  @objc func getStringValue(for name: Swift.String, variable: Swift.String) -> Swift.String
-  @objc func getIntValue(for name: Swift.String, variable: Swift.String) -> Swift.Int
-  @objc func getLongValue(for name: Swift.String, variable: Swift.String) -> Swift.Int64
-  @objc func getDoubleValue(for name: Swift.String, variable: Swift.String) -> Swift.Double
-  @objc func getArrayValue(for name: Swift.String, variable: Swift.String) -> [Any]
-  @objc func getDictionaryValue(for name: Swift.String, variable: Swift.String) -> [Swift.String : Any]
-  @objc func getJsonObjectValue(for name: Swift.String, variable: Swift.String) -> Any?
 }
 @objc final public class FeatureFlagVariable : ObjectiveC.NSObject {
   final public let boolValue: Swift.Bool?
@@ -97,10 +79,10 @@ import _StringProcessing
   @objc deinit
 }
 extension PluggerFeatureFlags.FeatureFlagVariable : Swift.Encodable {
-  final public func encode(to encoder: Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
 }
 extension PluggerFeatureFlags.FeatureFlagVariable : Swift.Decodable {
-  convenience public init(from decoder: Swift.Decoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
 }
 extension PluggerFeatureFlags.FeatureFlagVariable {
   @objc override final public var description: Swift.String {
@@ -111,32 +93,24 @@ public typealias FeatureFlagsFetchResponse = (PluggerFeatureFlags.FeatureFlagRes
 @_inheritsConvenienceInitializers @objc final public class PlugFeatureFlags : ObjectiveC.NSObject, PluggerCore.Initializable {
   @objc required override dynamic public init()
   public static let shared: PluggerFeatureFlags.PlugFeatureFlags
-  weak final public var delegate: PluggerFeatureFlags.FeatureFlagsDelegate?
-  final public func fetchFeatureFlags(completion: @escaping PluggerFeatureFlags.FeatureFlagsFetchResponse)
+  weak final public var delegate: (any PluggerFeatureFlags.FeatureFlagsDelegate)?
+  final public func fetchFeatureFlags(isTriggeredExplicitly: Swift.Bool = true, completion: @escaping PluggerFeatureFlags.FeatureFlagsFetchResponse)
   @objc deinit
 }
 @objc extension PluggerFeatureFlags.PlugFeatureFlags : PluggerCore.Configurable {
-  @objc final public func configure(config: PluggerCore.Config)
+  @objc final public func configure(config: any PluggerCore.Config)
 }
-@objc extension PluggerFeatureFlags.PlugFeatureFlags : PluggerFeatureFlags.FeatureFlagsDataSource {
-  @objc final public func getBooleanValue(for key: Swift.String) -> Swift.Bool
-  @objc final public func getStringValue(for key: Swift.String) -> Swift.String
-  @objc final public func getIntValue(for key: Swift.String) -> Swift.Int
-  @objc final public func getLongValue(for key: Swift.String) -> Swift.Int64
-  @objc final public func getDoubleValue(for key: Swift.String) -> Swift.Double
-  @objc final public func getArrayValue(for key: Swift.String) -> [Any]
-  @objc final public func getDictionaryValue(for key: Swift.String) -> [Swift.String : Any]
-  @objc final public func getJsonObjectValue(for key: Swift.String) -> Any?
-  @objc final public func getBooleanValue(for name: Swift.String, variable: Swift.String) -> Swift.Bool
-  @objc final public func getStringValue(for name: Swift.String, variable: Swift.String) -> Swift.String
-  @objc final public func getIntValue(for name: Swift.String, variable: Swift.String) -> Swift.Int
-  @objc final public func getLongValue(for name: Swift.String, variable: Swift.String) -> Swift.Int64
-  @objc final public func getDoubleValue(for name: Swift.String, variable: Swift.String) -> Swift.Double
-  @objc final public func getArrayValue(for name: Swift.String, variable: Swift.String) -> [Any]
-  @objc final public func getDictionaryValue(for name: Swift.String, variable: Swift.String) -> [Swift.String : Any]
-  @objc final public func getJsonObjectValue(for name: Swift.String, variable: Swift.String) -> Any?
-  @objc final public func isEnabled(for flagName: Swift.String) -> Swift.Bool
-  @objc final public func getValue(for flagName: Swift.String) -> Swift.Bool
+extension PluggerFeatureFlags.PlugFeatureFlags {
+  final public func getValue(for flagName: Swift.String) -> [Swift.String : Any]
+  final public func getBooleanValue(for key: Swift.String, defaultValue: Swift.Bool? = nil) -> Swift.Bool
+  final public func getStringValue(for key: Swift.String, defaultValue: Swift.String? = nil) -> Swift.String
+  final public func getIntValue(for key: Swift.String, defaultValue: Swift.Int? = nil) -> Swift.Int
+  final public func getLongValue(for key: Swift.String, defaultValue: Swift.Int64? = nil) -> Swift.Int64
+  final public func getDoubleValue(for key: Swift.String, defaultValue: Swift.Double? = nil) -> Swift.Double
+  final public func getArrayValue(for key: Swift.String, defaultValue: [Any]? = nil) -> [Any]
+  final public func getDictionaryValue(for key: Swift.String, defaultValue: [Swift.String : Any]? = nil) -> [Swift.String : Any]
+  final public func getJsonObjectValue(for key: Swift.String, defaultValue: Any? = nil) -> Any?
+  final public func isEnabled(for flagName: Swift.String) -> Swift.Bool
 }
 @objc extension PluggerFeatureFlags.PlugFeatureFlags : PluggerCore.Notifiable {
   @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
