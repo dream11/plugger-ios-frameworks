@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerExperiments
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -8,27 +8,28 @@ import PluggerCore
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public class ExperimentSnapshot : ObjectiveC.NSObject, Swift.Codable {
   final public let timestamp: Swift.Double
   final public let data: [Swift.String : PluggerExperiments.Experiment]
   public init(timestamp: Swift.Double, data: [Swift.String : PluggerExperiments.Experiment])
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class ExperimentResponse : ObjectiveC.NSObject, Swift.Codable {
   final public let data: [PluggerExperiments.Experiment]?
   final public let error: PluggerExperiments.ExperimentResponseError?
   public init(data: [PluggerExperiments.Experiment]?, error: PluggerExperiments.ExperimentResponseError?)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class ExperimentResponseError : ObjectiveC.NSObject, Swift.Codable {
   final public let message: Swift.String?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class ExperimentVariant : ObjectiveC.NSObject, Swift.Codable {
   final public let experimentId: Swift.String
@@ -36,8 +37,8 @@ import _StringProcessing
   public init(experimentId: Swift.String, variantName: Swift.String)
   convenience public init(experiment: PluggerExperiments.Experiment)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class Experiment : ObjectiveC.NSObject, Swift.Codable {
   final public let experimentId: Swift.String
@@ -48,8 +49,8 @@ import _StringProcessing
   final public let variantName: Swift.String
   public init(experimentId: Swift.String, userIdentifierType: Swift.String, status: Swift.String, variables: PluggerExperiments.Variable? = nil, apiPath: Swift.String, variantName: Swift.String)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension PluggerExperiments.Experiment {
   @objc override dynamic public var description: Swift.String {
@@ -75,10 +76,10 @@ extension PluggerExperiments.Experiment {
   @objc deinit
 }
 extension PluggerExperiments.Variable : Swift.Encodable {
-  final public func encode(to encoder: Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
 }
 extension PluggerExperiments.Variable : Swift.Decodable {
-  convenience public init(from decoder: Swift.Decoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
 }
 extension PluggerExperiments.Variable {
   @objc override final public var description: Swift.String {
@@ -90,11 +91,11 @@ extension PluggerExperiments.Variable {
   @objc func onFailure(error: Swift.String)
 }
 @objc public protocol ExperimentsDataSource {
-  @objc func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
-  @objc func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
-  @objc func getLongValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int64
-  @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
-  @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String
+  @objc func getBoolValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Bool
+  @objc func getIntValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Int
+  @objc func getLongValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Int64
+  @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Double
+  @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.String
   @objc func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
   @objc func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
   @objc func getExperimentVariantsJSON() -> Swift.String?
@@ -103,7 +104,7 @@ public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentRespon
 @_inheritsConvenienceInitializers @objc final public class PlugExperiments : ObjectiveC.NSObject, PluggerCore.Initializable {
   @objc required override dynamic public init()
   public static let shared: PluggerExperiments.PlugExperiments
-  weak final public var delegate: PluggerExperiments.ExperimentsDelegate?
+  weak final public var delegate: (any PluggerExperiments.ExperimentsDelegate)?
   final public func fetchExperiments(for apiPaths: [Swift.String : PluggerExperiments.Variable], completion: @escaping PluggerExperiments.ExperimentsFetchResponse)
   final public func refreshExperiments(completion: @escaping PluggerExperiments.ExperimentsFetchResponse)
   @objc deinit
@@ -128,14 +129,14 @@ public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentRespon
   }
 }
 @objc extension PluggerExperiments.PlugExperiments : PluggerCore.Configurable {
-  @objc final public func configure(config: PluggerCore.Config)
+  @objc final public func configure(config: any PluggerCore.Config)
 }
 @objc extension PluggerExperiments.PlugExperiments : PluggerExperiments.ExperimentsDataSource {
-  @objc final public func getBoolValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Bool
-  @objc final public func getIntValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int
-  @objc final public func getLongValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Int64
-  @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.Double
-  @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String) -> Swift.String
+  @objc final public func getBoolValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Bool
+  @objc final public func getIntValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Int
+  @objc final public func getLongValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Int64
+  @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Double
+  @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.String
   @objc final public func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
   @objc final public func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
   @objc final public func getExperimentVariantsJSON() -> Swift.String?
