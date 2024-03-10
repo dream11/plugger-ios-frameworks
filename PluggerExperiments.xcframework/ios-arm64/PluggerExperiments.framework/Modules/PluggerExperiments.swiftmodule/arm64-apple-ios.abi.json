@@ -5574,115 +5574,94 @@
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "StringLiteral",
-      "offset": 2772,
-      "length": 44,
-      "value": "\"PlugExperiments init: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "StringLiteral",
-      "offset": 3033,
-      "length": 65,
-      "value": "\"PlugExperiments init: successfully loaded snapshot from storage\""
-    },
-    {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "StringLiteral",
-      "offset": 3168,
-      "length": 57,
-      "value": "\"PlugExperiments init: load from storage failed \""
-    },
-    {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "StringLiteral",
-      "offset": 3224,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "Dictionary",
-      "offset": 3636,
+      "offset": 3385,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "Dictionary",
-      "offset": 3893,
+      "offset": 3642,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "Dictionary",
-      "offset": 3959,
+      "offset": 3708,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "BooleanLiteral",
-      "offset": 4191,
+      "offset": 3940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 4846,
+      "offset": 4595,
       "length": 46,
       "value": "\"PlugExperiments: saved snapshot into storage\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 4953,
+      "offset": 4702,
       "length": 52,
       "value": "\"PlugExperiments: unable to write data into storage\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 5097,
+      "offset": 4846,
       "length": 33,
       "value": "\"PlugExperiments error: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 5129,
+      "offset": 4878,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "BooleanLiteral",
-      "offset": 6472,
+      "offset": 6221,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "BooleanLiteral",
-      "offset": 6783,
+      "offset": 6532,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "Array",
-      "offset": 6899,
+      "offset": 6648,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 7073,
+      "offset": 6822,
       "length": 25,
       "value": "\"ExperimentConfig is nil\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
+      "kind": "Array",
+      "offset": 6994,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
@@ -5693,113 +5672,106 @@
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
-      "kind": "Array",
-      "offset": 7496,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 7650,
+      "offset": 7399,
       "length": 23,
       "value": "\"\/v1\/users\/experiments\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "Dictionary",
-      "offset": 7688,
+      "offset": 7437,
       "length": 15,
       "value": "[(\"type\", \"FE\")]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 8021,
+      "offset": 7770,
       "length": 24,
       "value": "\"PlugExperiments is nil\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "Dictionary",
-      "offset": 9497,
+      "offset": 9246,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "BooleanLiteral",
-      "offset": 10567,
+      "offset": 10316,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "BooleanLiteral",
-      "offset": 11115,
+      "offset": 10864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "BooleanLiteral",
-      "offset": 11193,
+      "offset": 10942,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 10766,
+      "offset": 10515,
       "length": 16,
       "value": "\"PluggerExperiments.ExperimentConfig\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "IntegerLiteral",
-      "offset": 11564,
+      "offset": 11313,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "IntegerLiteral",
-      "offset": 11580,
+      "offset": 11329,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "IntegerLiteral",
-      "offset": 11564,
+      "offset": 11313,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "IntegerLiteral",
-      "offset": 11580,
+      "offset": 11329,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 11724,
+      "offset": 11473,
       "length": 10,
       "value": "\"guest-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 11776,
+      "offset": 11525,
       "length": 9,
       "value": "\"user-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerExperiments\/PluggerExperiments\/Classes\/PlugExperiments.swift",
       "kind": "StringLiteral",
-      "offset": 11827,
+      "offset": 11576,
       "length": 9,
       "value": "\"api-key\""
     },
