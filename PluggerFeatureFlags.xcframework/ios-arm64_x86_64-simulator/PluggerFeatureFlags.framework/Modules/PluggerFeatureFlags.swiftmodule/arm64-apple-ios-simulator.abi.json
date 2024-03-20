@@ -5810,42 +5810,28 @@
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 738,
+      "offset": 451,
       "length": 3,
       "value": "304"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 797,
+      "offset": 510,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 894,
+      "offset": 1195,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 2810,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2874,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlagForegroundHandler.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2973,
+      "offset": 1335,
       "length": 4,
       "value": "1000"
     },
@@ -6005,239 +5991,281 @@
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "Dictionary",
+      "offset": 5603,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 5609,
+      "offset": 5701,
       "length": 78,
       "value": "\"Network request body: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 5683,
+      "offset": 5775,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 5686,
+      "offset": 5778,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 5751,
+      "offset": 5843,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 5834,
+      "offset": 5926,
       "length": 20,
       "value": "\"\/v1\/users\/features\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 6093,
+      "offset": 6185,
       "length": 25,
       "value": "\"PlugFeatureFlags is nil\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 6224,
+      "offset": 6316,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 6755,
+      "offset": 6578,
+      "length": 77,
+      "value": "\"Network request successful with statusCode : \""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6652,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 6654,
+      "length": 162,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6798,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6902,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 7464,
       "length": 96,
       "value": "\"ErrorCode: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 6795,
+      "offset": 7504,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 6797,
+      "offset": 7506,
       "length": 1,
       "value": "\" | Network request error with response: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 6850,
+      "offset": 7559,
       "length": 162,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 6994,
+      "offset": 7703,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 7337,
+      "offset": 8074,
       "length": 97,
       "value": "\"ErrorCode: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 7377,
+      "offset": 8114,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 7379,
+      "offset": 8116,
       "length": 1,
       "value": "\" | Network request error with response: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 7433,
+      "offset": 8170,
       "length": 162,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 7577,
+      "offset": 8314,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 7835,
+      "offset": 8636,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 8243,
+      "offset": 9061,
       "length": 67,
       "value": "\"Network request successful with data parsing error: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 8309,
+      "offset": 9127,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 8637,
+      "offset": 9644,
       "length": 70,
       "value": "\"Network request successful with data: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 8704,
+      "offset": 9711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 8706,
+      "offset": 9713,
       "length": 162,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "IntegerLiteral",
-      "offset": 8850,
+      "offset": 9857,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10494,
+      "offset": 11384,
       "length": 52,
       "value": "\"Success cache configs: saved snapshot into storage\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10662,
+      "offset": 11552,
       "length": 56,
       "value": "\"Error cache configs: unable to write data into storage\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10861,
+      "offset": 11751,
       "length": 52,
       "value": "\"Error cache configs: \""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 10912,
+      "offset": 11802,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 11000,
+      "offset": 11890,
       "length": 9,
       "value": "\"user-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 11029,
+      "offset": 11919,
       "length": 10,
       "value": "\"guest-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 11058,
+      "offset": 11948,
       "length": 9,
       "value": "\"api-key\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 11000,
+      "offset": 11890,
       "length": 9,
       "value": "\"user-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 11029,
+      "offset": 11919,
       "length": 10,
       "value": "\"guest-id\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags.swift",
       "kind": "StringLiteral",
-      "offset": 11058,
+      "offset": 11948,
       "length": 9,
       "value": "\"api-key\""
     },
@@ -6251,7 +6279,7 @@
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/PlugFeatureFlags+Configurable.swift",
       "kind": "Dictionary",
-      "offset": 1502,
+      "offset": 1783,
       "length": 3,
       "value": "[]"
     },
@@ -6454,14 +6482,21 @@
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Constants\/PlugFeatureFlagsConstant.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 538,
+      "length": 15,
+      "value": "\"Last-Modified\""
+    },
+    {
+      "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Constants\/PlugFeatureFlagsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
       "length": 9,
       "value": "\"max-age\""
     },
     {
       "filePath": "\/Users\/anup.kher\/Dream11Projects\/plugger-ios\/PluggerFeatureFlags\/PluggerFeatureFlags\/Classes\/Constants\/PlugFeatureFlagsConstant.swift",
       "kind": "StringLiteral",
-      "offset": 559,
+      "offset": 624,
       "length": 27,
       "value": "\"PLUG_FEATURE_FLAG_STORAGE\""
     },

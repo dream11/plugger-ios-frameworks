@@ -91,18 +91,21 @@ extension PluggerExperiments.Variable {
   @objc func onFailure(error: Swift.String)
 }
 @objc public protocol ExperimentsDataSource {
-  @objc func getBoolValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Bool
-  @objc func getIntValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Int
-  @objc func getLongValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Int64
-  @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.Double
-  @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool) -> Swift.String
+  @objc func getBoolValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool, ignoreCache: Swift.Bool) -> Swift.Bool
+  @objc func getIntValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool, ignoreCache: Swift.Bool) -> Swift.Int
+  @objc func getLongValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool, ignoreCache: Swift.Bool) -> Swift.Int64
+  @objc func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool, ignoreCache: Swift.Bool) -> Swift.Double
+  @objc func getStringValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool, ignoreCache: Swift.Bool) -> Swift.String
   @objc func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
   @objc func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
   @objc func getExperimentVariantsJSON() -> Swift.String?
+  @objc func getExperimentsFromStorage() -> [Swift.String : PluggerExperiments.Experiment]?
+  @objc func setExperimentsToStorage(_ experiments: [Swift.String : PluggerExperiments.Experiment]?)
 }
 public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentResponse?, Swift.String?) -> Swift.Void
 @_inheritsConvenienceInitializers @objc final public class PlugExperiments : ObjectiveC.NSObject, PluggerCore.Initializable {
   @objc required override dynamic public init()
+  final public func loadExperimentsFromStorage() -> [Swift.String : PluggerExperiments.Experiment]?
   public static let shared: PluggerExperiments.PlugExperiments
   weak final public var delegate: (any PluggerExperiments.ExperimentsDelegate)?
   final public func fetchExperiments(for apiPaths: [Swift.String : PluggerExperiments.Variable], completion: @escaping PluggerExperiments.ExperimentsFetchResponse)
@@ -132,14 +135,16 @@ public typealias ExperimentsFetchResponse = (PluggerExperiments.ExperimentRespon
   @objc final public func configure(config: any PluggerCore.Config)
 }
 @objc extension PluggerExperiments.PlugExperiments : PluggerExperiments.ExperimentsDataSource {
-  @objc final public func getBoolValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Bool
-  @objc final public func getIntValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Int
-  @objc final public func getLongValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Int64
-  @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.Double
-  @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false) -> Swift.String
+  @objc final public func getBoolValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false, ignoreCache: Swift.Bool = false) -> Swift.Bool
+  @objc final public func getIntValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false, ignoreCache: Swift.Bool = false) -> Swift.Int
+  @objc final public func getLongValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false, ignoreCache: Swift.Bool = false) -> Swift.Int64
+  @objc final public func getDoubleValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false, ignoreCache: Swift.Bool = false) -> Swift.Double
+  @objc final public func getStringValue(for apiPath: Swift.String, with variable: Swift.String, dontCache: Swift.Bool = false, ignoreCache: Swift.Bool = false) -> Swift.String
   @objc final public func getAllVariablesJSON(for apiPath: Swift.String) -> Swift.String?
   @objc final public func getExperimentVariants() -> [Swift.String : PluggerExperiments.ExperimentVariant]
   @objc final public func getExperimentVariantsJSON() -> Swift.String?
+  @objc final public func getExperimentsFromStorage() -> [Swift.String : PluggerExperiments.Experiment]?
+  @objc final public func setExperimentsToStorage(_ experiments: [Swift.String : PluggerExperiments.Experiment]?)
 }
 extension PluggerExperiments.PlugExperiments {
   final public func getDefaultExperimentValues() -> [Swift.String : PluggerExperiments.Variable]
