@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
@@ -10,6 +10,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol Config {
   @objc var httpConfig: PluggerCore.HTTPConfig { get set }
 }
@@ -27,8 +28,8 @@ import _StringProcessing
 }
 @_hasMissingDesignatedInitializers public class ConfigProvider {
   public static let shared: PluggerCore.ConfigProvider
-  public static func getInstance(key: PluggerCore.PluginList) -> PluggerCore.Config?
-  public static func setInstance(key: PluggerCore.PluginList, config: PluggerCore.Config)
+  public static func getInstance(key: PluggerCore.PluginList) -> (any PluggerCore.Config)?
+  public static func setInstance(key: PluggerCore.PluginList, config: any PluggerCore.Config)
   public static func setInstances(for plugins: [PluggerCore.Plugin])
   @objc deinit
 }
@@ -170,7 +171,7 @@ public class NetworkDataOperation<T> : Foundation.Operation where T : Swift.Deco
   @objc init()
 }
 @objc public protocol Configurable {
-  @objc func configure(config: PluggerCore.Config)
+  @objc func configure(config: any PluggerCore.Config)
 }
 @objc public protocol Notifiable {
   @objc func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
@@ -235,7 +236,7 @@ public struct LogDetail {
   public var description: Swift.String {
     get
   }
-  public var exception: Swift.Error {
+  public var exception: any Swift.Error {
     get
   }
   public var meta: [Swift.String : Swift.String]? {
@@ -248,7 +249,7 @@ public struct LogDetail {
   public func setLevel(level: PluggerCore.LogType)
   public func setSilent()
   public func e(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
-  public func e(tag: Swift.String, e: Swift.Error, meta: [Swift.String : Swift.String]? = nil)
+  public func e(tag: Swift.String, e: any Swift.Error, meta: [Swift.String : Swift.String]? = nil)
   public func w(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
   public func i(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
   public func d(tag: Swift.String, log: Swift.String, meta: [Swift.String : Swift.String]? = nil)
@@ -266,9 +267,9 @@ public struct LogDetail {
   @objc deinit
 }
 public class Plugin {
-  public var type: PluggerCore.PluginInterface.Type
-  public var config: PluggerCore.Config
-  public init(type: PluggerCore.PluginInterface.Type, config: PluggerCore.Config)
+  public var type: any PluggerCore.PluginInterface.Type
+  public var config: any PluggerCore.Config
+  public init(type: any PluggerCore.PluginInterface.Type, config: any PluggerCore.Config)
   @objc deinit
 }
 @objc public enum PluginList : Swift.Int {
@@ -309,6 +310,7 @@ public func getErrorDescription(from error: PluggerCore.StorageManagerError) -> 
   final public func saveSync<T>(data: T, forKey key: Swift.String, completion: (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Encodable
   final public func loadSync<T>(forKey key: Swift.String, completion: (Swift.Result<T, PluggerCore.StorageManagerError>) -> Swift.Void) where T : Swift.Decodable
   final public func deleteSync(forKey key: Swift.String, completion: (Swift.Result<Swift.Bool, PluggerCore.StorageManagerError>) -> Swift.Void)
+  final public func loadSync<T>(from url: Swift.String, ofType dataType: T.Type) -> T? where T : Swift.Decodable
   @objc deinit
 }
 public struct StorageWriteOperationInfo<T> {
