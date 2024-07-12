@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerEvents
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -8,6 +8,7 @@ import PluggerCore
 import Swift
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc final public class ClientConfigEventAction : ObjectiveC.NSObject {
   final public let eventName: Swift.String
   final public let reversedAction: [Swift.String]
@@ -17,56 +18,56 @@ import _StringProcessing
 @objc final public class ClientConfigEventReversedActionInfo : ObjectiveC.NSObject, Swift.Codable {
   final public let reversedAction: [Swift.String]
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc final public class ClientConfigEventDestinationInfo : ObjectiveC.NSObject, Swift.Codable {
   final public let defaultAction: [Swift.String : Swift.Int]?
   final public let event: [Swift.String : PluggerEvents.ClientConfigEventReversedActionInfo]?
   final public func shouldSendEventToDestination(withDefaultActionName defaultActionName: Swift.String) -> Swift.Bool
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class ClientConfigData : ObjectiveC.NSObject, Swift.Codable {
   final public let eventDestination: PluggerEvents.ClientConfigEventDestinationInfo?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class ClientConfigResponse : ObjectiveC.NSObject, Swift.Codable {
   final public let data: PluggerEvents.ClientConfigData?
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc final public class Event : ObjectiveC.NSObject, Swift.Codable {
-  public init(name: Swift.String, props: [Swift.String : PluggerEvents.EventProp], isPriority: Swift.Bool, destinations: [PluggerEvents.EventDestination] = [])
-  convenience public init(name: Swift.String, props: [Swift.String : Any], isPriority: Swift.Bool, destinations: [Swift.String])
+  public init(eventName: Swift.String, props: [Swift.String : PluggerEvents.EventProp], isPriority: Swift.Bool, destinations: [PluggerEvents.EventDestination] = [])
+  convenience public init(eventName: Swift.String, props: [Swift.String : Any], isPriority: Swift.Bool, destinations: [Swift.String])
   final public func updateProps(with newProps: [Swift.String : Any])
   final public func getAllProps() -> [Swift.String : PluggerEvents.EventProp]
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc final public class EventsBatchRequestPayload : ObjectiveC.NSObject, Swift.Encodable {
   public init(batch: [PluggerEvents.Event])
   @objc deinit
-  final public func encode(to encoder: Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public class EventSnapshot : ObjectiveC.NSObject, Swift.Codable {
   final public let timestamp: Swift.Double
   final public let data: [Swift.String : PluggerEvents.Event]
   public init(timestamp: Swift.Double, data: [Swift.String : PluggerEvents.Event])
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class SendableEvent : ObjectiveC.NSObject, Swift.Codable {
   public init(event: PluggerEvents.Event)
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum EventDestination : Swift.Int, Swift.Codable {
   case DATA_HIGHWAY
@@ -105,10 +106,10 @@ public func getDefaultActionName(from eventDestination: PluggerEvents.EventDesti
   @objc deinit
 }
 extension PluggerEvents.EventProp : Swift.Encodable {
-  final public func encode(to encoder: Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
 }
 extension PluggerEvents.EventProp : Swift.Decodable {
-  convenience public init(from decoder: Swift.Decoder) throws
+  convenience public init(from decoder: any Swift.Decoder) throws
 }
 extension PluggerEvents.EventProp {
   @objc override final public var description: Swift.String {
@@ -145,7 +146,7 @@ public protocol EventsDebuggable {
   @objc deinit
 }
 @objc extension PluggerEvents.PlugEvents : PluggerCore.Configurable {
-  @objc final public func configure(config: PluggerCore.Config)
+  @objc final public func configure(config: any PluggerCore.Config)
 }
 @objc extension PluggerEvents.PlugEvents : PluggerCore.Notifiable {
   @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
