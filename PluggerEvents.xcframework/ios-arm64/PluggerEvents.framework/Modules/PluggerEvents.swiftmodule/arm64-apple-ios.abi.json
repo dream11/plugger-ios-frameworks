@@ -339,7 +339,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -364,7 +364,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -690,7 +690,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -715,7 +715,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -893,7 +893,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -921,7 +921,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1095,7 +1095,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -1123,7 +1123,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1477,7 +1477,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -1502,7 +1502,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1676,7 +1676,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -1980,7 +1980,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -2008,7 +2008,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -2171,7 +2171,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -2199,7 +2199,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -3687,7 +3687,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -3717,7 +3717,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -3864,6 +3864,127 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerEvents"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventsConstant",
+        "printedName": "EventsConstant",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "DreamAuthProviderHostPackage",
+            "printedName": "DreamAuthProviderHostPackage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PluggerEvents0B8ConstantV28DreamAuthProviderHostPackageSDyS2SGvp",
+            "mangledName": "$s13PluggerEvents0B8ConstantV28DreamAuthProviderHostPackageSDyS2SGvp",
+            "moduleName": "PluggerEvents",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PluggerEvents0B8ConstantV28DreamAuthProviderHostPackageSDyS2SGvg",
+                "mangledName": "$s13PluggerEvents0B8ConstantV28DreamAuthProviderHostPackageSDyS2SGvg",
+                "moduleName": "PluggerEvents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "includes",
+            "printedName": "includes(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PluggerEvents0B8ConstantV8includes5valueSbSS_tF",
+            "mangledName": "$s13PluggerEvents0B8ConstantV8includes5valueSbSS_tF",
+            "moduleName": "PluggerEvents",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13PluggerEvents0B8ConstantV",
+        "mangledName": "$s13PluggerEvents0B8ConstantV",
+        "moduleName": "PluggerEvents",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -4908,7 +5029,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Config",
-                "printedName": "PluggerCore.Config",
+                "printedName": "any PluggerCore.Config",
                 "usr": "c:@M@PluggerCore@objc(pl)Config"
               }
             ],
@@ -8380,1922 +8501,480 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
       "kind": "Array",
       "offset": 210,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 23,
       "value": "\"PluggerEvents.ClientConfigEventAction\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 896,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/ClientConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 936,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
       "offset": 238,
       "length": 17,
       "value": "\"_pluggerEventId\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "Array",
       "offset": 377,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
-      "kind": "StringLiteral",
-      "offset": 1371,
-      "length": 11,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
-      "kind": "StringLiteral",
-      "offset": 1381,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1703,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
-      "kind": "Array",
-      "offset": 1737,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
-      "kind": "StringLiteral",
-      "offset": 2962,
-      "length": 45,
-      "value": "\"Could not convert \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
-      "kind": "StringLiteral",
-      "offset": 2993,
-      "length": 2,
-      "value": "\" to EventProp\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
       "offset": 44,
       "length": 5,
       "value": "\"PluggerEvents.Event\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3093,
       "length": 25,
       "value": "\"PluggerEvents.EventsBatchRequestPayload\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3289,
       "length": 13,
       "value": "\"PluggerEvents.EventSnapshot\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/Event.swift",
       "kind": "StringLiteral",
       "offset": 3577,
       "length": 13,
       "value": "\"PluggerEvents.SendableEvent\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 82,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 101,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 116,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 135,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
       "length": 11,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 175,
       "length": 20,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 7,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 82,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 101,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 116,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 135,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 154,
       "length": 11,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 175,
       "length": 20,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 7,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 376,
-      "length": 14,
-      "value": "\"DATA_HIGHWAY\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 427,
-      "length": 11,
-      "value": "\"CLEVERTAP\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 471,
-      "length": 7,
-      "value": "\"APXOR\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 515,
-      "length": 11,
-      "value": "\"APPSFLYER\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 563,
-      "length": 11,
-      "value": "\"APPTIMIZE\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 613,
-      "length": 13,
-      "value": "\"CRASHLYTICS\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 674,
-      "length": 22,
-      "value": "\"FIREBASE_CRASHLYTICS\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 731,
-      "length": 9,
-      "value": "\"DATADOG\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 775,
-      "length": 9,
-      "value": "\"SEGMENT\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 917,
-      "length": 10,
-      "value": "\"IN_HOUSE\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 967,
-      "length": 11,
-      "value": "\"CLEVERTAP\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1015,
-      "length": 7,
-      "value": "\"APXOR\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1055,
-      "length": 11,
-      "value": "\"APPSFLYER\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1103,
-      "length": 11,
-      "value": "\"APPTIMIZE\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1151,
-      "length": 13,
-      "value": "\"CRASHLYTICS\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1203,
-      "length": 22,
-      "value": "\"FIREBASE_CRASHLYTICS\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1273,
-      "length": 9,
-      "value": "\"DATADOG\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1317,
-      "length": 9,
-      "value": "\"SEGMENT\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1537,
-      "length": 4,
-      "value": "\"DH\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1581,
-      "length": 4,
-      "value": "\"CT\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1622,
-      "length": 4,
-      "value": "\"AP\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1663,
-      "length": 4,
-      "value": "\"AF\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1704,
-      "length": 4,
-      "value": "\"AX\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1741,
-      "length": 4,
-      "value": "\"FB\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1784,
-      "length": 5,
-      "value": "\"FCL\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1837,
-      "length": 4,
-      "value": "\"DD\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 1876,
-      "length": 4,
-      "value": "\"SM\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2102,
-      "length": 4,
-      "value": "\"DH\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2143,
-      "length": 4,
-      "value": "\"CT\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2184,
-      "length": 4,
-      "value": "\"AF\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2225,
-      "length": 4,
-      "value": "\"AP\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2262,
-      "length": 4,
-      "value": "\"AX\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2305,
-      "length": 4,
-      "value": "\"FB\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2357,
-      "length": 5,
-      "value": "\"FCL\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2397,
-      "length": 4,
-      "value": "\"DD\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 2436,
-      "length": 4,
-      "value": "\"SM\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 9,
       "value": "\"PluggerEvents.EventProp\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 2731,
-      "length": 46,
-      "value": "\"Error encoding singleValueContainer \""
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsConstants.swift",
+      "kind": "Dictionary",
+      "offset": 113,
+      "length": 482,
+      "value": "[(\"Dream11\", \"com.dream11.dream11app\"), (\"FancodeDream11\", \"com.fancode.partner\"), (\"FancodeWeb\", \"com.fancode-web.partner.production\"), (\"FancodeSportsGuruUat\", \"com.dream11.sportsguru.uat\"), (\"FancodeShop\", \"fc-shop\"), (\"FancodePartnerEvents\", \"fc-partner-events\"), (\"FancodeWebProduction\", \"com.app.fc-web.production\"), (\"FancodeStagePartnerEvents\", \"fc-stage-partner-events\"), (\"FancodeSportsGuru\", \"com.dream11.sportsguru\")]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 2776,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 3573,
-      "length": 46,
-      "value": "\"Error decoding singleValueContainer \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 3618,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 3838,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 3905,
-      "length": 27,
-      "value": "\"boolValue -> \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 3931,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4002,
-      "length": 25,
-      "value": "\"intValue -> \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4026,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4099,
-      "length": 27,
-      "value": "\"longValue -> \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4125,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4202,
-      "length": 31,
-      "value": "\"doubleValue -> \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4232,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4309,
-      "length": 31,
-      "value": "\"stringValue -> \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4339,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4424,
-      "length": 39,
-      "value": "\"dictionaryValue -> \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/Models\/EventProp.swift",
-      "kind": "StringLiteral",
-      "offset": 4462,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 15,
       "value": "\"\/users\/events\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 10,
       "value": "\"\/process\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 597,
-      "length": 33,
-      "value": "\"com.plugger.eventsmanager.queue\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "Array",
       "offset": 855,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "Array",
       "offset": 898,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "Array",
       "offset": 942,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 1269,
       "length": 28,
       "value": "\"Error sending batch events\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 32,
       "value": "\"Successfully sent batch events\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "StringLiteral",
       "offset": 1923,
       "length": 91,
       "value": "\"Error: failed and successful event arrays are empty in batchingOperationCompletionHandler\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2102,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "Array",
-      "offset": 2453,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2510,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2728,
-      "length": 70,
-      "value": "\"plugger: SendEventsOperation removed \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2790,
-      "length": 6,
-      "value": "\" events\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3164,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4155,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4300,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4962,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5041,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5159,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "Array",
-      "offset": 5432,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "Array",
-      "offset": 5601,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "Array",
-      "offset": 5871,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "Array",
-      "offset": 6042,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "Array",
-      "offset": 6313,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "Array",
-      "offset": 6485,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8452,
-      "length": 23,
-      "value": "\"Events array is empty\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8718,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 9449,
-      "length": 40,
-      "value": "\"Error sending priority event: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 9488,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 9613,
-      "length": 34,
-      "value": "\"Successfully sent priority event\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10329,
-      "length": 41,
-      "value": "\"Error sending priority events: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10369,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10504,
-      "length": 35,
-      "value": "\"Successfully sent priority events\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11056,
-      "length": 41,
-      "value": "\"Error sending priority events: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11096,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/EventsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11223,
-      "length": 35,
-      "value": "\"Successfully sent priority events\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
       "kind": "Dictionary",
       "offset": 176,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 515,
-      "length": 11,
-      "value": "\"eventTime\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 528,
-      "length": 38,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 565,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 580,
-      "length": 10,
-      "value": "\"app_name\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 636,
-      "length": 13,
-      "value": "\"app_version\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 698,
-      "length": 4,
-      "value": "\"os\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 743,
-      "length": 8,
-      "value": "\"mobile\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 802,
-      "length": 7,
-      "value": "\"model\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 853,
-      "length": 12,
-      "value": "\"os_version\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 913,
-      "length": 19,
-      "value": "\"screen_resolution\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 987,
-      "length": 18,
-      "value": "\"network_provider\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1051,
-      "length": 13,
-      "value": "\"device_name\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/GlobalPropsManager.swift",
       "kind": "StringLiteral",
       "offset": 63,
       "length": 18,
       "value": "\"PluggerEvents.GlobalPropsManager\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 227,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 436,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 462,
-      "length": 21,
-      "value": "\"plugger_events.json\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 654,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 680,
-      "length": 28,
-      "value": "\"plugger_events_failed.json\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 880,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 906,
-      "length": 29,
-      "value": "\"plugger_events_waiting.json\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1367,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2052,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "Dictionary",
-      "offset": 2631,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3979,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4448,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4755,
-      "length": 55,
-      "value": "\"PersistenceManager backupEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5174,
-      "length": 55,
-      "value": "\"PersistenceManager backupEvents load failed: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5228,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5455,
-      "length": 59,
-      "value": "\"PersistenceManager backupEvents: snapshot creation failed\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5926,
-      "length": 56,
-      "value": "\"PersistenceManager: saved events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6043,
-      "length": 66,
-      "value": "\"PersistenceManager: unable to write events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6203,
-      "length": 56,
-      "value": "\"PersistenceManager backupEvents save error: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6258,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6572,
-      "length": 61,
-      "value": "\"PersistenceManager backupFailedEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6999,
-      "length": 61,
-      "value": "\"PersistenceManager backupFailedEvents load failed: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7059,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7288,
-      "length": 65,
-      "value": "\"PersistenceManager backupFailedEvents: snapshot creation failed\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7774,
-      "length": 63,
-      "value": "\"PersistenceManager: saved failed events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 7898,
-      "length": 73,
-      "value": "\"PersistenceManager: unable to write failed events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8065,
-      "length": 62,
-      "value": "\"PersistenceManager backupFailedEvents save error: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8126,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8442,
-      "length": 62,
-      "value": "\"PersistenceManager backupWaitingEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8871,
-      "length": 62,
-      "value": "\"PersistenceManager backupWaitingEvents load failed: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 8932,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 9162,
-      "length": 66,
-      "value": "\"PersistenceManager backupWaitingEvents: snapshot creation failed\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 9651,
-      "length": 64,
-      "value": "\"PersistenceManager: saved waiting events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 9776,
-      "length": 74,
-      "value": "\"PersistenceManager: unable to write waiting events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 9944,
-      "length": 63,
-      "value": "\"PersistenceManager backupWaitingEvents save error: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10006,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10308,
-      "length": 56,
-      "value": "\"PersistenceManager restoreEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10637,
-      "length": 70,
-      "value": "\"PersistenceManager: successfully loaded events snapshot from storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10769,
-      "length": 62,
-      "value": "\"PersistenceManager: events load from storage failed \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 10830,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11127,
-      "length": 62,
-      "value": "\"PersistenceManager restoreFailedEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11468,
-      "length": 77,
-      "value": "\"PersistenceManager: successfully loaded failed events snapshot from storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11607,
-      "length": 69,
-      "value": "\"PersistenceManager: failed events load from storage failed \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11675,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 11974,
-      "length": 63,
-      "value": "\"PersistenceManager restoreWaitingEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12317,
-      "length": 78,
-      "value": "\"PersistenceManager: successfully loaded waiting events snapshot from storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12457,
-      "length": 70,
-      "value": "\"PersistenceManager: waiting events load from storage failed \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12526,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12827,
-      "length": 54,
-      "value": "\"PersistenceManager clearEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13366,
-      "length": 68,
-      "value": "\"PersistenceManager clearEvents: saved events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13503,
-      "length": 78,
-      "value": "\"PersistenceManager clearEvents: unable to write events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13687,
-      "length": 56,
-      "value": "\"PersistenceManager clearEvents save failed: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13742,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13845,
-      "length": 54,
-      "value": "\"PersistenceManager clearEvents load failed: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13898,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 14212,
-      "length": 60,
-      "value": "\"PersistenceManager clearFailedEvents: self not initialized\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 14764,
-      "length": 74,
-      "value": "\"PersistenceManager clearFailedEvents: saved events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 14907,
-      "length": 84,
-      "value": "\"PersistenceManager clearFailedEvents: unable to write events snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15097,
-      "length": 62,
-      "value": "\"PersistenceManager clearFailedEvents save failed: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15158,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15261,
-      "length": 60,
-      "value": "\"PersistenceManager clearFailedEvents load failed: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15320,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15652,
-      "length": 70,
-      "value": "\"PersistenceManager: successfully deleted waiting events from storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15775,
-      "length": 66,
-      "value": "\"PersistenceManager: could not delete waiting events from storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15923,
-      "length": 74,
-      "value": "\"PersistenceManager: waiting events delete from storage failed \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 15996,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 16224,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "BooleanLiteral",
       "offset": 16253,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16595,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16831,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16918,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17174,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17237,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 17416,
-      "length": 65,
-      "value": "\"PersistenceManager BackupOperation: saved snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17531,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 17639,
-      "length": 75,
-      "value": "\"PersistenceManager BackupOperation: unable to write snapshot into storage\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17764,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 17902,
-      "length": 54,
-      "value": "\"PersistenceManager BackupOperation error: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 17955,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18002,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 18175,
-      "length": 13,
-      "value": "\"isExecuting\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 18263,
-      "length": 13,
-      "value": "\"isExecuting\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 18372,
-      "length": 12,
-      "value": "\"isFinished\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "StringLiteral",
-      "offset": 18459,
-      "length": 12,
-      "value": "\"isFinished\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18558,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18607,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PersistenceManager.swift",
       "kind": "StringLiteral",
       "offset": 16038,
       "length": 15,
       "value": "\"PluggerEvents.BackupOperation\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "Dictionary",
-      "offset": 2188,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2894,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3146,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 3322,
-      "length": 66,
-      "value": "\"PlugEvents configData error: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 3387,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 3570,
-      "length": 83,
-      "value": "\"PlugEvents configData success: \""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 3652,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
       "offset": 3776,
       "length": 23,
       "value": "\"http:\/\/localhost:7001\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
       "offset": 3840,
       "length": 42,
       "value": "\"https:\/\/d11-events-framework.dream11.com\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
       "offset": 3926,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
       "offset": 3982,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
       "offset": 4043,
       "length": 4,
       "value": "5000"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 4344,
+      "offset": 4346,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "Dictionary",
-      "offset": 4509,
+      "offset": 4511,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "Dictionary",
-      "offset": 4853,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5246,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5811,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 6495,
-      "length": 92,
-      "value": "\"PlugEvents: Network failure getClientConfig, adding DH as default destination from Plugger\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6719,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "Dictionary",
-      "offset": 7445,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "Dictionary",
-      "offset": 8069,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 8615,
-      "length": 52,
-      "value": "\"PlugEvents: processBlacklistedWaitingEvents failed\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 9250,
-      "length": 44,
-      "value": "\"PlugEvents: processAllWaitingEvents failed\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 10015,
-      "length": 59,
-      "value": "\"PlugEvents: fireEvent failed, eventsManager\/config is nil\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "Dictionary",
-      "offset": 12246,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13961,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "Dictionary",
-      "offset": 13980,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "Dictionary",
-      "offset": 13999,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 15240,
-      "length": 64,
-      "value": "\"PlugEvents: getAllEventQueues failed, getAllEventQueues is nil\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 15508,
+      "offset": 16286,
       "length": 14,
       "value": "\"PluggerEvents.BatchingConfig\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 15794,
+      "offset": 16572,
       "length": 19,
       "value": "\"PluggerEvents.PersistEventsConfig\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 16311,
+      "offset": 17089,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 16028,
+      "offset": 16806,
       "length": 17,
       "value": "\"PluggerEvents.GlobalPropsConfig\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 16712,
+      "offset": 17490,
       "length": 18,
       "value": "\"PluggerEvents.BlacklistingConfig\""
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 17703,
+      "offset": 18481,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 17780,
+      "offset": 18558,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 17864,
+      "offset": 18642,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "BooleanLiteral",
-      "offset": 17942,
+      "offset": 18720,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18608,
+      "offset": 19386,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18659,
+      "offset": 19437,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18710,
+      "offset": 19488,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18757,
+      "offset": 19535,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18808,
+      "offset": 19586,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18861,
+      "offset": 19639,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18923,
+      "offset": 19701,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 18972,
+      "offset": 19750,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 19021,
+      "offset": 19799,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "IntegerLiteral",
-      "offset": 19146,
+      "offset": 19924,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
+      "filePath": "\/Users\/sonam.kumari\/Desktop\/plugger\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
       "kind": "StringLiteral",
-      "offset": 17189,
+      "offset": 17967,
       "length": 12,
       "value": "\"PluggerEvents.EventsConfig\""
-    },
-    {
-      "filePath": "\/Users\/shubhranshutiwari\/ws\/plugger-ios\/PluggerEvents\/PluggerEvents\/Classes\/PlugEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 19345,
-      "length": 9,
-      "value": "\"api-key\""
     }
   ]
 }
