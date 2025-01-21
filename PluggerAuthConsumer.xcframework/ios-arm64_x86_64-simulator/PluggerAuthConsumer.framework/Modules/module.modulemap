@@ -1,0 +1,11 @@
+framework module PluggerAuthConsumer {
+  umbrella header "PluggerAuthConsumer-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PluggerAuthConsumer.Swift {
+  header "PluggerAuthConsumer-Swift.h"
+  requires objc
+}
