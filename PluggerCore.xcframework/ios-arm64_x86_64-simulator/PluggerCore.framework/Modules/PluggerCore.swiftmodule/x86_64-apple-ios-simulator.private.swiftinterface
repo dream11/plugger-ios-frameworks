@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PluggerCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PluggerCore
 import CoreLocation
 import CoreTelephony
 import Foundation
@@ -142,6 +141,11 @@ public func getDelayTimeFor(attemptNumber: Swift.Int, delay: PluggerCore.Delay) 
   }
 }
 public func getErrorDescription(from error: PluggerCore.NetworkManagerError) -> Swift.String
+@objc @_inheritsConvenienceInitializers public class CustomSessionDelegate : ObjectiveC.NSObject, Foundation.URLSessionDelegate, Foundation.URLSessionTaskDelegate {
+  @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class NetworkManager : ObjectiveC.NSObject {
   public static let shared: PluggerCore.NetworkManager
   final public func makeHttpRequest<T>(method: PluggerCore.HTTPMethod, apiEndpointPath: Swift.String, queryParams: [Swift.String : Swift.String]? = nil, body: Foundation.Data?, httpConfig: PluggerCore.HTTPConfig, useStatusCodeAsResponse: Swift.Bool = false, completion: @escaping (T?, PluggerCore.NetworkManagerError?, PluggerCore.NetworkOperationResponseInfo?) -> Swift.Void) where T : Swift.Decodable
@@ -277,6 +281,8 @@ public class Plugin {
   case Experiments
   case Features
   case Events
+  case AuthProvider
+  case AuthConsumer
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
