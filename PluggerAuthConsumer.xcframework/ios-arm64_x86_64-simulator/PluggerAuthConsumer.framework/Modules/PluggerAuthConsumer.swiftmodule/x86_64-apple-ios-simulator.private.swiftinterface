@@ -1,0 +1,151 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PluggerAuthConsumer
+import Foundation
+@_exported import PluggerAuthConsumer
+import PluggerCore
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc final public class AuthConsumerResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public var redirectUrl: Swift.String?
+  final public var error: Swift.String?
+  public init(redirectUrl: Swift.String?, error: Swift.String?)
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class AuthConsumerConfig : ObjectiveC.NSObject, PluggerCore.Config {
+  @objc public var httpConfig: PluggerCore.HTTPConfig
+  public var clientConfig: PluggerAuthConsumer.AuthConsumerClientConfig
+  public var deeplinkConfig: PluggerAuthConsumer.AuthConsumerDeeplinkConfig
+  public var host: PluggerAuthConsumer.DreamAuthProviderHost
+  public var prompt: PluggerAuthConsumer.Prompt
+  public var responseType: PluggerAuthConsumer.ResponseType
+  public var codeChallengeMethod: PluggerAuthConsumer.CodeChallengeMethod
+  public var state: Swift.Bool
+  public var nonce: Swift.Bool
+  public init(httpConfig: PluggerCore.HTTPConfig, clientConfig: PluggerAuthConsumer.AuthConsumerClientConfig, deeplinkConfig: PluggerAuthConsumer.AuthConsumerDeeplinkConfig)
+  @objc deinit
+}
+@objc public class AuthConsumerClientConfig : ObjectiveC.NSObject {
+  public var clientId: Swift.String
+  public var scopes: [Swift.String]
+  public var redirectUrl: Swift.String
+  public var loginCallback: any PluggerAuthConsumer.IAuthLoginCallback
+  public init(clientId: Swift.String, scopes: [Swift.String], redirectUrl: Swift.String, iLoginCallback: any PluggerAuthConsumer.IAuthLoginCallback)
+  @objc deinit
+}
+@objc public class AuthConsumerDeeplinkConfig : ObjectiveC.NSObject {
+  public var providerUrlScheme: Swift.String
+  public init(providerUrlScheme: Swift.String)
+  @objc deinit
+}
+public enum CodeChallengeMethod : Swift.String {
+  case NONE
+  case PLAIN
+  case S256
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Prompt : Swift.String {
+  case NONE
+  case LOGIN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ResponseType : Swift.String {
+  case CODE
+  case TOKEN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DreamAuthProviderHost : Swift.String {
+  case Dream11
+  case Dream11PlayStore
+  case Dream11Stag
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class AuthConsumerLoginCallback : PluggerAuthConsumer.IAuthLoginCallback {
+  public init()
+  public func onSuccess(authPacket: PluggerAuthConsumer.AuthPacketResult)
+  public func onFailure(status: PluggerAuthConsumer.DreamAuthStatusCodes, error: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AuthPacketResult : Swift.Encodable {
+  public func display() -> Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public protocol AuthConsumerDelegate {
+  @objc func onSuccess()
+  @objc func onFailure(error: Swift.String)
+}
+public enum DreamAuthStatusCodes : Swift.String {
+  case LOGGED_IN
+  case LOGIN_CANCELLED
+  case CONSENT_DENIED
+  case SWITCH_ACCOUNT
+  case SOMETHING_WENT_WRONG
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol IAuthLoginCallback {
+  func onSuccess(authPacket: PluggerAuthConsumer.AuthPacketResult)
+  func onFailure(status: PluggerAuthConsumer.DreamAuthStatusCodes, error: Swift.String)
+}
+public typealias AuthConsumerLoginResponse = (PluggerAuthConsumer.AuthConsumerResponse?, Swift.String?) -> Swift.Void
+@_inheritsConvenienceInitializers @objc final public class PlugAuthConsumer : ObjectiveC.NSObject, PluggerCore.Initializable {
+  weak final public var delegate: (any PluggerAuthConsumer.AuthConsumerDelegate)?
+  @objc required override dynamic public init()
+  final public func getConfig() -> PluggerAuthConsumer.AuthConsumerConfig?
+  final public func login(completion: @escaping PluggerAuthConsumer.AuthConsumerLoginResponse)
+  final public func openTargetApp(_ authConsumerConfig: PluggerAuthConsumer.AuthConsumerConfig, _ params: [Swift.String : Swift.String])
+  final public func openWebAndLogin(_ authConsumerConfig: PluggerAuthConsumer.AuthConsumerConfig, _ completion: @escaping PluggerAuthConsumer.AuthConsumerLoginResponse)
+  final public func handleIncomingURL(_ url: Foundation.URL)
+  final public func triggerLoginFailedCallback(_ status: PluggerAuthConsumer.DreamAuthStatusCodes, _ error: Swift.String)
+  @objc deinit
+}
+@objc extension PluggerAuthConsumer.PlugAuthConsumer : PluggerCore.Configurable {
+  @objc final public func configure(config: any PluggerCore.Config)
+}
+@objc extension PluggerAuthConsumer.PlugAuthConsumer : PluggerCore.Notifiable {
+  @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
+}
+@_hasMissingDesignatedInitializers public class PlugAuthUtils {
+  @objc deinit
+}
+extension PluggerAuthConsumer.CodeChallengeMethod : Swift.Equatable {}
+extension PluggerAuthConsumer.CodeChallengeMethod : Swift.Hashable {}
+extension PluggerAuthConsumer.CodeChallengeMethod : Swift.RawRepresentable {}
+extension PluggerAuthConsumer.Prompt : Swift.Equatable {}
+extension PluggerAuthConsumer.Prompt : Swift.Hashable {}
+extension PluggerAuthConsumer.Prompt : Swift.RawRepresentable {}
+extension PluggerAuthConsumer.ResponseType : Swift.Equatable {}
+extension PluggerAuthConsumer.ResponseType : Swift.Hashable {}
+extension PluggerAuthConsumer.ResponseType : Swift.RawRepresentable {}
+extension PluggerAuthConsumer.DreamAuthProviderHost : Swift.Equatable {}
+extension PluggerAuthConsumer.DreamAuthProviderHost : Swift.Hashable {}
+extension PluggerAuthConsumer.DreamAuthProviderHost : Swift.RawRepresentable {}
+extension PluggerAuthConsumer.DreamAuthStatusCodes : Swift.Equatable {}
+extension PluggerAuthConsumer.DreamAuthStatusCodes : Swift.Hashable {}
+extension PluggerAuthConsumer.DreamAuthStatusCodes : Swift.RawRepresentable {}
