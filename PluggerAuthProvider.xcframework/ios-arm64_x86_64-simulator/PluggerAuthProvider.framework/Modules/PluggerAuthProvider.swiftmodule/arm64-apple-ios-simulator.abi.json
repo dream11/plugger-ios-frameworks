@@ -1,0 +1,4874 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "AuthProviderResponse",
+        "printedName": "AuthProviderResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC8ResponseC5stateSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC8ResponseC5stateSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC5stateSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC5stateSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC5stateSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC5stateSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC5stateSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC5stateSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redirectUrl",
+            "printedName": "redirectUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC11redirectUrlSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC8ResponseC4codeSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC8ResponseC4codeSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC4codeSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC4codeSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC4codeSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC4codeSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC4codeSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC4codeSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerAuthProvider.AuthErrorResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthErrorResponse",
+                    "printedName": "PluggerAuthProvider.AuthErrorResponse",
+                    "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthErrorResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC8ResponseC5errorAA0b5ErrorD0CSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC8ResponseC5errorAA0b5ErrorD0CSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerAuthProvider.AuthErrorResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthErrorResponse",
+                        "printedName": "PluggerAuthProvider.AuthErrorResponse",
+                        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthErrorResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC8ResponseC5errorAA0b5ErrorD0CSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC8ResponseC5errorAA0b5ErrorD0CSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthProviderResponse",
+                "printedName": "PluggerAuthProvider.AuthProviderResponse",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderResponse"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderResponse(im)init",
+            "mangledName": "$s19PluggerAuthProvider0bC8ResponseCACycfc",
+            "moduleName": "PluggerAuthProvider",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthProviderResponse",
+                "printedName": "PluggerAuthProvider.AuthProviderResponse",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerAuthProvider0bC8ResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19PluggerAuthProvider0bC8ResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerAuthProvider",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider0bC8ResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19PluggerAuthProvider0bC8ResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerAuthProvider",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderResponse",
+        "mangledName": "$s19PluggerAuthProvider0bC8ResponseC",
+        "moduleName": "PluggerAuthProvider",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthProviderClientDetailsResponse",
+        "printedName": "AuthProviderClientDetailsResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "client_name",
+            "printedName": "client_name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC11client_nameSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "client_id",
+            "printedName": "client_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC9client_idSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logo_uri",
+            "printedName": "logo_uri",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8logo_uriSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "policy_uri",
+            "printedName": "policy_uri",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10policy_uriSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "is_privileged",
+            "printedName": "is_privileged",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC13is_privilegedSbSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "client_uri",
+            "printedName": "client_uri",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC10client_uriSSSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contacts",
+            "printedName": "contacts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvs",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvM",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC8contactsSaySSGSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerAuthProvider.AuthErrorResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthErrorResponse",
+                    "printedName": "PluggerAuthProvider.AuthErrorResponse",
+                    "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthErrorResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC5errorAA0b5ErrorF0CSgvp",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC5errorAA0b5ErrorF0CSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerAuthProvider.AuthErrorResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthErrorResponse",
+                        "printedName": "PluggerAuthProvider.AuthErrorResponse",
+                        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthErrorResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC5errorAA0b5ErrorF0CSgvg",
+                "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC5errorAA0b5ErrorF0CSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthProviderClientDetailsResponse",
+                "printedName": "PluggerAuthProvider.AuthProviderClientDetailsResponse",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderClientDetailsResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerAuthProvider",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider0bC21ClientDetailsResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerAuthProvider",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderClientDetailsResponse",
+        "mangledName": "$s19PluggerAuthProvider0bC21ClientDetailsResponseC",
+        "moduleName": "PluggerAuthProvider",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthErrorResponse",
+        "printedName": "AuthErrorResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0B13ErrorResponseC4codeSiSgvp",
+            "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC4codeSiSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0B13ErrorResponseC4codeSiSgvg",
+                "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC4codeSiSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cause",
+            "printedName": "cause",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0B13ErrorResponseC5causeSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC5causeSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0B13ErrorResponseC5causeSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC5causeSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0B13ErrorResponseC7messageSSSgvp",
+            "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC7messageSSSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0B13ErrorResponseC7messageSSSgvg",
+                "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC7messageSSSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthErrorResponse",
+                "printedName": "PluggerAuthProvider.AuthErrorResponse",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthErrorResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerAuthProvider0B13ErrorResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PluggerAuthProvider",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider0B13ErrorResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PluggerAuthProvider",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthErrorResponse",
+        "mangledName": "$s19PluggerAuthProvider0B13ErrorResponseC",
+        "moduleName": "PluggerAuthProvider",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthProviderConfig",
+        "printedName": "AuthProviderConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "httpConfig",
+            "printedName": "httpConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPConfig",
+                "printedName": "PluggerCore.HTTPConfig",
+                "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig(py)httpConfig",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigC04httpD00A4Core10HTTPConfigCvp",
+            "moduleName": "PluggerAuthProvider",
+            "objc_name": "httpConfig",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPConfig",
+                    "printedName": "PluggerCore.HTTPConfig",
+                    "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig(im)httpConfig",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC04httpD00A4Core10HTTPConfigCvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "objc_name": "httpConfig",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPConfig",
+                    "printedName": "PluggerCore.HTTPConfig",
+                    "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig(im)setHttpConfig:",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC04httpD00A4Core10HTTPConfigCvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "objc_name": "setHttpConfig:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC04httpD00A4Core10HTTPConfigCvM",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC04httpD00A4Core10HTTPConfigCvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldFetchOnInit",
+            "printedName": "shouldFetchOnInit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvp",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvg",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvs",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvM",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC17shouldFetchOnInitSbvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldFetchOnForeground",
+            "printedName": "shouldFetchOnForeground",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvp",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvg",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvs",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvM",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC23shouldFetchOnForegroundSbvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fetchInterval",
+            "printedName": "fetchInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvp",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvg",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvs",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvM",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13fetchIntervalSdvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defaultValues",
+            "printedName": "defaultValues",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvp",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvg",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvs",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvM",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC13defaultValuesSDySSypGvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientConfig",
+            "printedName": "clientConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvp",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvg",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvs",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvM",
+                "mangledName": "$s19PluggerAuthProvider0bC6ConfigC06clientD0SDyS2SGvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(httpConfig:shouldFetchOnInit:shouldFetchOnForeground:fetchInterval:defaultValues:clientConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthProviderConfig",
+                "printedName": "PluggerAuthProvider.AuthProviderConfig",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPConfig",
+                "printedName": "PluggerCore.HTTPConfig",
+                "usr": "c:@M@PluggerCore@objc(cs)HTTPConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19PluggerAuthProvider0bC6ConfigC04httpD017shouldFetchOnInit0fgH10Foreground13fetchInterval13defaultValues06clientD0AC0A4Core10HTTPConfigC_S2bSdSDySSypGSDyS2SGtcfc",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigC04httpD017shouldFetchOnInit0fgH10Foreground13fetchInterval13defaultValues06clientD0AC0A4Core10HTTPConfigC_S2bSdSDySSypGSDyS2SGtcfc",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthProviderConfig",
+                "printedName": "PluggerAuthProvider.AuthProviderConfig",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig(im)init",
+            "mangledName": "$s19PluggerAuthProvider0bC6ConfigCACycfc",
+            "moduleName": "PluggerAuthProvider",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig",
+        "mangledName": "$s19PluggerAuthProvider0bC6ConfigC",
+        "moduleName": "PluggerAuthProvider",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Config",
+            "printedName": "Config",
+            "usr": "c:@M@PluggerCore@objc(pl)Config",
+            "mangledName": "$s11PluggerCore6ConfigP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthProviderDelegate",
+        "printedName": "AuthProviderDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerAuthProvider@objc(pl)AuthProviderDelegate(im)onSuccess",
+            "mangledName": "$s19PluggerAuthProvider0bC8DelegateP9onSuccessyyF",
+            "moduleName": "PluggerAuthProvider",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerAuthProvider.AuthProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PluggerAuthProvider.AuthProviderDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFailure",
+            "printedName": "onFailure(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PluggerAuthProvider@objc(pl)AuthProviderDelegate(im)onFailureWithError:",
+            "mangledName": "$s19PluggerAuthProvider0bC8DelegateP9onFailure5errorySS_tF",
+            "moduleName": "PluggerAuthProvider",
+            "genericSig": "<τ_0_0 where τ_0_0 : PluggerAuthProvider.AuthProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PluggerAuthProvider.AuthProviderDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@PluggerAuthProvider@objc(pl)AuthProviderDelegate",
+        "mangledName": "$s19PluggerAuthProvider0bC8DelegateP",
+        "moduleName": "PluggerAuthProvider",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlugAuthProvider",
+        "printedName": "PlugAuthProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authProviderConfig",
+            "printedName": "authProviderConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerAuthProvider.AuthProviderConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthProviderConfig",
+                    "printedName": "PluggerAuthProvider.AuthProviderConfig",
+                    "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvp",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerAuthProvider.AuthProviderConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthProviderConfig",
+                        "printedName": "PluggerAuthProvider.AuthProviderConfig",
+                        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvg",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PluggerAuthProvider.AuthProviderConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthProviderConfig",
+                        "printedName": "PluggerAuthProvider.AuthProviderConfig",
+                        "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvs",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvM",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC0C04authC6ConfigAA0bcF0CSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getConfig",
+            "printedName": "getConfig()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PluggerAuthProvider.AuthProviderConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthProviderConfig",
+                    "printedName": "PluggerAuthProvider.AuthProviderConfig",
+                    "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderConfig"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider04PlugbC0C9getConfigAA0bcF0CSgyF",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC0C9getConfigAA0bcF0CSgyF",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any PluggerAuthProvider.AuthProviderDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvp",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvp",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any PluggerAuthProvider.AuthProviderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthProviderDelegate",
+                        "printedName": "any PluggerAuthProvider.AuthProviderDelegate",
+                        "usr": "c:@M@PluggerAuthProvider@objc(pl)AuthProviderDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvg",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvg",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any PluggerAuthProvider.AuthProviderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthProviderDelegate",
+                        "printedName": "any PluggerAuthProvider.AuthProviderDelegate",
+                        "usr": "c:@M@PluggerAuthProvider@objc(pl)AuthProviderDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvs",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvs",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvM",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC0C8delegateAA0bC8Delegate_pSgvM",
+                "moduleName": "PluggerAuthProvider",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlugAuthProvider",
+                "printedName": "PluggerAuthProvider.PlugAuthProvider",
+                "usr": "c:@M@PluggerAuthProvider@objc(cs)PlugAuthProvider"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PluggerAuthProvider@objc(cs)PlugAuthProvider(im)init",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC0CACycfc",
+            "moduleName": "PluggerAuthProvider",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "login",
+            "printedName": "login(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PluggerAuthProvider.AuthProviderResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PluggerAuthProvider.AuthProviderResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PluggerAuthProvider.AuthProviderResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AuthProviderResponse",
+                            "printedName": "PluggerAuthProvider.AuthProviderResponse",
+                            "usr": "c:@M@PluggerAuthProvider@objc(cs)AuthProviderResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider04PlugbC0C5login10completionyyAA0bC8ResponseCSg_SSSgtc_tF",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC0C5login10completionyyAA0bC8ResponseCSg_SSSgtc_tF",
+            "moduleName": "PluggerAuthProvider",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Config",
+                "printedName": "any PluggerCore.Config",
+                "usr": "c:@M@PluggerCore@objc(pl)Config"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerAuthProvider@objc(cs)PlugAuthProvider(im)configureWithConfig:",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC0C9configure6configy0A4Core6Config_p_tF",
+            "moduleName": "PluggerAuthProvider",
+            "objc_name": "configureWithConfig:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNotify",
+            "printedName": "onNotify(eventType:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PluggerNotifiableEvents",
+                "printedName": "PluggerCore.PluggerNotifiableEvents",
+                "usr": "c:@M@PluggerCore@E@PluggerNotifiableEvents"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PluggerAuthProvider@objc(cs)PlugAuthProvider(im)onNotifyWithEventType:data:",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC0C8onNotify9eventType4datay0A4Core0A16NotifiableEventsO_SDys11AnyHashableVypGSgtF",
+            "moduleName": "PluggerAuthProvider",
+            "objc_name": "onNotifyWithEventType:data:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PluggerAuthProvider@objc(cs)PlugAuthProvider",
+        "mangledName": "$s19PluggerAuthProvider04PlugbC0C",
+        "moduleName": "PluggerAuthProvider",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Initializable",
+            "printedName": "Initializable",
+            "usr": "c:@M@PluggerCore@objc(pl)Initializable",
+            "mangledName": "$s11PluggerCore13InitializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Configurable",
+            "printedName": "Configurable",
+            "usr": "c:@M@PluggerCore@objc(pl)Configurable",
+            "mangledName": "$s11PluggerCore12ConfigurableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Notifiable",
+            "printedName": "Notifiable",
+            "usr": "c:@M@PluggerCore@objc(pl)Notifiable",
+            "mangledName": "$s11PluggerCore10NotifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlugAuthProviderConstant",
+        "printedName": "PlugAuthProviderConstant",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "LOG_TAG",
+            "printedName": "LOG_TAG",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV7LOG_TAGSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV7LOG_TAGSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV7LOG_TAGSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV7LOG_TAGSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PROCESS_CONIFG_DATA_LOG_TAG",
+            "printedName": "PROCESS_CONIFG_DATA_LOG_TAG",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV27PROCESS_CONIFG_DATA_LOG_TAGSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV27PROCESS_CONIFG_DATA_LOG_TAGSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV27PROCESS_CONIFG_DATA_LOG_TAGSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV27PROCESS_CONIFG_DATA_LOG_TAGSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NETOWRK_LOG_TAG",
+            "printedName": "NETOWRK_LOG_TAG",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV15NETOWRK_LOG_TAGSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV15NETOWRK_LOG_TAGSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV15NETOWRK_LOG_TAGSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV15NETOWRK_LOG_TAGSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LAST_FETCHED_TIMESTAMP",
+            "printedName": "LAST_FETCHED_TIMESTAMP",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV22LAST_FETCHED_TIMESTAMPSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV22LAST_FETCHED_TIMESTAMPSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV22LAST_FETCHED_TIMESTAMPSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV22LAST_FETCHED_TIMESTAMPSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "LAST_MODIFIED_TIMESTAMP",
+            "printedName": "LAST_MODIFIED_TIMESTAMP",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV23LAST_MODIFIED_TIMESTAMPSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV23LAST_MODIFIED_TIMESTAMPSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV23LAST_MODIFIED_TIMESTAMPSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV23LAST_MODIFIED_TIMESTAMPSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PRE_AUTH_SESSION_ID_KEY",
+            "printedName": "PRE_AUTH_SESSION_ID_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV23PRE_AUTH_SESSION_ID_KEYSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV23PRE_AUTH_SESSION_ID_KEYSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV23PRE_AUTH_SESSION_ID_KEYSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV23PRE_AUTH_SESSION_ID_KEYSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "REFRESH_TOKEN_KEY",
+            "printedName": "REFRESH_TOKEN_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV17REFRESH_TOKEN_KEYSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV17REFRESH_TOKEN_KEYSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV17REFRESH_TOKEN_KEYSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV17REFRESH_TOKEN_KEYSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CLIENT_URI_KEY",
+            "printedName": "CLIENT_URI_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_URI_KEYSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_URI_KEYSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_URI_KEYSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_URI_KEYSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CLIENT_NAME_KEY",
+            "printedName": "CLIENT_NAME_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV15CLIENT_NAME_KEYSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV15CLIENT_NAME_KEYSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV15CLIENT_NAME_KEYSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV15CLIENT_NAME_KEYSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CLIENT_ID_KEY",
+            "printedName": "CLIENT_ID_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV13CLIENT_ID_KEYSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV13CLIENT_ID_KEYSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV13CLIENT_ID_KEYSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV13CLIENT_ID_KEYSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "FIELDS_KEY",
+            "printedName": "FIELDS_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV10FIELDS_KEYSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV10FIELDS_KEYSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV10FIELDS_KEYSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV10FIELDS_KEYSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "REDIRECT_URL",
+            "printedName": "REDIRECT_URL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV12REDIRECT_URLSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV12REDIRECT_URLSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV12REDIRECT_URLSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV12REDIRECT_URLSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PROVIDER_KEY",
+            "printedName": "PROVIDER_KEY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV12PROVIDER_KEYSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV12PROVIDER_KEYSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV12PROVIDER_KEYSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV12PROVIDER_KEYSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "JS_BRIDGE_NAME",
+            "printedName": "JS_BRIDGE_NAME",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV14JS_BRIDGE_NAMESSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV14JS_BRIDGE_NAMESSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV14JS_BRIDGE_NAMESSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV14JS_BRIDGE_NAMESSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AUTHENTICATE",
+            "printedName": "AUTHENTICATE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV12AUTHENTICATESSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV12AUTHENTICATESSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV12AUTHENTICATESSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV12AUTHENTICATESSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "API_CHECK_SESSION",
+            "printedName": "API_CHECK_SESSION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV17API_CHECK_SESSIONSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV17API_CHECK_SESSIONSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV17API_CHECK_SESSIONSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV17API_CHECK_SESSIONSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CLIENT_DETAILS",
+            "printedName": "CLIENT_DETAILS",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_DETAILSSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_DETAILSSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_DETAILSSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV14CLIENT_DETAILSSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "API_CONSENT",
+            "printedName": "API_CONSENT",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV11API_CONSENTSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV11API_CONSENTSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV11API_CONSENTSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV11API_CONSENTSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CONSENT_SCREEN_PATH",
+            "printedName": "CONSENT_SCREEN_PATH",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV19CONSENT_SCREEN_PATHSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV19CONSENT_SCREEN_PATHSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV19CONSENT_SCREEN_PATHSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV19CONSENT_SCREEN_PATHSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_PROVIDER",
+            "printedName": "DEFAULT_PROVIDER",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV16DEFAULT_PROVIDERSSvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV16DEFAULT_PROVIDERSSvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV16DEFAULT_PROVIDERSSvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV16DEFAULT_PROVIDERSSvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "WEB_VIEW_OPENING_DELAY",
+            "printedName": "WEB_VIEW_OPENING_DELAY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV22WEB_VIEW_OPENING_DELAYSdvpZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV22WEB_VIEW_OPENING_DELAYSdvpZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV22WEB_VIEW_OPENING_DELAYSdvgZ",
+                "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV22WEB_VIEW_OPENING_DELAYSdvgZ",
+                "moduleName": "PluggerAuthProvider",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:19PluggerAuthProvider04PlugbC8ConstantV",
+        "mangledName": "$s19PluggerAuthProvider04PlugbC8ConstantV",
+        "moduleName": "PluggerAuthProvider",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "PluggerCore",
+        "printedName": "PluggerCore",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlugAuthProviderUtils",
+        "printedName": "PlugAuthProviderUtils",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "openTargetApp",
+            "printedName": "openTargetApp(params:urlScheme:providerName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider04PlugbC5UtilsC13openTargetApp6params9urlScheme12providerNameySDyS2SG_S2SSgtFZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC5UtilsC13openTargetApp6params9urlScheme12providerNameySDyS2SG_S2SSgtFZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "extractFields",
+            "printedName": "extractFields(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider04PlugbC5UtilsC13extractFields4fromSDyS2SGSS_tFZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC5UtilsC13extractFields4fromSDyS2SGSS_tFZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "extractBaseURL",
+            "printedName": "extractBaseURL(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19PluggerAuthProvider04PlugbC5UtilsC14extractBaseURL4fromSSSgSS_tFZ",
+            "mangledName": "$s19PluggerAuthProvider04PlugbC5UtilsC14extractBaseURL4fromSSSgSS_tFZ",
+            "moduleName": "PluggerAuthProvider",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19PluggerAuthProvider04PlugbC5UtilsC",
+        "mangledName": "$s19PluggerAuthProvider04PlugbC5UtilsC",
+        "moduleName": "PluggerAuthProvider",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PluggerAuthProvider"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Models\/AuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 25,
+      "length": 20,
+      "value": "\"PluggerAuthProvider.AuthProviderResponse\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Models\/AuthProviderConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 263,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Models\/AuthProviderConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 57,
+      "length": 18,
+      "value": "\"PluggerAuthProvider.AuthProviderConfig\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 122,
+      "length": 14,
+      "value": "\"AuthProvider\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 189,
+      "length": 29,
+      "value": "\"AuthProviderProcessResponse\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 259,
+      "length": 21,
+      "value": "\"AuthProviderNetwork\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 328,
+      "length": 24,
+      "value": "\"LAST_FETCHED_TIMESTAMP\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 401,
+      "length": 15,
+      "value": "\"Last-Modified\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
+      "length": 18,
+      "value": "\"preAuthSessionId\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 555,
+      "length": 14,
+      "value": "\"refreshToken\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 609,
+      "length": 11,
+      "value": "\"clientUri\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 661,
+      "length": 12,
+      "value": "\"clientName\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 712,
+      "length": 10,
+      "value": "\"clientId\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 758,
+      "length": 8,
+      "value": "\"fields\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 13,
+      "value": "\"redirectUrl\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 14,
+      "value": "\"providerName\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 914,
+      "length": 19,
+      "value": "\"DreamAuthJSBridge\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1007,
+      "length": 15,
+      "value": "\"\/authenticate\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1065,
+      "length": 16,
+      "value": "\"\/check-session\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1121,
+      "length": 10,
+      "value": "\"\/client\/\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1168,
+      "length": 10,
+      "value": "\"\/consent\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1223,
+      "length": 21,
+      "value": "\"\/consent-dream-auth\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1318,
+      "length": 9,
+      "value": "\"dream11\""
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1380,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 330,
+      "length": 3,
+      "value": "302"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 384,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 437,
+      "length": 2,
+      "value": "37"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 495,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 428,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 52,
+      "length": 17,
+      "value": "\"PluggerAuthProvider.WebViewController\""
+    }
+  ]
+}

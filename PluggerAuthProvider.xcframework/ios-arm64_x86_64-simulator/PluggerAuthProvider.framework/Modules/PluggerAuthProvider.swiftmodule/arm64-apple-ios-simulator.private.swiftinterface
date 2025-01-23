@@ -1,0 +1,104 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PluggerAuthProvider
+import Foundation
+@_exported import PluggerAuthProvider
+import PluggerCore
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc final public class AuthProviderResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public var state: Swift.String?
+  final public var redirectUrl: Swift.String?
+  final public var code: Swift.String?
+  final public let error: PluggerAuthProvider.AuthErrorResponse?
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc final public class AuthProviderClientDetailsResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public var client_name: Swift.String?
+  final public var client_id: Swift.String?
+  final public var logo_uri: Swift.String?
+  final public var policy_uri: Swift.String?
+  final public var is_privileged: Swift.Bool?
+  final public var client_uri: Swift.String?
+  final public var contacts: [Swift.String]?
+  final public let error: PluggerAuthProvider.AuthErrorResponse?
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class AuthErrorResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public let code: Swift.Int?
+  final public let cause: Swift.String?
+  final public let message: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class AuthProviderConfig : ObjectiveC.NSObject, PluggerCore.Config {
+  @objc public var httpConfig: PluggerCore.HTTPConfig
+  public var shouldFetchOnInit: Swift.Bool
+  public var shouldFetchOnForeground: Swift.Bool
+  public var fetchInterval: Swift.Double
+  public var defaultValues: [Swift.String : Any]
+  public var clientConfig: [Swift.String : Swift.String]
+  public init(httpConfig: PluggerCore.HTTPConfig, shouldFetchOnInit: Swift.Bool, shouldFetchOnForeground: Swift.Bool, fetchInterval: Foundation.TimeInterval, defaultValues: [Swift.String : Any], clientConfig: [Swift.String : Swift.String])
+  @objc deinit
+}
+@objc public protocol AuthProviderDelegate {
+  @objc func onSuccess()
+  @objc func onFailure(error: Swift.String)
+}
+public typealias AuthProviderLoginResponse = (PluggerAuthProvider.AuthProviderResponse?, Swift.String?) -> Swift.Void
+public typealias AuthProviderClientDetailsResponseFunc = (PluggerAuthProvider.AuthProviderClientDetailsResponse?, Swift.String?) -> Swift.Void
+@_inheritsConvenienceInitializers @objc final public class PlugAuthProvider : ObjectiveC.NSObject, PluggerCore.Initializable {
+  final public var authProviderConfig: PluggerAuthProvider.AuthProviderConfig? {
+    get
+    set
+  }
+  final public func getConfig() -> PluggerAuthProvider.AuthProviderConfig?
+  weak final public var delegate: (any PluggerAuthProvider.AuthProviderDelegate)?
+  @objc required override dynamic public init()
+  final public func login(completion: @escaping PluggerAuthProvider.AuthProviderLoginResponse)
+  @objc deinit
+}
+@objc extension PluggerAuthProvider.PlugAuthProvider : PluggerCore.Configurable {
+  @objc final public func configure(config: any PluggerCore.Config)
+}
+public struct PlugAuthProviderConstant {
+  public static let LOG_TAG: Swift.String
+  public static let PROCESS_CONIFG_DATA_LOG_TAG: Swift.String
+  public static let NETOWRK_LOG_TAG: Swift.String
+  public static let LAST_FETCHED_TIMESTAMP: Swift.String
+  public static let LAST_MODIFIED_TIMESTAMP: Swift.String
+  public static let PRE_AUTH_SESSION_ID_KEY: Swift.String
+  public static let REFRESH_TOKEN_KEY: Swift.String
+  public static let CLIENT_URI_KEY: Swift.String
+  public static let CLIENT_NAME_KEY: Swift.String
+  public static let CLIENT_ID_KEY: Swift.String
+  public static let FIELDS_KEY: Swift.String
+  public static let REDIRECT_URL: Swift.String
+  public static let PROVIDER_KEY: Swift.String
+  public static let JS_BRIDGE_NAME: Swift.String
+  public static let AUTHENTICATE: Swift.String
+  public static let API_CHECK_SESSION: Swift.String
+  public static let CLIENT_DETAILS: Swift.String
+  public static let API_CONSENT: Swift.String
+  public static let CONSENT_SCREEN_PATH: Swift.String
+  public static let DEFAULT_PROVIDER: Swift.String
+  public static let WEB_VIEW_OPENING_DELAY: Swift.Double
+}
+@objc extension PluggerAuthProvider.PlugAuthProvider : PluggerCore.Notifiable {
+  @objc final public func onNotify(eventType: PluggerCore.PluggerNotifiableEvents, data: [Swift.AnyHashable : Any]?)
+}
+@_hasMissingDesignatedInitializers public class PlugAuthProviderUtils {
+  public static func openTargetApp(params: [Swift.String : Swift.String], urlScheme: Swift.String, providerName: Swift.String?)
+  public static func extractFields(from urlString: Swift.String) -> [Swift.String : Swift.String]
+  public static func extractBaseURL(from urlString: Swift.String) -> Swift.String?
+  @objc deinit
+}
