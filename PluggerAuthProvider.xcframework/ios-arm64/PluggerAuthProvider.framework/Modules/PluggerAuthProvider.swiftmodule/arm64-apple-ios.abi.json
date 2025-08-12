@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PluggerAuthProvider",
+    "printedName": "PluggerAuthProvider",
     "children": [
       {
         "kind": "TypeDecl",
@@ -542,6 +542,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1612,6 +1626,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1939,6 +1967,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2745,6 +2787,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2870,6 +2926,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3358,6 +3430,20 @@
             "printedName": "Initializable",
             "usr": "c:@M@PluggerCore@objc(pl)Initializable",
             "mangledName": "$s11PluggerCore13InitializableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4441,6 +4527,22 @@
         "moduleName": "PluggerAuthProvider",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4626,7 +4728,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4654,221 +4772,207 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Models\/AuthProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 25,
-      "length": 20,
-      "value": "\"PluggerAuthProvider.AuthProviderResponse\""
-    },
-    {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Models\/AuthProviderConfig.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Models\/AuthProviderConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 263,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Models\/AuthProviderConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 57,
-      "length": 18,
-      "value": "\"PluggerAuthProvider.AuthProviderConfig\""
-    },
-    {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProvider.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 362,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 122,
       "length": 14,
       "value": "\"AuthProvider\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 29,
       "value": "\"AuthProviderProcessResponse\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 21,
       "value": "\"AuthProviderNetwork\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 328,
       "length": 24,
       "value": "\"LAST_FETCHED_TIMESTAMP\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 401,
       "length": 15,
       "value": "\"Last-Modified\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 18,
       "value": "\"preAuthSessionId\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 555,
       "length": 14,
       "value": "\"refreshToken\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 609,
       "length": 11,
       "value": "\"clientUri\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 661,
       "length": 12,
       "value": "\"clientName\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 712,
       "length": 10,
       "value": "\"clientId\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 758,
       "length": 8,
       "value": "\"fields\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 804,
       "length": 13,
       "value": "\"redirectUrl\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 855,
       "length": 14,
       "value": "\"providerName\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 914,
       "length": 19,
       "value": "\"DreamAuthJSBridge\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 1007,
       "length": 15,
       "value": "\"\/authenticate\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 1065,
       "length": 16,
       "value": "\"\/check-session\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 10,
       "value": "\"\/client\/\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 1168,
       "length": 10,
       "value": "\"\/consent\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 1223,
       "length": 21,
       "value": "\"\/consent-dream-auth\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "StringLiteral",
       "offset": 1318,
       "length": 9,
       "value": "\"dream11\""
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/Constants\/PlugAuthProviderConstants.swift",
       "kind": "FloatLiteral",
       "offset": 1380,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 330,
       "length": 3,
       "value": "302"
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 384,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 437,
+      "offset": 432,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 485,
       "length": 2,
       "value": "37"
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/PlugAuthProviderForegroundHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 495,
+      "offset": 543,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/WebViewController.swift",
+      "filePath": "\/Users\/atharva-kothawade\/Desktop\/plugger-ios-provider\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 428,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/uditagrawal\/Downloads\/temp-repos\/plugger-ios\/PluggerAuthProvider\/PluggerAuthProvider\/Classes\/WebViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 52,
-      "length": 17,
-      "value": "\"PluggerAuthProvider.WebViewController\""
     }
   ]
 }

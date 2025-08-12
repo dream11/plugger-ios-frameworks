@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PluggerAuthProvider-Swift.h</key>
 		<data>
-		W53NHmh7lbhL9UxRGuDwtMIAL7Q=
+		dc+9Dr3DTUveG1wwG5nGX+7pGmM=
 		</data>
 		<key>Headers/PluggerAuthProvider-umbrella.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EejpbZJbO9umEsJw1fMh5x9yRp4=
+		NDIIeP129kazWwRfTJvLViMXlls=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1Bnt++HPRP/x8s+Ttp4qY8PthnI=
+		PSSqC0I1Xy609zp6G2O4Za4Pf1k=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EZMcCJtNtgXJ3O/RtqTLWfgdBXc=
+		7IDtvqhIhZrb+oX5/2tB9swJsgY=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		eciCs1VdwfmVRCZXAITQseMgMsU=
+		nG/iWgVNCm0oR83l3x7+ZM2mNmA=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EZMcCJtNtgXJ3O/RtqTLWfgdBXc=
+		7IDtvqhIhZrb+oX5/2tB9swJsgY=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nMml2P9KXhOD63aXdbLTQZb/Uks=
+		AMEf0+w/TAS2JLDN3xDmv+njgJU=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1Bnt++HPRP/x8s+Ttp4qY8PthnI=
+		PSSqC0I1Xy609zp6G2O4Za4Pf1k=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Ya4s6BSWCJUeCbBOLUHc3tpCmuI=
+		FMZa4/h54OnGfZa42UCsjTJPHZg=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vYH71nu6wIcwTo/DY8MYFZOC4vY=
+		PA7XFlJ1NIJaZmpxQtqtJKLdWDY=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Ya4s6BSWCJUeCbBOLUHc3tpCmuI=
+		FMZa4/h54OnGfZa42UCsjTJPHZg=
 		</data>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uDaJuSgVNlmzH6rmWljKK0Oosgs=
+		NIPAzJPid80/JReBLt3M1u0Csyc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0leTgp3saMrS5f5O6+iIWQKIC0dNlOy9sr4mSJB1q+8=
+			eTGeWfGvKR82+PPvtQV3alm3pX/HJky4ILOA8dV0ZSQ=
 			</data>
 		</dict>
 		<key>Headers/PluggerAuthProvider-umbrella.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S7LaFvb6vZekVp7GF5A8Tny0+vjvoTJ4eyprGA9/gpk=
+			zciCICeDItJFoNmX/HhFtzdX8bTeSVYjzVUXrEF3tuQ=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uXJa5k8t8Pb1+Obws7U83io0Iv5vR1oMjP0Xl1DiYzc=
+			uPN5GZ2mG2NArXylHDcICQfKcDSP5ICUOLM7uh3tLQE=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tMddfw7V5/Oa9ZZ0XFlhoxJtzVhRkOloa+yRhzCAvqs=
+			f5Xz7PTsEvtnOwG0nkrOKvCPRoRR20GyI7LBKMsXIKE=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uXJa5k8t8Pb1+Obws7U83io0Iv5vR1oMjP0Xl1DiYzc=
+			uPN5GZ2mG2NArXylHDcICQfKcDSP5ICUOLM7uh3tLQE=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uT962ZJEHmdbz796le08g/u1LFsJhewbIIbhKhPTQLU=
+			IqTWc4CFtkedsHc2ETFxVss3aVElSVFFbhnqk0Di4AU=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S7LaFvb6vZekVp7GF5A8Tny0+vjvoTJ4eyprGA9/gpk=
+			zciCICeDItJFoNmX/HhFtzdX8bTeSVYjzVUXrEF3tuQ=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HzgmNWqYn1CT7ZfKdgTJ9IfZfYpwZMzUnjzTPnhTYjI=
+			jTQEjPMPRVp6ZIG0l49tgWG1OQ4w1BOdFR+od7Ep9NU=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KkcU48oXrqr9uI/XIuase0HHZ3RcBZQWn17ti25GuHg=
+			xUr+b0ExANAz+h+uVEkFUxsynVdh5TdLCxXwck04y+c=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HzgmNWqYn1CT7ZfKdgTJ9IfZfYpwZMzUnjzTPnhTYjI=
+			jTQEjPMPRVp6ZIG0l49tgWG1OQ4w1BOdFR+od7Ep9NU=
 			</data>
 		</dict>
 		<key>Modules/PluggerAuthProvider.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZrwxR1F5oo2xUfk07KXUoSnXhV18WVYtg4x4w0bZ9W4=
+			QartVXxJYSG0/qbozUokb3adlojbKVGlZzC2J2WmV+w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
